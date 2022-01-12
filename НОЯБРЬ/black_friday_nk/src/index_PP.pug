@@ -1,0 +1,83 @@
+<!-- @format -->
+include ./miksins.pug
+
+
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		title= "Черная пятница"
+	body.js-body
+		.main_content.ChP_PP
+			toolbar
+				include ./modules/toolbar_pp.pug
+			header
+				.content
+					.offer 
+						p.section_h0 Черная пятница #[br] на Пульсе цен
+						p Самые интересные предложения для компаний, которые хотят подключить повышенный пакет или тариф*.
+						p.section_h2.section-accent Мега черный sale на всё!
+			
+			.bonus#bonus
+				.content 	
+					.block 
+						.item
+							div.item__header
+								img.item__img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/285627/content_galochka.png", alt="")
+								.heading.section_h3 Тариф «Старт»
+								p.subtitle.item__subtitle Необходимый минимум инструментов для эффективных продаж в интернете.
+								.item__modal-button.button
+									+buttonEvent('выгоды','выгоды', "textaria__btn ", "start", "start")
+									img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/285328/content_subtract.png", alt="" id="start" rel="start")
+
+							+button("{crm_analytics:click_link(Хочу скидку на Старт,#order,network_actions,ПП_ЧП_Старт)}", "Хочу скидку на Старт","section-buttonAccent btn_bonus fat", )
+						.item
+							div.item__header
+								img.item__img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/285627/content_galochka.png", alt="")
+								.heading.section_h3 Тариф «Бизнес»
+								p.subtitle.item__subtitle Расширенный тариф для успешного развития бизнеса в интернете.
+								.item__modal-button.button
+									+buttonEvent('выгоды','выгоды', "textaria__btn ", "business", "business")
+									img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/285328/content_subtract.png", alt="" id="business" rel="business")
+
+							+button("{crm_analytics:click_link(Хочу скидку на Бизнес,#order,network_actions,ПП_ЧП_Бизнес)}", "Хочу скидку на Бизнес","section-buttonAccent btn_bonus fat", )
+						.item
+							div.item__header
+								img.item__img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/285627/content_galochka.png", alt="")
+								.heading.section_h3 Тариф «Всё включено»
+								p.subtitle.item__subtitle.item__subtitle_width Полный фарш! Всё что нужно для быстрых и эффективных продаж от А до Я.
+								.item__modal-button.button
+									+buttonEvent('выгоды','выгоды', "textaria__btn ", "All_includes", "All_includes")
+									img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/285328/content_subtract.png", alt="" id="All_includes" rel="All_includes")
+
+							+button("{crm_analytics:click_link(Хочу скидку на Всё включено,#order,network_actions,ПП_ЧП_Всё_включено)}", "Хочу скидку на Всё включено","section-buttonAccent btn_bonus fat", )
+					.block.block2 
+						.wrapper
+							.item.item1
+								div.item__header
+									img.item__img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/285627/content_galochka.png", alt="")
+									.heading.section_h3 Тариф «Региональные кластеры»
+									p.subtitle.item__subtitle Региональный охват рынка. Получайте клиентов из соседних или любых других регионов.
+									.item__modal-button.button
+										+buttonEvent('выгоды','выгоды', "textaria__btn ", "region", "region")
+										img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/285328/content_subtract.png", alt="" id="region" rel="region")
+
+								+button("{crm_analytics:click_link(Хочу скидку на кластеры,#order,network_actions,НК_ЧП_РФ_Тарифы_091121)}", "Хочу скидку на кластеры","section-buttonAccent btn_bonus fat", )
+							.item
+								div.item__header
+									img.item__img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/285627/content_galochka.png", alt="")
+									.heading.section_h3 Тариф «Вся Россия»
+									p.subtitle.item__subtitle Полный охват рынка! Получайте клиентов со всей России, включая города-миллионники. 
+									.item__modal-button.button
+										+buttonEvent('выгоды','выгоды', "textaria__btn ", "russia", "russia")
+										img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/285328/content_subtract.png", alt="" id="russia" rel="russia")
+
+								+button("{crm_analytics:click_link(Хочу скидку на Всю Россию,#order,network_actions,ПП_ЧП_ВсяРФ)}", "Хочу скидку на Всю Россию","section-buttonAccent btn_bonus fat", )
+			.end 
+				.content 
+					p Успевайте подключить пакет или тариф с большой скидкой. За подробностями обратитесь к менеджеру, его предложение вас точно порадует!	
+					.end__line 
+					p.end__note *В акции не участвуют услуги: пакеты тарифов «Старт. Платина+» и «Бизнес.Серебро».	
+			include ./modules/modal.pug
+			include ./modules/footer_pp.pug
+			p {crm_analytics:show_page(network_actions,ПП_Черная_пятница)}

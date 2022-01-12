@@ -1,0 +1,224 @@
+/** @format */
+
+//как использовать - main_content{@include mainContent}
+.main_content {
+	@include mainContent(18px, $main_text_color);
+	font-weight: 500;
+}
+
+header {
+	background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/280612/content_fonovye_volny.png') no-repeat 100% 100% / 100%, linear-gradient(207.55deg, #00a5ff -11.01%, #3562b6 113.64%);
+	position: relative;
+	color: #fff;
+}
+.line {
+	margin: 0px 0 0px;
+	background: #e7eef4;
+	max-width: 100%;
+	width: 100%;
+	height: 2px;
+}
+.line-note {
+	font-weight: 700;
+}
+
+.header {
+	padding: 0px 0 169px;
+	margin-top: 80px;
+	z-index: 2;
+	position: relative;
+	.btns {
+		margin-top: 40px;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+		grid-gap: 20px;
+		justify-content: start;
+	}
+	.line {
+		margin: 30px 0 10px;
+		background: $accentF;
+		max-width: 628px;
+		width: 100%;
+		height: 2px;
+	}
+	.line-note {
+		color: $accentF;
+		font-weight: 700;
+	}
+	.header__img {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+	.offer {
+		margin-top: 10px;
+	}
+}
+.instruction {
+	background: #f5f6f7;
+	margin: 80px auto 0 auto;
+	color: $main_text_color;
+	display: grid;
+	justify-content: center;
+	max-width: 1122px;
+	.instruction__heading {
+		text-align: center;
+	}
+	.instruction__subtitle {
+		margin-top: 30px;
+		margin-bottom: 40px;
+		width: 97%;
+		max-width: 100%;
+	}
+	.block {
+		max-width: 1106px;
+		display: grid;
+		grid-gap: 25px;
+		position: relative;
+	}
+	.block__line {
+		position: absolute;
+		height: 100%;
+		width: 3px;
+		background: #2486da;
+		left: 40px;
+	}
+	.item {
+		@include grid(40px, auto 1fr);
+		z-index: 1;
+		img {
+			max-width: 100%;
+		}
+		.item__img {
+			margin-top: 25px;
+			margin-left: -15px;
+		}
+		.item__icon {
+			max-width: 80px;
+		}
+		.item__right {
+			margin-top: 30px;
+		}
+		.item__text {
+			display: contents;
+		}
+		.accent {
+			color: $corporate_color;
+		}
+	}
+	.instruction__btn {
+		margin: 10px auto 0;
+	}
+}
+.end {
+	margin: 40px 0 80px;
+
+	.end__wrapper {
+		max-width: 100%;
+		width: 80%;
+		display: grid;
+		grid-gap: 30px;
+	}
+}
+
+@media (max-width: 1460px) {
+	.header {
+		.header__img {
+			right: -11%;
+		}
+	}
+}
+
+@media (max-width: 1260px) {
+	.header {
+		.header__heading {
+			max-width: 500px;
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.header {
+		padding: 0px 0 60px;
+		.header__wrapper {
+			grid-template-columns: 1fr;
+		}
+		.btns {
+			grid-auto-flow: dense;
+			margin-top: 24px;
+		}
+		.offer {
+			grid-gap: 16px;
+		}
+		.header__img {
+			img {
+				width: 72%;
+			}
+		}
+	}
+	:root {
+		--section: 60px;
+		--block: 40px;
+	}
+}
+
+@media (max-width: 900px) {
+	.header {
+		margin-top: 40px;
+		.header__img {
+			right: 0%;
+			img {
+				width: 100%;
+			}
+		}
+		.btns {
+			grid-template-columns: 1fr;
+			margin-top: 201px;
+			grid-gap: 8px;
+		}
+		.section-button {
+			max-width: 100%;
+			padding: 10px 16px;
+		}
+	}
+	.toolbar-rascal {
+		padding-top: 20px;
+	}
+}
+
+@media (max-width: 660px) {
+	.main_content {
+		font-size: 14px;
+	}
+}
+@media (max-width: 480px) {
+	.instruction {
+		.item {
+			grid-gap: 16px;
+			.item__icon {
+				max-width: 30px;
+			}
+			.item__right {
+				margin-top: 8px;
+			}
+			.item__img {
+				margin-top: 5px;
+				margin-left: -10px;
+			}
+		}
+		.block__line {
+			left: 14px;
+		}
+		.instruction__btn {
+			margin: 25px auto 0;
+		}
+
+		.instruction__subtitle {
+			margin-top: 10px;
+			margin-bottom: 30px;
+		}
+		.instruction__heading {
+			text-align: left;
+		}
+	}
+}

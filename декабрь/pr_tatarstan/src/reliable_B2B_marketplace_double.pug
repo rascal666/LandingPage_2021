@@ -1,0 +1,123 @@
+<!-- @format -->
+include miksins.pug
+
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		title= "миксы"
+	body.js-body
+		.main_content
+			.header_wrapper
+				include ./components/toolbar.pug
+				header
+					.content
+						.header__wrapper
+							.header__text
+								p.section_h1 Надежный В2В-маркетплейс в Татарстане — Пульс цен
+								p.section_h4 9 лет помогаем предпринимателям зарабатывать.
+								.info
+									.info__item
+										p.section_h3.info__heading Сайт для продаж 
+										p.section_h4 Готов за 1 неделю, работает сразу и без перебоев.
+									.info__item
+										p.section_h3.info__heading Клиенты из Татарстана 
+										p.section_h4 Из любого города или со всего региона — решать вам. 
+									.info__item
+										p.section_h3.info__heading Персональный менеджер 
+										p.section_h4 Поможет в любом вопросе по работе с Пульсом цен.
+									+button("Хочу подключиться","Хочу подключиться", "section-button")
+							.header__img
+								img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/279851/content_ill_3.png")
+			section.this
+				.content
+					.section_h2.this__heading 29 лет в России и 9 лет в Татарстане
+					.section_h4 Пульс цен – ведущий промышленно-строительный портал – давно завоевал доверие у покупателей и поставщиков.
+					.this__block
+						.item
+							.item__img
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/279845/content_galochka.png')
+							.item__text
+								p.section_h3.item__heading Универсальный сервис
+								p.section_h4 Простое и понятное управление продажами. Под рукой инструменты для продвижения и запуска рекламных кампаний. Информационный Блог для поиска идей и вдохновения.
+						.item
+							.item__img
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/279845/content_galochka.png')
+							.item__text
+								p.section_h3.item__heading 100 000 потенциальных покупателей
+								p.section_h4 Столько человек ежемесячно заходит на Пульс цен в рубрики, связанные со строительством, металлопрокатом, продажей и арендой оборудования и спецтехники.  
+						.item
+							.item__img
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/279845/content_galochka.png')
+							.item__text
+								p.section_h3.item__heading Более 200 000 обращений от клиентов
+								p.section_h4 Столько заявок и заказов в год получают компании, которые размещаются на платных тарифах на Пульсе цен.  
+			section.possibilities
+				.content
+					p.section_h2 Ваши возможности на Пульсе цен
+					#all.block-left.block-right
+						.text
+							p.section_h3 Зарабатывать больше, а тратить меньше
+							.text__block
+								p С Пульсом цен легко получать клиентов без расходов на командировкии создание филиалов.
+								p Продажи в любом городе, региональном кластере или по всей России (214 городов).
+							+button("{crm_analytics:click_link(Посмотреть города и регионы,#order,network_actions,НК_РК_Татарстан-1_Регионы)}", "Посмотреть города и регионы", "section-button")
+						.img
+							img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/279846/content_ill_1.png")
+					#sate.block-left
+						.img
+							img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/279847/content_ill_2.png")
+						.text
+							p.section_h3 Получить работающий сайт с техподдержкой 
+							p Экономьте на разработке и обслуживании сайта — на Пульсе цен уже всё включено. Через 7 дней получите сайт, полностью готовый для приема покупателей:
+							.list
+								.list__li с дизайном
+								.list__li с оптимизированным товарным каталогом
+								.list__li с модулями онлайн-доставки и оплаты
+							+button("{crm_analytics:click_link(Узнать про сайт подробнее,#order,network_actions,НК_РК_Татарстан-1_сайт)}","Узнать про сайт подробнее", "section-button")
+					#client.block-left.block-right
+						.text
+							p.section_h3 Получить 3 потока целевой аудитории
+							p С Пульсом цен вы сможете охватить целых три сегмента целевой аудитории:
+							.list
+								.list__li аудитория Яндекса
+								.list__li аудитория Google
+								.list__li аудитория самого Пульса цен (более 6 000 000 покупателей).
+							p Только целевые посетители, запросы и заявки
+							+button("{crm_analytics:click_link(Узнать про трафик подробнее,#order,НК_РК_Татарстан-1_Трафик)}", "Узнать про трафик подробнее", "section-button")
+						.img
+							img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/279848/content_ill_4.png")
+					#support.block-left
+						.img
+							img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/279849/content_ill_5.png")
+						.text
+							p.section_h3 Всегда знать, с кого спросить результат
+							p Целая команда профессионалов занимается развитиемвашего бизнеса на Пульсе цен. Здесь одно предложениео профессиональной поддержке и персональном менеджере.
+							+button("Узнать подробнее о поддержке", "Узнать подробнее о поддержке",  "section-button")
+					#tariff.block-left.block-right
+						.text
+							p.section_h3 Получать готовые заказы прямо в телефон
+							p Вы не тратите время на поиск клиентов, а получаете готовые заказы в телефон или на почту.
+							p Уникальный сервис «Закупки» - это база заявок от покупателей, оптовых и розничных. Мы сравниваем заявку с товарами поставщиков и рассылаем предложение тем, кто может закрыть заказ. 
+							p Доступ к «Закупкам» предоставляется при подключении любого платного тарифа.
+							+button("{crm_analytics:click_link(Подробнее о тарифах,#orders,НК_РК_Татарстан-1_Закупки)}","Подробнее о тарифах", "section-button")
+						.img
+							img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/279850/content_ill_6.png")
+			section.end
+				.content
+					.end__block
+						p Для вас действуют специальные условия на подключение! Закажите бесплатную консультацию.
+						+button("Хочу бесплатную консультацию", "Хочу бесплатную консультацию", "section-button")
+
+
+
+
+
+	include ./components/footer.pug
+		p {crm_analytics:show_page(network_actions,НК_РК_Татарстан-1_B2B_маркетплейс_double)}
+	include ./components/metricks.pug
+
+
+
+
+

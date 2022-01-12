@@ -1,0 +1,106 @@
+<!-- @format -->
+mixin linkMassagers
+	a(href="https://wa.me/+79292690013").numder_futer
+		img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/266954/content_group_282.png")
+	a(href="viber://chat?number=+79292690013").numder_futer
+		img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/266952/content_group_283.png")
+	a(href="mailto:tolstova@pulscen.ru").numder_futer
+		img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/266951/content_group_286.png")
+	a(href="https://t.me/PulscenKC").numder_futer
+		img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/268037/content_telega.png")
+
+mixin button(textButton, style)
+	.feedback-js.weight_600.ab-order.js-apress-order-button.js-orders-callback-link(class=style data-button-type="order_callback" data-company="99572059 " data-company-id="99572059 " data-company-name="Пульс цен Онлайн" data-company-name-rest="" data-company-url="https://help.pulscen.ru/" data-params='{"company_id":"99572059 "}' data-statistics="1" data-type="callback")=textButton
+
+
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		title= "миксы"
+	body.js-body
+		.main_content
+			section.toolbar
+				.content
+					.block
+						a(href="https://pulscen.ru/")
+							img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/183694/content_content_logo-pc_2.png").logo
+
+						.toolbar__feedback
+							.massenger_futer
+								+linkMassagers
+							+button("Позвоните мне", "section-buttonToolbar" )
+							.massenger_futer
+								img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/204255/content_r.png")
+								a(href="tel:88001009191").numder_futer.phone-js 8 800 100 91 91
+			header
+				.content
+					.header__wrapper
+						.header__text
+							p.section_h1 Получайте максимум клиентов за свой бюджет
+							p.section_h4 Миксы тарифов на Пульсе цен — это возможность усилить продвижение в период, когда нужно больше заказов, и снизить трафик, когда нужно сэкономить. Самое эффективное решение по распределению бюджета.
+						.header__img
+							img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/279524/content_ill_3.png")
+			section.task
+				.content
+					p.section_h2 Какие задачи решает Микс тарифов
+					.task__wrapper
+						.item
+							.item__heading.section_h3 Увеличить прибыль в сезон без больших затрат
+							.item__subtitle.section_h4 Ваши выгоды:
+							.list
+								p.list__li больше заказов в сезон
+								p.list__li самые конверсионные места в каталоге только в нужное время
+								p.list__li возможность протестировать премиум-размещение
+								p.list__li.list__li_by годовой доступ к базе готовых заявок
+							.item__text.section_h4 Год продаж на Пульсе цен + первые места в рубриках на самые горячие месяцы сезона
+							+button("{crm_analytics:click_link(Хочу больше продаж в сезон,#order,network_actions,НК_РФ_Продажи_в_сезон_061021)}","section-button item__btn" )
+						.item.item2
+							.item__heading.section_h3 Собрать максимум заказов до конца сезона
+							.item__subtitle.section_h4 Ваши выгоды:
+							.list
+								p.list__li больше клиентов при меньшем бюджете
+								p.list__li двойной охват аудитории: с Пульса цен и из Яндекса
+								p.list__li.list__li_ua  настройка, запуск и ведение рекламной кампании экспертами  B2B-сегмента
+								p.list__li годовой доступ к базе готовых заявок
+							.item__text.section_h4 12 месяцев продаж на Пульсе цен + реклама в Яндексе на период усиления продаж
+							+button("{crm_analytics:click_link(Хочу больше заказов сейчас,#order,network_actions,НК_РФ_Продажи_сейчас_061021)}","section-button item__btn" )
+
+						.item.item3
+							.item__heading.section_h3 Получать заказы со всей РФ с минимальными вложениями
+							.item__subtitle.section_h4 Ваши выгоды:
+							.list
+								p.list__li заказы со всей России или из отдельных регионов при минимальном бюджете
+								p.list__li повышение узнаваемости компании на федеральном уровне
+								p.list__li повышение лояльности покупателей за счет узнаваемости
+								p.list__li годовой доступ к базе готовых заявок
+							.item__text.section_h4 Год продаж на Пульсе цен в родном городе + продажи в 214 городах РФ на месяцы пикового спроса
+							+button("{crm_analytics:click_link(Хочу заказы со всей России,#order,network_actions,НК_РФ_Продажи_Россия_061021)}","section-button item__btn" )
+					p.section_h4.end Получайте больше клиентов за те же деньги. В октябре подключить Микс тарифов можно на особых условиях, т.е. можно еще больше увеличить эффективность бюджета.
+			footer.futer_main
+				.futer_wrapper
+					.contact
+						.tolstova 
+							img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/269138/content_mask_group.png")
+							b Наш специалист Елена Толстова ответит на ваши вопросы.
+						.contact__by
+						.contact__main.col_cintact_futer
+							p.footer__call Звоните
+							.massenger_futer
+								img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/204255/content_r.png")
+								a(href="tel:88001009191").numder_futer.phone-js 8 800 100 91 91
+							.note_futer - бесплатно на территории 
+								span.phoneNote-js РФ
+						.col_cintact_futer
+							p.footer__call Пишите
+							.footer__massagers
+								+linkMassagers
+							.massenger_futer
+						p Или закажите обратный звонок, и специалист Пульса цен свяжется с вами
+						+button("Позвоните мне", "section-buttonToolbar" )
+					.agreement
+						a(href="https://ekb.pulscen.ru/about/terms")
+							p.text_futter Пользовательское соглашение
+						a(href="https://ekb.pulscen.ru/about/privacy")
+							p.text_futter Политика конфиденциальности
+		p {crm_analytics:show_page(network_actions,НК_РФ_Миксы_061021)}

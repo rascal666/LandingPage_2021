@@ -1,0 +1,42 @@
+/** @format */
+
+@mixin mainContent($size, $color) {
+	max-width: 1920px;
+	width: 100%;
+	margin: auto;
+	font-size: $size;
+	color: $color;
+	background: #f6f6f6;
+	font-family: 'Montserrat', sans-serif;
+}
+@mixin content($padd...) {
+	max-width: 1400px;
+	width: 90%;
+	margin: auto;
+	padding: $padd;
+}
+
+@mixin grid($gap, $fr...) {
+	display: grid;
+	grid-template-columns: $fr;
+	grid-gap: $gap;
+}
+
+@mixin btn($size, $bg, $border, $color, $pad...) {
+	letter-spacing: 0.06em;
+	font-size: $size;
+	font-weight: 600;
+	background: $bg;
+	border-radius: 5px;
+	width: 100%;
+	max-width: 410px;
+	padding: $pad;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	color: $color !important;
+	transition-duration: 0.5s;
+	border: 1px solid $border;
+	text-align: center;
+	cursor: pointer;
+}

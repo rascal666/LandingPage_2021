@@ -1,0 +1,136 @@
+<!-- @format -->
+include ./miksins.pug
+
+
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		title= "Черная пятница"
+	body.js-body
+		.main_content
+			toolbar
+				include ./modules/toolbar.pug
+			header
+				.content
+					.offer 
+						p.section_h0 Черная пятница на Пульсе цен
+						p Шок! Скидки и бонусы на все виды продвижения!
+						p.fat Выбирайте что-то одно или забирайте все сразу:
+						.btns
+							.btn
+								+buttonEvent("{crm_analytics:click_link(Скидка до 50%,#sale,want_orders,МР_ЧП_Формы_ПЦ)}", "Скидка до 50%","section-button fat", )
+								p на продвижение на Пульсе цен
+							.btn
+								+buttonEvent("{crm_analytics:click_link(Бонус 15 000 руб,#bonus,want_orders,МР_ЧП_Формы_Яндекс-Google)}", "Бонус 15 000 руб","section-button fat", )
+								p на продвижение в Яндекс и Google
+			.sale#sale 
+				.content 
+					p.section_h1 Черная пятница со скидкой
+					p.subtitle Скидки до 50%  на подключение витрины на Пульсе цен.  
+					.block-number
+						.item 
+							.item__number
+								p 50
+								span %
+							p.section_h3 на 12 месяцев
+						.item 
+							.item__number 
+								p 40
+								span %
+							p.section_h3 на 6 месяцев
+						.item 
+							.item__number 
+								p 30
+								span %
+							p.section_h3 на 3 месяца
+					.block-info 
+						.heading.section_h2 Витрины
+						img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/286324/content_vector.png", alt="")
+						.block-info__wrapper
+							.item 
+								.textaria
+									.text
+										p Выделит товар на фоне остальных предложений в каталоге Пульса цен.
+										p Витрины органично вписаны в листинг. Не выглядят как реклама, но привлекают внимание.
+									//- .item__modal-button.button
+									//- 	+buttonEvent('выгоды','выгоды', "textaria__btn ", "popup1", "popup1")
+									//- 	img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/285328/content_subtract.png", alt="" id="popup1" rel="popup1")
+									
+							.item 
+								.list 
+									.list__li усиление продаж группы товаров
+									.list__li быстрый старт региональных продаж
+									.list__li привлечение новых покупателей
+									.list__li продвижение уникальных преимуществ вашей продукции
+									.list__li информирование потенциальных покупателей об акции/распродаже/спецпредложении
+						+button("{crm_analytics:click_link(Хочу скидку на Витрину,#order,want_orders,МР_ЧП_Витрина)}", "Хочу скидку на Витрину","section-buttonAccent fat", )
+						
+					.end Получайте максимальный охват целевой аудитории и новых покупателей. Успевайте подключить витрину с максимальной скидкой, пока Черная пятница не закончилась.
+			.bonus#bonus
+				.content 	
+					p.section_h1 Черная пятница с бонусами
+					.subtitle 
+						div 15 000 бонусных рублей
+						| каждому, кто подключит или продлит услуги &nbsp; #[p.block__hint.section-accent(data-title="Турбосети — продвижение групп товаров в поисковике Яндекса.") Турбосети ] &nbsp; и/или &nbsp; #[p.block__hint.section-accent(data-title="Турбопоиск — продвижение групп товаров в рекламных сетях Яндекса и Google.") Турбопоиск. ]
+						div.fat На что вы можете потратить #[p.section-accent 15 000 рублей:] 
+					.block 
+						.item
+							div
+								img.item__img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/285508/content_galochka.png", alt="")
+								.heading.section_h3 Бонусы при подключении услуги  #[span Турбосети]
+								.subtitle Адаптивное объявление в 3-х форматах:
+							.item__block 
+								.heading 
+									p.fat Классическое объявление
+									.item__modal-button.button
+										+buttonEvent("Подробнее","Подробнее", "textaria__btn ", "classic", "classic")
+										img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/285328/content_subtract.png", alt="" id="classic" rel="classic")
+								p Проверенный временем формат.
+							.item__block 
+								.heading 
+									p.fat Видео-баннер 
+									.item__modal-button.button
+										+buttonEvent("Подробнее","Подробнее", "textaria__btn ", "video-banner", "video-banner")
+										img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/285328/content_subtract.png", alt="" id="video-banner" rel="video-banner")
+								p Редкий и цепляющий формат.
+							.item__block 
+								.heading 
+									p.fat Статическое объявление
+									.item__modal-button.button
+										+buttonEvent("Подробнее","Подробнее", "textaria__btn ", "static", "static")
+										img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/285328/content_subtract.png", alt="" id="static" rel="static")
+								p Уникальный адаптивный формат.
+							+button("{crm_analytics:click_link(Хочу адаптивное объявление,#order,want_orders,МР_ЧП_Адаптивное_объявление)}", "Хочу адаптивное объявление","section-buttonAccent btn_bonus fat", )
+							p.end Услуга Турбосети — продвижение групп товаров в рекламных сетях Яндекса и Google. Запуск рекламной кампании в РСЯ и КМС в короткие сроки. Показ вашего объявления на 1000-х сайтах.
+						.item
+							div
+								img.item__img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/285508/content_galochka.png", alt="")
+								.heading.section_h3 Бонусы при подключении услуги #[span Турбопоиск]
+								.subtitle Дополнительное продвижение в Яндекс и Google:
+							.item__block 
+								.heading 
+									p.fat На аудиторию Google
+									.item__modal-button.button
+										+buttonEvent('Подробнее','Подробнее', "textaria__btn ", "google", "google")
+										img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/285328/content_subtract.png", alt="" id="google" rel="google")
+								p Контекстное объявление, показывается на первой странице коммерческой выдачи Google. 
+							.item__block 
+								.heading 
+									p.fat На уникальную аудиторию
+									.item__modal-button.button
+										+buttonEvent("Подробнее","Подробнее", "textaria__btn ", "audit", "audit")
+										img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/285328/content_subtract.png", alt="" id="audit" rel="audit")
+								div(style = "text-align: left") Медийное объявление, показывается в рекламной сети Яндекса покупателям с Пульса цен и аудитории #[p.block__hint.section-accent(data-title="Look-ilake — аудитория посетителей Яндекса, похожая на аудиторию рубрики Пульс цен. ") &nbsp; look-alike. ]
+							.item__block 
+								.heading 
+									p.fat Смарт-Баннер в Яндексе
+									.item__modal-button.button
+										+buttonEvent("Подробнее","Подробнее", "textaria__btn ", "yandex", "yandex")
+										img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/285328/content_subtract.png", alt="" id="yandex" rel="yandex")
+								p Динамическое объявление «текст с картинкой», показывается в рекламной сети Яндекса тем, кто уже смотрел ваши товары или искал похожие.
+							+button("{crm_analytics:click_link(Хочу дополнительное продвижение,#order,want_orders,МР_ЧП_Продвижение_на_поиске)}", "Хочу дополнительное продвижение","section-buttonAccent btn_bonus fat", )
+							p.end Услуга Турбопоиск — продвижение групп товаров в рекламной выдаче на поиске Яндекс и Google. Запуск в короткие сроки. Гарантирован рост трафика в 2 раза по выбранным направлениям и первую страницу выдачи.
+			include ./modules/modal.pug
+			include ./modules/footer.pug
+			p {crm_analytics:show_page(want_orders,МР_Черная_пятница)}

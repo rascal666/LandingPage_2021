@@ -1,0 +1,30 @@
+/** @format */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.body_pages2 {
+	.header_wrapper {
+		background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/279868/content_illyustratsiya_glavnaya.png') no-repeat 100% 0% / 40%, #b0dbff;
+	}
+	.this {
+		background: #f6f6f600;
+		padding: 0 0 var(--block104);
+	}
+	.section_h1 {
+		color: $main_text_color;
+	}
+	.toolbar {
+		background: #97cdfc40;
+	}
+	.possibilities {
+		background: #97cdfc30;
+	}
+}
+
+@media (max-width: 1024px) {
+	.body_pages2 {
+		.main_content {
+			background: #ebf2f8;
+		}
+	}
+}

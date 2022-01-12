@@ -1,0 +1,11 @@
+const icon = document.querySelector('.icon')
+const _line2 = document.querySelector('.line2')
+const _line1 = document.querySelector('.line1')
+const _line3 = document.querySelector('.line3')
+const _menu = document.querySelector('.menu')
+icon.addEventListener('click', () => {
+    _line2.classList.toggle('forLine2')
+    _line1.classList.toggle('forLine1')
+    _line3.classList.toggle('forLine3')
+    _menu.classList.toggle('menu-js')
+})

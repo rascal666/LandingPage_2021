@@ -1,0 +1,168 @@
+/** @format */
+
+.contact {
+	grid-row-gap: 16px;
+}
+
+.content {
+	@include content(0px 0 0px);
+}
+
+.section-btns {
+	@include grid(60px, auto auto);
+	justify-content: left;
+}
+
+.section-button {
+	@include btn(14px, #fff, #fff, $forButton, 19px 40px);
+	border-radius: 100px;
+	filter: drop-shadow(0px 4px 16px rgba(29, 66, 98, 0.15));
+	z-index: 1;
+}
+
+.section-buttonAccent {
+	@include btn(14px, $forButton, $forButton, #fff, 24px 40px);
+	border-radius: 100px;
+	filter: drop-shadow(0px 4px 16px rgba(29, 66, 98, 0.15));
+}
+
+.section-buttonToolbar {
+	@include btn(14px, #ffffff00, #fff, #fff, 8px 30px);
+	border-radius: 5px;
+	max-width: 200px;
+	overflow: hidden;
+}
+
+.section-buttonFooter {
+	@include btn(14px, #ffffff00, $forButton, $forButton, 8px 30px);
+	border-radius: 5px;
+}
+
+.section_h1 {
+	font-size: 48px;
+	font-weight: 800;
+}
+.section_h2 {
+	font-size: 36px;
+	font-weight: 800;
+}
+.section_h3 {
+	font-size: 24px;
+	font-weight: 700;
+}
+.section_h4 {
+	font-size: 18px;
+}
+
+.section-button a {
+	color: inherit;
+	font-weight: 800;
+}
+.section-button:hover {
+	cursor: pointer;
+	background: $main_text_color;
+	color: #fff !important;
+	border: 1px solid $main_text_color;
+}
+.section-buttonAccent:hover {
+	cursor: pointer;
+	background: rgba(255, 255, 255, 0);
+	color: $forButton !important;
+}
+.section-buttonToolbar:hover {
+	cursor: pointer;
+	background: $forButton;
+	border: 1px solid #fff;
+	color: #fff !important;
+}
+.section-subtitle {
+	margin-top: 20px;
+	max-width: 1040px;
+	width: 100%;
+}
+
+.section-offer {
+	display: grid;
+	grid-gap: 16px;
+}
+
+.list {
+	margin: 24px 0;
+	display: grid;
+	grid-gap: 20px;
+	font-size: 18px;
+	.list__li {
+		position: relative;
+		padding-left: 50px;
+		display: grid;
+		align-content: center;
+		min-height: 32px;
+	}
+	.list__li_circle {
+		position: relative;
+		padding-left: 20px;
+		display: grid;
+		align-content: center;
+		display: inline;
+	}
+	.list__li::before {
+		content: '';
+		position: absolute;
+		width: 32px;
+		left: 0;
+		height: 32px;
+		background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/280767/content_galochka.png') no-repeat 100% 100% / cover;
+	}
+	.list__li_gray::before {
+		background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/280239/content_group_410.png') no-repeat 100% 100% / cover;
+	}
+	.list__li_circle::before {
+		content: '•';
+		position: absolute;
+		width: 2px;
+		left: 0;
+		height: 2px;
+	}
+}
+.list_circle {
+	grid-gap: 4px;
+}
+
+.contact__by {
+	@include grid(15px, auto);
+}
+
+@media (max-width: 1440px) {
+	.section_h1 {
+		font-size: 40px;
+		font-weight: 800;
+	}
+}
+
+@media (max-width: 660px) {
+	.section-btns {
+		grid-template-columns: 1fr;
+	}
+	.section-buttonToolbar {
+		padding: 8px 20px;
+		font-size: 12px;
+	}
+	.logo {
+		width: 100px;
+	}
+	.section_h1 {
+		font-size: 26px;
+	}
+	.section_h2 {
+		font-size: 24px;
+	}
+	.section_h3 {
+		font-size: 16px;
+	}
+	.section_h4 {
+		font-size: 14px;
+	}
+	.list {
+		font-size: 14px;
+	}
+}

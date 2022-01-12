@@ -1,0 +1,47 @@
+<!-- @format -->
+include ./miksins.pug
+
+
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		title= "все включено"
+	body.js-body
+		.main_content
+			header
+				include ./modules/toolbar.pug
+				.header
+					.content
+						.header__wrapper
+							.header__text
+								p.section_h1 Создаем новогоднее настроение
+								.offer
+									p В Новом 2022 году всё изменится к лучшему. Мы это знаем. Потому что с такими подарками ваш бизнес точно вырастет.
+							.header__img
+								img.elks-js(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/292304/content_frame_2.png")
+			section.tariff
+				.content
+					p.tariff__heading.section_h2 Подключите приоритетный тариф и выбирайте любой подарок:
+					.blocks.blocks-kz 
+						.item
+							.item__heading.section_h3 2 месяца повышенного тарифа
+							.item__subtitle 2 любых месяца на более эффективном тарифе. Максимальное усиление продаж!
+							+button('{crm_analytics:click_link(Хочу повышение тарифа,#order,network_actions,НК_НГ_РФ_Звезда_curData)}', "Хочу повышение тарифа","section-buttonAccent")
+						.item
+							.item__heading.section_h3 2 дополнительных месяца размещения
+							.item__subtitle 2 бонусных месяца на вашем тарифе. Без дополнительных вложений!
+							+button('{crm_analytics:click_link(Хочу +2 месяца,#order,network_actions,НК_НГ_РФ_Сезон_curData)}', "Хочу +2 месяца","section-buttonAccent")
+						.item.item-by
+							.item__heading.section_h3 Дополнительный город
+							.item__subtitle 1 месяц размещения в дополнительном городе. Увеличение заказов и заявок!
+							+button('{crm_analytics:click_link(Хочу город,#order,network_actions,НК_НГ_РФ_Город_curData)}', "Хочу город","section-buttonAccent")
+						.item.item-kz.item-by.item-ua
+							.item__heading.section_h3 Кластер городов
+							.item__subtitle 1 месяц размещения на площадках любого кластера (до 65 городов). Охват всего рынка!
+							+button('{crm_analytics:click_link(Хочу кластер городов,#order,network_actions,НК_НГ_РФ_Кластер_curData)}', "Хочу кластер городов","section-buttonAccent")
+					.tariff__end Выбирайте и забирайте подарок до 25 декабря, получайте клиентов весь 2022 год!
+			
+
+		include ./modules/footer.pug
+	p {crm_analytics:show_page(network_actions,НК_НГ_РФ_curData)}

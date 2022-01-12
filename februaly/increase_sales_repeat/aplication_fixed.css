@@ -1,0 +1,292 @@
+/**
+ * /* Сброс врапперов
+ *
+ * @format
+ */
+
+body {
+	min-width: 0 !important;
+	background-color: white;
+}
+
+.wrapper-text p {
+	margin-bottom: 0em;
+	margin-bottom: 0px;
+}
+
+.base-width {
+	background-color: transparent;
+	margin: 0;
+	max-width: none;
+	min-width: 0;
+}
+
+.wrapper-text ul {
+	margin: 0px;
+	padding: 0px 0px 56px 0px;
+}
+
+.wrapper-text ul li {
+	padding: 0 0 24px;
+}
+
+.catalogue {
+	padding: 0;
+}
+
+.cms-page .col-middle {
+	background: none;
+	border: none;
+	box-shadow: none;
+	padding: 0 !important;
+}
+
+.catalogue h1 {
+	display: none;
+}
+
+#content {
+	margin-top: 0;
+}
+
+.wrapper-text ul li {
+	list-style-type: none !important;
+}
+
+.wrapper-text table td {
+	padding: 20px;
+}
+
+.simple-breadcrumbs {
+	display: none !important;
+}
+
+/* --- */
+
+.content {
+	font-family: "Open Sans", sans-serif;
+	max-width: 1920px;
+	width: 100%;
+	margin: auto;
+	background: linear-gradient(#ffffff87, #ffffffe3), url(https://www.pulscen.ru/system/ckeditor_assets/pictures/215801/content_photo-1481278403982-f2d9f387cdcc.jpg), no-repeat 100% 100% / cover;
+	font-size: 16px;
+	letter-spacing: 0.05px;
+	line-height: 30px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	background-position-y: 20%;
+}
+.content a {
+	text-decoration: none;
+	color: inherit;
+	border-bottom: 1px solid;
+}
+
+.btns {
+	display: flex;
+	grid-gap: 20px;
+	flex-wrap: wrap;
+	margin-bottom: 40px;
+}
+
+.btn {
+	max-width: 400px;
+	width: 100%;
+	margin: auto;
+	background: #0492de;
+	border: 1px solid #0492de;
+	padding: 10px 15px;
+
+	color: #ffffff !important;
+	border-radius: 5px;
+	cursor: pointer;
+	transition-duration: 0.5s;
+}
+
+.btn:hover {
+	background: #ffffff00;
+	color: #0492de !important;
+}
+
+.btn-white {
+	max-width: 400px;
+	width: 100%;
+	margin: auto;
+	border: 1px solid #0492de;
+	background: #ffffff00;
+	padding: 10px 15px;
+	color: #0492de !important;
+	border-radius: 5px;
+	cursor: pointer;
+	transition-duration: 0.5s;
+}
+.btn-white:hover {
+	background: #0492de;
+	color: #ffffff;
+}
+.btn-white:hover {
+	color: #ffffff !important;
+}
+
+.flex {
+	display: flex;
+}
+
+.coll_me_futer {
+	border-bottom: 1px dotted #5e7491;
+}
+
+.Block_text {
+	width: 100%;
+}
+
+.img img {
+	width: 200px;
+}
+
+.img {
+	width: 100%;
+	display: grid;
+	justify-content: center;
+}
+
+.heading_1 {
+	font-size: 50px;
+	padding-bottom: 40px;
+	line-height: 55px;
+	width: 700px;
+}
+
+.text_h2 {
+	font-size: 20px;
+	max-width: 905px;
+}
+
+.text_h3 {
+	font-size: 16px;
+	max-width: 800px;
+	width: 100%;
+}
+
+.paddingB150 {
+	padding-bottom: 50px;
+}
+
+.paddingB60 {
+	padding-bottom: 60px;
+}
+
+.marginB60 {
+	margin-bottom: 60px;
+}
+
+.content_bg {
+}
+
+.wrapper_content {
+	position: relative;
+	color: #303844;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	display: grid;
+	justify-content: center;
+}
+
+.futer_main {
+	max-width: 1920px;
+	background: #ffffff00;
+	/* color: #443d3d; */
+	letter-spacing: 0.04em;
+	font-family: "Open Sans", sans-serif;
+	color: #5e7491;
+}
+
+.agreement a {
+	color: #5e7491;
+}
+
+.massenger_futer {
+	width: 180px;
+}
+.phone-coll {
+	display: flex;
+	flex-wrap: wrap;
+	grid-gap: 20px;
+	align-items: center;
+	text-align: center;
+	justify-content: space-evenly;
+	margin-bottom: 20px;
+}
+.phone-coll a {
+	display: block;
+}
+
+@media (max-width: 1000px) {
+	.wrapper_content {
+		top: 0%;
+		left: 0%;
+		transform: translate(0%, 0%);
+	}
+	.content {
+		height: 100%;
+	}
+	.paddingB150 {
+		padding-bottom: 40px;
+	}
+	.heading_1 {
+		font-size: 30px;
+		line-height: 50px;
+		font-weight: 600;
+		width: 100%;
+	}
+	.paddingB60 {
+		padding-bottom: 20px;
+	}
+	.wrapper_content {
+		padding: 60px 0;
+	}
+	.marginB60 {
+		margin-bottom: 40px;
+	}
+	.futer_main {
+		padding-top: 40px;
+	}
+	.heading_Button {
+		padding: 15px 20px;
+	}
+	.paddingB40 {
+		padding-bottom: 20px;
+	}
+	.content_bg {
+		background: #ffffffe0;
+	}
+	.img img {
+		display: none;
+	}
+	.text_h2 {
+		width: 100%;
+	}
+	.flex {
+		display: block;
+	}
+}
+
+.col {
+	position: relative;
+	padding-top: 20px;
+	display: grid;
+	justify-items: center;
+}
+
+.col:before {
+	content: "";
+	position: absolute;
+	width: 200px;
+	height: 2px;
+	background: #0492de;
+	top: 0;
+	display: inline;
+}

@@ -1,0 +1,336 @@
+<!-- @format -->
+include ./miksins.pug
+
+
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+
+		title= "новый пульс цен"
+	body.js-body
+		.main_content
+			header
+				include ./modules/toolbar.pug
+				.header
+					.content
+						.header__wrapper
+							.header__text
+								p.section_h1 Новый Пульс цен
+								.offer
+									p С тех пор, как вы были с нами, произошло много нового! Пульс цен изменился и теперь это современный сервис по привлечению клиентов и продажам в интернете. 
+									p Посмотрите, что теперь вам доступно:  
+								.mobile
+									img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/280782/content_group_965.png")
+								.btns
+									+buttonLink("Инструменты для сайта", "section-button", "#tools")
+									+buttonLink("Выход в регионы", "section-button", "#region")
+									+buttonLink("Быстрый трафик", "section-button", "#site")
+								.line
+								p.line-note Сейчас для вас действуют специальные условия.
+								+button("Узнать подробности", "section-buttonAccent")
+				.header__img.desktop
+					img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/280611/content_group_962.png")
+
+			section.tools#tools
+				.content
+					p.section_h2 Новые инструменты для работы с сайтом
+					p.section-subtitle.tools__subtitle Теперь на Пульсе цен есть всё, что нужно для продающего сайта: дизайн, адаптация под требования SEO,  интеграции с другими сервисами и модули для доставки и оплаты.
+					.tools__block
+						.item
+							.item__img
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/280766/content_galochkha.png')
+							.item__text
+								p.section_h3.item__heading Дизайн
+								.tools__offer
+									p.section_h4 Оформление сайта по премиальным шаблонам или по персональному проекту. 
+									p.section_h4 Структура и визуал сайта будут соответствовать сфере вашей деятельности и отвечать задачам.
+								.line
+								p.line-note Привлекает внимание и повышает лояльность
+						.item
+							.item__img
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/280766/content_galochkha.png')
+							.item__text
+								p.section_h3.item__heading SEO
+								.tools__offer
+									p.section_h4 Проработка всех страниц сайта и каталога под требования SEO для лучшего ранжирования в поисковых системах. 
+									p.section_h4 Повышает трафик с поисковых систем и улучшает его качество. 
+								.line
+								p.line-note Положительно влияет на трафик с Яндекс и Google 
+						.item
+							.item__img
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/280766/content_galochkha.png')
+							.item__text
+								p.section_h3.item__heading Сервисы
+								div
+									p.section_h4 Для повышения конверсии вы можете подключить:
+									.list.list_circle
+										.list__li_circle интеграция с  #[b Битрикс24]
+
+										.list__li_circle интеграция с системами учета #[b 1С] и #[b Мой склад] 
+										.list__li_circle интеграция с платежной системой #[b Paykeeper], #[b ЮKassa], #[b Сбербанк] и #[b Альфа-банк]
+										.list__li_circle модули доставки #[b СДЭК], #[b ПЭК], #[b Деловые линии] #[b и Boxberry]
+								.line
+								p.line-note Помогает клиенту завершить цикл покупки  
+					+button("{crm_analytics:click_link(Хочу продающий сайт,#order,network_actions,ПП_РФ_Отвалы_Хочу_Сайт)}", "section-buttonAccent tools__btn")
+			section.region#region
+				.content
+					p.section_h2 Полный охват регионального рынка
+					p.section-subtitle.region__subtitle Расширяйте географию продаж с региональными кластерами или тарифом «Вся Россия».
+						.block
+							.item
+								p.section_h3.item__heading Клиенты из регионов
+								.item__zone
+									p.heading Какие задачи решает:
+										.list
+											.list__li Увеличение рынка сбыта в регионах
+											.list__li Увеличение объема продаж
+											.list__li Повышение узнаваемости компании на региональном уровне
+								.item__zone
+									p.heading Преимущества:
+										.list
+											.list__li Размещение товаров на площадках от 5 до 65 городов (зависит от выбранного кластера)
+											.list__li Повышение лояльности к компании в регионах
+											.list__li.list__li_kz Увеличение лимита товаров до 10 000
+								.item__zone
+									p.heading Дополнительно включены:
+										.list
+											.list__li SSL-сертификат
+											.list__li.list__li_kz От 1 до 3 интеграций на выбор (СДЭК, ЮKassa, Paykeeper, Boxberry, Деловые линии)
+								+buttonEvent("{crm_analytics:click_link(Смотреть кластеры,#order,network_actions,ПП_РФ_Отвалы_Регионы)}", "section-buttonAccent region__btn ", "popup1", "popup1")
+
+								.modal-wrapper
+									.modal-wrapper-block(data-popup="popup1")
+										.modal-block.modal-block-height
+											img.modal-close(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/195450/content_union_3.png")
+											.region-js
+												.clasters
+													.sibirr
+														.claster-heading(claster-open="sibir") 
+															p(claster-open="sibir")  Сибирь
+															img.clasters__img(claster-open="sibir", src="https://www.pulscen.ru/system/ckeditor_assets/pictures/226109/content_vector.png")
+														.claster-content(claster-content="sibir") 
+															.claster-big
+																p Новосибирск
+																p Томск
+																p Омск
+																p Икрутск
+																p Барнаул
+															.claster-city
+																p Ангарск
+																p Бердск
+																p Бийск
+																p Братск
+																p Кемерово
+																p Ленинск-Кузнецкий
+																p Междуреченск
+																p Новокузнецк
+																p Прокопьевск
+																p Рубцовск
+																p Северск
+																p Улан-Удэ
+													.yrfo
+														.claster-heading(claster-open="yrfo") 
+															p(claster-open="yrfo")  УРФО
+															img.clasters__img(claster-open="yrfo", src="https://www.pulscen.ru/system/ckeditor_assets/pictures/226109/content_vector.png")
+														.claster-content(claster-content="yrfo") 
+															.claster-big
+																p Екатеринбург
+																p Челябинск
+																p Тюмень
+																p Пермь
+																p Сургут
+															.claster-city.UrFO
+													.ekby
+														.claster-heading(claster-open="ekb") 
+															p(claster-open="ekb")  Екатеринбург + ХМАО ЯНАО
+															img.clasters__img(claster-open="ekb", src="https://www.pulscen.ru/system/ckeditor_assets/pictures/226109/content_vector.png")
+														.claster-content(claster-content="ekb") 
+															.claster-big
+																p Екатеринбург
+																p Тюмень
+																p Сургут
+																p Новый Уренгой
+																p Ханты-Мансийск
+															.claster-city.ekb
+													.povolziet
+														.claster-heading(claster-open="povolzie") 
+															p(claster-open="povolzie")  Поволжье
+															img.clasters__img(claster-open="povolzie", src="https://www.pulscen.ru/system/ckeditor_assets/pictures/226109/content_vector.png")
+														.claster-content(claster-content="povolzie") 
+															.claster-big
+																p Казань
+																p Нижний Новгород
+																p Самара
+																p Йошкар-Ола
+																p Ижевск
+															.claster-city.Povolzie
+													.tatar
+														.claster-heading(claster-open="tatar") 
+															p(claster-open="tatar")  Татарстан
+															img.clasters__img(claster-open="tatar", src="https://www.pulscen.ru/system/ckeditor_assets/pictures/226109/content_vector.png")
+														.claster-content(claster-content="tatar") 
+															.claster-big
+																p ​Казань
+															.claster-city
+																p ​Наб. Челны
+																p ​Альметьевск
+																p ​Нижнекамск
+																p ​Йошкар-Ола
+													.rostov
+														.claster-heading(claster-open="rostov") 
+															p(claster-open="rostov")  Ростов +
+															img.clasters__img(claster-open="rostov", src="https://www.pulscen.ru/system/ckeditor_assets/pictures/226109/content_vector.png")
+														.claster-content(claster-content="rostov") 
+															.claster-big
+																p Ростов-на-Дону
+																p Волгоград
+																p Астрахань
+																p Ставрополь
+																p Астрахань
+															.claster-city.RostovOnDon
+													.krasnodarr
+														.claster-heading(claster-open="krasnodar") 
+															p(claster-open="krasnodar")  Краснодар +
+															img.clasters__img(claster-open="krasnodar", src="https://www.pulscen.ru/system/ckeditor_assets/pictures/226109/content_vector.png")
+														.claster-content(claster-content="krasnodar") 
+															.claster-big
+																p Волгоград
+																p Астрахань
+																p Краснодар
+																p Сочи
+																p Новороссийск
+															.claster-city.Krasnodar
+													.crim
+														.claster-heading(claster-open="crim") 
+															p(claster-open="crim")  Крым-Макрорегион
+															img.clasters__img(claster-open="crim", src="https://www.pulscen.ru/system/ckeditor_assets/pictures/226109/content_vector.png")
+														.claster-content(claster-content="crim") 
+															.claster-big
+																p площадка Крым
+																p Севастополь
+																p Симферополь
+
+															.claster-city
+																p Ялта
+																p Керчь
+													.FCOo
+														.claster-heading(claster-open="FCO") 
+															p(claster-open="FCO")  ЦФО
+															img.clasters__img(claster-open="FCO", src="https://www.pulscen.ru/system/ckeditor_assets/pictures/226109/content_vector.png")
+														.claster-content(claster-content="FCO") 
+															.claster-big
+																p Москва
+																p Воронеж
+																p Ярославль
+																p Рязань
+																p Липецк
+																p Пенза
+																p Курск
+																p Тула
+																p Тверь
+																p Иваново
+															.claster-city.FCO
+													.severo
+														.claster-heading(claster-open="severo") 
+															p(claster-open="severo")  Северо-Запад
+															img.clasters__img(claster-open="severo", src="https://www.pulscen.ru/system/ckeditor_assets/pictures/226109/content_vector.png")
+														.claster-content(claster-content="severo") 
+															.claster-big
+																p Санкт-Петербург
+																p Великий Новгород
+																p Калининград
+																p Архангельск 
+																p Мурманск
+															.claster-city.Severo_Zapad
+													.Vostokk
+														.claster-heading(claster-open="Vostok") 
+															p(claster-open="Vostok")  Дальний Восток
+															img.clasters__img(claster-open="Vostok", src="https://www.pulscen.ru/system/ckeditor_assets/pictures/226109/content_vector.png")
+														.claster-content(claster-content="Vostok") 
+															.claster-big
+																p Владивосток
+																p Хабаровск
+																p Благовещенск
+																p Комсомольск-на-Амуре 
+																p Южно-Сахалинск
+															.claster-city.Vostok
+
+
+							.item.item_accent
+								p.section_h3.item__heading Клиенты со всей России
+								.item__zone
+									p.heading Какие задачи решает:
+										.list
+											.list__li Полный охват российского рынка
+											.list__li Максимальное увеличение продаж
+											.list__li Повышение узнаваемости компании на федеральном уровне
+								.item__zone
+									p.heading Преимущества:
+										.list
+											.list__li Размещение товаров на площадках в 214 городах, включая миллионники
+											.list__li Увеличение лимита товаров до 10 000
+											.list__li Повышение лояльности покупателей по всей стране
+								.item__zone
+									p.heading Дополнительно включены:
+										.list
+											.list__li SSL-сертификат
+											.list__li Проработка товарного каталога
+											.list__li Все сервисы интеграции
+								+buttonEvent("{crm_analytics:click_link( Смотреть города,#order,network_actions,ПП_РФ_Отвалы_Вся_Россия)}", "section-buttonAccent region__btn", "popup2", "popup2")
+								+modal("popup2")
+
+						p.region_end Выходите на новые рынки с разумными вложениями средств. Чтобы продавать в любой город России вам не требуется открывать филиал и пополнять штат сотрудников - только нужный тариф на Пульсе цен.
+			section.site#site
+				.content
+					p.section_h2 Инструменты для быстрого привлечения трафика
+					p.section-subtitle.site__subtitle Помогут быстро продать товар или оповестить потенциальных покупателей о спецпредложениях.
+					.site__block
+						.item
+							.section_h3.item__heading Реклама в Яндекс и Google
+							.item__zone 
+								.heading Какие задачи решает:
+								.list
+									.list__li_circle привлечение максимум клиентов в любой сезон
+									.list__li_circle рост трафика в 2 раза по выбранному направлению
+									.list__li_circle первая страница выдачи в поисковиках
+									.list__li_circle перехват заявок, которые могут уйти к конкурентам
+							.item__zone 
+								.heading Как работает:
+								p Покупатель вводит запрос на покупку товара в поиске и видит ваше предложение на первой странице.
+							.line
+							p.line-note Помогает клиенту завершить цикл покупки 
+						.item
+							.section_h3.item__heading Реклама на Пульсе цен
+							.item__zone 
+								.heading Какие задачи решает:
+								.list
+									.list__li_circle выделяет ваше предложение  на фоне конкурентов
+									.list__li_circle помогает покупателю принять решение в вашу пользу
+									.list__li_circle оповещает аудиторию Пульса цен  о вашем предложении
+									.list__li_circle помогает перехватить заявки, которые могут уйти к конкуренту
+							.item__zone 
+								.heading Как работает:
+								p Покупатель заходит в товарную рубрику Пульса цен, и среди перечня предложений видят именно ваше.
+							.line
+							p.line-note Привлекает внимание покупателей на Пульсе цен 
+						.item
+							.section_h3.item__heading Ремаркетинг
+							.item__zone 
+								.heading Какие задачи решает:
+								.list
+									.list__li_circle возврат «теплых» клиентов, которые уже посещали вашу или смежную рубрики на Пульсе цен и выбирали похожие товары.
+									.list__li_circle только целевые клиенты
+									.list__li_circle захват внимания покупателя в момент покупки
+							.item__zone 
+								.heading Как работает:
+								p Человек смотрел ваш товар на Пульсе цен, но отвлекся и не купил. Ремаркетинг напомнит ему об этом и вернет на ваш сайт.
+							.line
+							p.line-note Возвращает тех, кто смотрел товары, но не купил 
+					.textaria
+						p Развивать бизнес с Пульсом цен стало еще удобнее. Один подрядчик — полный спектр услуг по продвижению в интернете и усилению продаж. Вам не нужно вникать в процессы, а только получать заявки и прибыль. И всегда понятно, с кого спросить результат.
+						p В октябре для вас самые выгодные условия для подключения любой услуги. За подробностями обращайтесь  к специалисту Пульса цен.
+					+button("{crm_analytics:click_link(Хочу бесплатную консультацию,#order,network_actions,ПП_РФ_Отвалы_Консультация)}", "section-buttonAccent")
+		include ./modules/footer.pug
+		p {crm_analytics:show_page(network_actions,ПП_РФ_Новый_ПЦ)}
+

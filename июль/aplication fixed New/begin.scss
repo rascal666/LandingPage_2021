@@ -1,0 +1,258 @@
+/** @format */
+
+$corporate_color: #028dd8;
+$main_text_color: #0b4870;
+
+@mixin mainContent($size, $color) {
+	max-width: 1920px;
+	width: 100%;
+	margin: auto;
+	font-size: $size;
+	// font-family: "Open Sans", sans-serif;
+	color: $color;
+	font-family: "Montserrat", sans-serif;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+a {
+	color: inherit;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+@mixin content($padd...) {
+	max-width: 1632px;
+	width: 90%;
+	margin: auto;
+	padding: $padd;
+}
+
+@mixin grid($gap, $fr...) {
+	display: grid;
+	grid-template-columns: $fr;
+	grid-gap: $gap;
+}
+
+@mixin btn($size, $bg, $border, $color, $pad...) {
+	letter-spacing: 0.06em;
+	letter-spacing: 0.06em;
+	font-size: $size;
+	background: $bg;
+	border-radius: 5px;
+	width: fit-content;
+	padding: $pad;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	color: $color !important;
+	transition-duration: 0.5s;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+	border: 1px solid $border;
+	text-align: center;
+}
+
+.futer_main a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.futer_main {
+	background: radial-gradient(317.4% 1805.73% at 112.11% 75%, #041c80 0%, #dde5ff 100%), #002fcc;
+	color: #fff;
+	margin-top: 120px;
+}
+
+.content {
+	@include content(176px 0 0px);
+}
+
+.section-btns {
+	@include grid(60px, auto auto);
+	justify-content: left;
+}
+
+.section-button {
+	@include btn(14px, (radial-gradient(317.4% 1805.73% at 150.11% 50%, #263c96 15%, #0011ff 100%), #222f5a), #0011ff, #fff, 15px 67px);
+	border-radius: 5px;
+}
+
+.section-buttonWhite {
+	@include btn(14px, #ffffff00, #0011ff, #0011ff, 15px 30px);
+	border-radius: 5px;
+}
+
+.section-buttonToolbar {
+	@include btn(14px, #ffffff00, #0011ff, #0011ff, 8px 30px);
+	border-radius: 5px;
+}
+
+.section_h1 {
+	font-size: 64px;
+	font-weight: 700;
+}
+.section_h2 {
+	font-size: 24px;
+	font-weight: 500;
+	max-width: 600px;
+}
+.section_h3 {
+	font-size: 16px;
+}
+
+.section-button a {
+	color: inherit;
+	font-weight: 800;
+}
+.section-button:hover {
+	cursor: pointer;
+	background: #ffffff00;
+	color: #0011ff !important;
+}
+.section-buttonWhite:hover {
+	cursor: pointer;
+	background: #0011ff;
+	color: #fff !important;
+}
+.section-buttonToolbar:hover {
+	cursor: pointer;
+	background: #0011ff;
+	color: #fff !important;
+}
+
+.header {
+	@include grid(40px, repeat(auto-fit, minmax(250px, auto)));
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 80px;
+}
+
+//как использовать - main_content{@include mainContent}
+
+.main_content {
+	@include mainContent(14px, $main_text_color);
+	background: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/265450/content_group_132.png) no-repeat 100% 100% / 80%, #f2f6f8;
+}
+.js-body {
+	background: #f2f6f8;
+}
+.line {
+	max-width: 700px;
+	background: rgba(11, 72, 112, 0.4);
+	width: 100%;
+	height: 3px;
+	margin: 80px 0 62px;
+	opacity: 0.2;
+}
+.footer {
+	color: #809daf;
+	padding-bottom: 218px;
+	background: inherit;
+}
+a:link {
+	color: inherit;
+}
+a:visited {
+	color: inherit;
+}
+.img {
+	img {
+		max-width: 1047px;
+		width: 100%;
+	}
+}
+.column {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.modile {
+	display: none;
+}
+@media (max-width: 1450px) {
+	.section_h1 {
+		font-size: 48px;
+	}
+	.section_h2 {
+		font-size: 18px;
+	}
+	.content {
+		@include content(132px 0 0px);
+	}
+	.header {
+		margin-bottom: 60px;
+	}
+	.lime {
+		margin: 60px 0 48px;
+	}
+	.footer {
+		padding-bottom: 130px;
+	}
+}
+
+@media (max-width: 900px) {
+	.modile {
+		display: block;
+	}
+	.desctop {
+		display: none;
+	}
+	.main_content {
+		background: #f2f6f8;
+	}
+	.column {
+		grid-template-columns: 1fr;
+	}
+	.img {
+		.modile {
+			position: relative;
+			right: -5%;
+		}
+	}
+	.section_h1 {
+		font-size: 32px;
+	}
+	.section_h2 {
+		font-size: 16px;
+	}
+	.content {
+		@include content(47px 0 0px);
+	}
+	.header {
+		margin-bottom: 40px;
+	}
+	.line {
+		margin: 40px 0;
+	}
+	.footer {
+		padding-bottom: 0px;
+	}
+}
+
+@media (max-width: 800px) {
+}
+
+@media (max-width: 660px) {
+	.section-btns {
+		grid-template-columns: 1fr;
+	}
+	.logo {
+		width: 100px;
+	}
+}
+
+@media (max-width: 560px) {
+	.section_h1 {
+		order: 2;
+	}
+}

@@ -1,0 +1,30 @@
+<!-- @format -->
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>backdrop-filter</title>
+		<style>
+			body {
+				background: url(/example/image/shark.jpg) center/cover fixed; /* Параметры фона */
+				/* Выравниваем по центру */
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: 0; /* Убираем отступы */
+				height: 100vh; /* Высота веб-страницы */
+			}
+			.box {
+				backdrop-filter: blur(4px); /* Размываем фон */
+				background: rgba(255, 255, 255, 0.4); /* Белый фон с полупрозрачностью */
+				width: 300px; /* Ширина блока */
+				padding: 20px; /* Поля вокруг текста */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<p>Полинезийцы называют Млечный путь Манго-Роа-И-Ата, что в переводе с маори означает «Длинная акула на рассвете».</p>
+		</div>
+	</body>
+</html>

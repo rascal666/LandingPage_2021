@@ -1,0 +1,320 @@
+/** @format */
+
+$corporate_color: #028dd8;
+$main_text_color: #013a59;
+
+@mixin mainContent($size, $color) {
+	max-width: 1920px;
+	width: 100%;
+	margin: auto;
+	font-size: $size;
+	font-family: "Open Sans", sans-serif;
+	color: $color;
+	// font-family: "Montserrat", sans-serif;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+@mixin content($padd...) {
+	max-width: 1366px;
+	width: 90%;
+	margin: auto;
+	padding: $padd;
+}
+
+@mixin grid($gap, $fr...) {
+	display: grid;
+	grid-template-columns: $fr;
+	grid-gap: $gap;
+}
+
+@mixin btn($size, $bg, $border, $color, $pad...) {
+	letter-spacing: 0.06em;
+	letter-spacing: 0.06em;
+	font-size: $size;
+	background: $bg;
+	border-radius: 5px;
+	width: fit-content;
+	padding: $pad;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	color: $color !important;
+	transition-duration: 0.5s;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+	border: 1px solid $border;
+	text-align: center;
+}
+
+//как использовать - main_content{@include mainContent}
+
+.main_content {
+	background: radial-gradient(99.84% 53.65% at -32.53% 33.56%, rgba(96, 130, 181, 0.1) 0%, rgba(96, 130, 181, 0.1) 3.23%, rgba(255, 255, 255, 0) 89.32%), linear-gradient(154.12deg, rgba(96, 130, 181, 0.24) 6.1%, rgba(255, 255, 255, 0) 25.46%), radial-gradient(59.14% 54.07% at 85.29% 55.81%, rgba(96, 130, 181, 0.15) 0%, rgba(255, 255, 255, 0) 100%), url("https://www.pulscen.ru/system/ckeditor_assets/pictures/245217/content_group_69.png") no-repeat 0% 0% / 600px, #f0f4fa;
+	@include mainContent(16px, $main_text_color);
+}
+.content {
+	@include content(0px 0 150px);
+}
+
+.section-btns {
+	@include grid(60px, auto auto);
+	margin-top: 64px;
+	justify-content: left;
+}
+
+.section-button {
+	@include btn(16px, #6082b5, #6082b5, #fff, 18px 40px);
+	border-radius: 20px;
+}
+
+.section-buttonWhite {
+	@include btn(16px, #ffffff00, #6082b5, #6082b5, 18px 40px);
+	border-radius: 20px;
+}
+
+.section-button a {
+	color: inherit;
+	font-weight: 800;
+}
+.section-button:hover {
+	cursor: pointer;
+	background: #ffffff00;
+	color: #6082b5 !important;
+}
+.section-buttonWhite:hover {
+	cursor: pointer;
+	background: #6082b5;
+	color: #fff !important;
+}
+
+header {
+	padding-top: 56px;
+	.wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		img {
+			max-width: 100%;
+			width: 100%;
+			height: auto;
+		}
+	}
+	.text {
+		max-width: 628px;
+	}
+	.heading {
+		font-size: 48px;
+		margin-top: 150px;
+	}
+	.offer {
+		@include grid(24px, 1fr);
+		margin: 54px 0 93px;
+	}
+	.choice {
+		p {
+			font-size: 24px;
+		}
+	}
+}
+
+.blurd {
+	.content {
+		padding: 0 0 36px 0;
+	}
+	.heading {
+		font-size: 26px;
+		line-height: 36px;
+		padding-bottom: 24px;
+		span {
+			display: block;
+			font-size: 14px;
+		}
+	}
+	.subtitle {
+		max-width: 1010px;
+	}
+
+	.task {
+		margin: 40px 0;
+		background: linear-gradient(90deg, rgba(123, 104, 160, 0.29) 21.05%, rgba(221, 229, 241, 0) 95.08%);
+		.content {
+			padding: 36px 0;
+		}
+		.heading {
+			font-size: 20px;
+			font-weight: 600;
+			padding-bottom: 36px;
+		}
+		.task__item {
+			@include grid(15px, 15px 1fr);
+		}
+		.task__list {
+			@include grid(24px, repeat(auto-fit, minmax(250px, 1fr)));
+		}
+	}
+
+	.advantage {
+		.heading {
+			font-size: 20px;
+			font-weight: 600;
+			margin-top: 20px;
+		}
+		.advantage__list {
+			@include grid(36px, 1fr 1fr);
+			margin-top: 36px;
+		}
+		.advantage__item {
+			@include grid(30px, 40px 1fr);
+			align-items: center;
+		}
+	}
+	.accent {
+		color: #6082b5;
+		font-weight: 600;
+		cursor: pointer;
+	}
+	.remarketing {
+		margin-top: 32px;
+		.offer {
+			@include grid(30px, auto 1fr);
+			font-size: 18px;
+			align-items: center;
+			background: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/245224/content_mask_g2roup.png) no-repeat center center / cover;
+			width: fit-content;
+		}
+		img {
+			position: relative;
+			top: -6px;
+			left: 6px;
+		}
+	}
+	.note {
+		margin-top: 24px;
+		margin-bottom: 64px;
+	}
+}
+
+.blurd2 {
+	margin-top: 150px;
+	margin-bottom: 80px;
+}
+.futer_main a {
+	text-decoration: none;
+	color: $main_text_color;
+}
+
+.futer_main {
+	background: #cbc9de;
+	color: $main_text_color;
+}
+.modal-content {
+	max-width: 600px;
+	border: none;
+}
+.accent:hover > .imgW {
+	animation: an 0.5s ease infinite;
+}
+.fly {
+	@include grid(10px, 1fr 1fr);
+	align-items: center;
+	justify-items: flex-end;
+	.img_item {
+		max-width: 100%;
+		width: 80%;
+	}
+}
+
+@keyframes an {
+	0% {
+		transform: rotate(25deg);
+	}
+	50% {
+		transform: rotate(-15deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+@media (max-width: 1600px) {
+	.main_content {
+		background: radial-gradient(99.84% 53.65% at -32.53% 33.56%, rgba(96, 130, 181, 0.1) 0%, rgba(96, 130, 181, 0.1) 3.23%, rgba(255, 255, 255, 0) 89.32%), linear-gradient(154.12deg, rgba(96, 130, 181, 0.24) 6.1%, rgba(255, 255, 255, 0) 25.46%), radial-gradient(59.14% 54.07% at 85.29% 55.81%, rgba(96, 130, 181, 0.15) 0%, rgba(255, 255, 255, 0) 100%), url(https://www.pulscen.ru/system/ckeditor_assets/pictures/245217/content_group_69.png) no-repeat -160px 0%/600px, #f0f4fa;
+	}
+}
+
+@media (max-width: 1200px) {
+	header {
+		.wrapper {
+			flex-direction: column-reverse;
+			align-items: baseline;
+		}
+		.heading {
+			margin-top: 20px;
+		}
+		.img {
+			display: grid;
+			align-self: center;
+		}
+		.offer {
+			margin: 24px 0 36px;
+		}
+	}
+}
+
+@media (max-width: 1010px) {
+	.fly {
+		grid-template-columns: 1fr;
+		.img_item {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	.section-btns {
+		grid-template-columns: 1fr;
+		grid-gap: 24px;
+		margin-top: 36px;
+	}
+	.section-button {
+		width: 100%;
+		font-size: 14px;
+	}
+	.section-buttonWhite {
+		width: 100%;
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 660px) {
+	.section-btns {
+		grid-template-columns: 1fr;
+	}
+	.blurd {
+		.advantage {
+			.advantage__list {
+				grid-template-columns: 1fr;
+			}
+		}
+	}
+	.blurd2 {
+		margin-top: 60px;
+		margin-bottom: 40px;
+	}
+	.content {
+		padding: 0px 0 60px;
+	}
+}

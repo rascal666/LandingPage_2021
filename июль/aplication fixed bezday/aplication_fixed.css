@@ -1,0 +1,298 @@
+/**
+ * /* Сброс врапперов
+ *
+ * @format
+ */
+
+@font-face {
+	font-family: "WC Mano Negra Bta(RUS BY LYAJKA";
+	src: url("https://www.pulscen.ru/system/ckeditor_assets/attachments/262543/wcmanonegrabta.eot");
+	src: url("https://www.pulscen.ru/system/ckeditor_assets/attachments/262543/wcmanonegrabta.eot?#iefix") format("embedded-opentype"), url("WCManoNegraBta.woff2") format("woff2"), url("https://www.pulscen.ru/system/ckeditor_assets/attachments/262540/wcmanonegrabta.woff") format("woff"), url("https://www.pulscen.ru/system/ckeditor_assets/attachments/262541/wcmanonegrabta.ttf") format("truetype"), url("https://www.pulscen.ru/system/ckeditor_assets/attachments/262542/wcmanonegrabta.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+body {
+	min-width: 0 !important;
+	background-color: white;
+}
+
+.wrapper-text p {
+	margin-bottom: 0em;
+	margin-bottom: 0px;
+}
+
+.base-width {
+	background-color: transparent;
+	margin: 0;
+	max-width: none;
+	min-width: 0;
+}
+
+.wrapper-text ul {
+	margin: 0px;
+	padding: 0px 0px 56px 0px;
+}
+
+.wrapper-text ul li {
+	padding: 0 0 24px;
+}
+
+.catalogue {
+	padding: 0;
+}
+
+.cms-page .col-middle {
+	background: none;
+	border: none;
+	box-shadow: none;
+	padding: 0 !important;
+}
+
+.catalogue h1 {
+	display: none;
+}
+
+#content {
+	margin-top: 0;
+}
+
+.wrapper-text ul li {
+	list-style-type: none !important;
+}
+
+.wrapper-text table td {
+	padding: 20px;
+}
+
+.simple-breadcrumbs {
+	display: none !important;
+}
+
+/* --- */
+
+.heading_Button {
+	border-radius: 3px;
+	padding: 15px 40px;
+	width: fit-content;
+	text-align: center;
+	letter-spacing: 0.04em;
+	color: #0492de !important;
+	white-space: normal !important;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	background: #ffffff;
+	border: 1px solid #0492de;
+	border-radius: 3px;
+	font-size: 16px;
+	align-items: center;
+}
+
+.content {
+	max-width: 1920px;
+	width: 100%;
+	margin: auto;
+	/* background: linear-gradient(#ffffff87, #ffffffe3), url(https://kartinkinaden.ru/uploads/posts/2021-01/1610843971_24-p-finansovii-fon-45.jpg), no-repeat 100% 100% / cover; */
+
+	background: url("https://www.pulscen.ru/system/ckeditor_assets/pictures/262526/content_group_88.png") no-repeat 50% -218px;
+
+	font-size: 16px;
+	letter-spacing: 0.05px;
+	line-height: 30px;
+	/* background-size: cover; */
+	background-repeat: no-repeat;
+	height: 100vh;
+	background-position-y: 100%;
+}
+
+.content a {
+	text-decoration: none;
+	color: inherit;
+	border-bottom: 1px solid;
+}
+
+.flex {
+	display: flex;
+}
+
+.coll_me_futer {
+	border-bottom: 1px dotted #5e7491;
+}
+
+.Block_text {
+	width: 100%;
+}
+
+.img img {
+	width: 200px;
+}
+
+.img {
+	width: 100%;
+	display: grid;
+	justify-content: center;
+}
+
+.heading_1 {
+	font-size: 50px;
+	padding-bottom: 40px;
+	line-height: 55px;
+	width: 703px;
+	font-family: "WC Mano Negra Bta(RUS BY LYAJKA";
+	margin: auto;
+	letter-spacing: 0.135em;
+}
+
+.text_h2 {
+	font-size: 18px;
+	max-width: 905px;
+	letter-spacing: 0.135em;
+	font-family: "Monda", sans-serif;
+}
+
+.text_h3 {
+	font-size: 16px;
+	max-width: 800px;
+	width: 100%;
+}
+
+.paddingB150 {
+	padding-bottom: 50px;
+}
+
+.paddingB60 {
+	padding-bottom: 60px;
+}
+
+.marginB60 {
+	margin-bottom: 60px;
+}
+
+.content_bg {
+}
+.im {
+	position: absolute;
+	max-width: 600px;
+	width: 100%;
+	top: -32%;
+	left: 63%;
+}
+
+.Block_text {
+	background: rgba(255, 255, 255, 0.7);
+	backdrop-filter: blur(4px);
+	border-radius: 20px;
+	box-shadow: 0px 4px 50px 0px rgba(128, 128, 128, 0.25);
+	padding: 40px;
+	box-sizing: border-box;
+}
+.contact__main {
+	font-family: "Monda", sans-serif;
+	font-size: 16px;
+}
+
+.wrapper_content {
+	position: absolute;
+	color: #303844;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: left;
+}
+
+.futer_main {
+	max-width: 1920px;
+	background: #ffffff00;
+	/* color: #443d3d; */
+	letter-spacing: 0.04em;
+	color: #5e7491;
+}
+
+.agreement a {
+	color: #5e7491;
+}
+
+.massenger_futer {
+	width: 190px;
+}
+
+@media (max-width: 1000px) {
+	.paddingB150 {
+		padding-bottom: 40px;
+	}
+	.heading_1 {
+		font-size: 30px;
+		line-height: 50px;
+		font-weight: 600;
+		width: 100%;
+	}
+	.paddingB60 {
+		padding-bottom: 20px;
+	}
+	.wrapper_content {
+		/* padding-top: 60px; */
+	}
+	.marginB60 {
+		margin-bottom: 40px;
+	}
+	.futer_main {
+		padding-top: 40px;
+	}
+	.heading_Button {
+		padding: 15px 20px;
+	}
+	.paddingB40 {
+		padding-bottom: 20px;
+	}
+	.content_bg {
+		background: #ffffffe0;
+	}
+	.img img {
+		display: none;
+	}
+	.text_h2 {
+		width: 100%;
+	}
+	.flex {
+		display: block;
+	}
+}
+
+.col {
+	position: relative;
+	padding-top: 20px;
+	display: grid;
+}
+
+.col:before {
+	content: "";
+	position: absolute;
+	width: 200px;
+	height: 2px;
+	background: #0492de;
+	top: 0;
+	display: inline;
+}
+
+@media (max-width: 850px) {
+	.wrapper_content {
+		position: absolute;
+		color: #303844;
+		top: 0;
+		left: 0;
+		transform: translate(0, 0);
+		text-align: left;
+	}
+	.im {
+		position: absolute;
+		max-width: 600px;
+		width: 59%;
+		top: 81%;
+		left: 38%;
+	}
+	.Block_text {
+		padding: 20px;
+	}
+}

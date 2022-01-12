@@ -1,0 +1,37 @@
+/** @format */
+
+.block__hint {
+	position: relative;
+	display: inline;
+}
+
+.block__hint:before {
+	content: attr(data-title);
+	position: absolute;
+	color: #5e7491;
+	background: #ffffff;
+	box-shadow: 0px 4px 24px rgba(68, 118, 145, 0.1);
+	border-radius: 4px;
+	opacity: 0;
+	width: 300px;
+	height: fit-content;
+	padding: 16px;
+	z-index: 2;
+	// top: -100px;
+	left: 70%;
+	transform: translate(-50%);
+	visibility: hidden;
+}
+.block__hint:hover {
+	cursor: pointer;
+}
+.block__hint:hover:before {
+	opacity: 1;
+	visibility: visible;
+}
+// .hintRSY {
+// 	display: none;
+// }
+// .hintLook {
+// 	display: none;
+// }

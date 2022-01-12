@@ -1,0 +1,88 @@
+/** @format */
+
+.contact {
+	grid-row-gap: 16px;
+}
+
+.content {
+	@include content(0px 0 0px);
+}
+
+.section-btns {
+	@include grid(60px, auto auto);
+	justify-content: left;
+}
+
+.section-button {
+	@include btn(14px, $forButton, $forButton, #fff, 15px 4px);
+	border-radius: 5px;
+}
+
+.section-buttonWhite {
+	@include btn(14px, #ffffff00, $forButton, $forButton, 15px 30px);
+	border-radius: 5px;
+}
+
+.section-buttonToolbar {
+	@include btn(14px, #ffffff00, $forButton, $forButton, 8px 30px);
+	border-radius: 5px;
+}
+
+.section-buttonFooter {
+	@include btn(14px, #ffffff00, $forButton, $forButton, 8px 30px);
+	border-radius: 5px;
+}
+
+.section_h1 {
+	font-size: 48px;
+	font-weight: 800;
+}
+.section_h2 {
+	font-size: 36px;
+	font-weight: 800;
+}
+.section_h3 {
+	font-size: 24px;
+}
+.section_h4 {
+	font-size: 18px;
+}
+
+.section-button a {
+	color: inherit;
+	font-weight: 800;
+}
+.section-button:hover {
+	cursor: pointer;
+	background: #ffffff00;
+	color: $forButton !important;
+}
+.section-buttonWhite:hover {
+	cursor: pointer;
+	background: $forButton;
+	color: #fff !important;
+}
+.section-buttonToolbar:hover {
+	cursor: pointer;
+	background: $forButton;
+	color: #fff !important;
+}
+
+.list {
+	margin: 24px 0;
+	display: grid;
+	grid-gap: 16px;
+	font-size: 18px;
+	.list__li {
+		position: relative;
+		padding-left: 26px;
+	}
+	.list__li::before {
+		content: '';
+		position: absolute;
+		width: 16px;
+		left: 0;
+		height: 16px;
+		background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/279525/content_vector_1.png') no-repeat 100% 100% / cover;
+	}
+}

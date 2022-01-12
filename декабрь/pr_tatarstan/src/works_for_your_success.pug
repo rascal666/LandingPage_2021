@@ -1,0 +1,133 @@
+<!-- @format -->
+include miksins.pug
+
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		title= "миксы"
+	body.js-body
+		.main_content.body_pages3.works_for_your_success
+			.header_wrapper
+				include ./components/toolbar.pug
+				header
+					.content  
+						.header__wrapper
+							.header__text 
+								p.section_h1 На ваш успех работает целая команда специалистов:
+								img.heading__img_mobile(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/293836/content_illyustratsiya_glavnaya.png", alt="")
+								.info
+									.info__item
+										.list
+											.list__li Персональный менеджер для решения любых вопросов
+											.list__li Контент-редакторы для загрузки товаров
+											.list__li SEO-специалисты для оптимизации товарного каталога и аналитики сайта
+											.list__li Контекстологи, директологи, таргетологи для настройки рекламы
+									+button("{crm_analytics:click_link(Хочу сайт на Пульсе цен,#order,network_actions,НК_РК_Татарстан-5_Хочу-сайт)}",'Хочу сайт на Пульсе цен', "section-button", "ym(86954894,'reachGoal',' Хочу сайт на Пульсе цен')")
+							img.heading__img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/293836/content_illyustratsiya_glavnaya.png", alt="")
+			section.possibilities#all
+					.content
+							p.section_h2 Всестороннее развитие ваших продаж
+							p.section-offer Пульс цен развивает ваши онлайн-продажи в комплексе. Этим занимается целая команда профессионалов. Каждый – эксперт в своей области
+							p.section_h3.section_h3_top Команда Пульса цен, которая поможет вам больше зарабатывать
+					.newClient.newClient-top
+						.content
+							.section_wrapperBlock.section_h4
+								.item
+									.img
+										img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/293840/content_ikodnka.png' alt='')
+									.text
+										p.section_h4.fat Менеджер по работе с клиентами
+										.list
+											.list__blue Персональный менеджер для решения любых вопросов
+											.list__blue Контент-редакторы для загрузки товаров
+											.list__blue SEO-специалисты для оптимизации товарного каталога и аналитики сайта
+											.list__blue Контекстологи, директологи, таргетологи для настройки рекламы
+								.item
+									.img
+										img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/293839/content_ikonka.png' alt='')
+									.text
+										p.section_h4.fat Целевая аудитория
+										.list
+											p Качественная аудитория и выдача товаров в поисковиках.
+											.list__blue p Качественная аудитория и выдача товаров в поисковиках.
+											.list__blue оформление товарных карточек по всем правилам
+											.list__blue настройка доступа к базе готовых заявок
+											.list__blue обучение по сервису Пульса цен, что где и как
+											.list__blue контроль и аналитика показателей вашего сайта, подготовка рекомендаций по развитию и улучшению.
+										
+			section.site#sate
+				.content
+					.section_wrapperBlock.section_h4
+						.item
+							.img
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/268892/content_group_337.png' alt='')
+							.text
+								p.section_h4.fat Специалист по SEO
+								.item__block
+									p
+										| Адаптация структуры и контента сайта под требования SEO. Аналитика, рекомендации по улучшению.
+						.item
+							.img
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/293841/content_idkonka.png' alt='')
+							.text
+								p.section_h4.fat Технический специалист
+								.item__block
+									p
+										| Тут будет какой-то текст
+			section.possibilities#client
+				.newClient
+					.content
+						.section_wrapperBlock.section_h4
+							.item
+								.img
+									img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/293844/content_ikoddnka.png' alt='')
+								.text
+									p.section_h4.fat Специалисты по контекстной рекламе
+									
+									.list
+										p.list__heading В комплексе с сайтом идет квалифицированная помощь и постоянный мониторинг эффективности.
+										.list__blue подготовка посадочных страниц, куда будут попадать клиенты после клика на рекламу
+										.list__blue настройка рекламной кампании
+										.list__blue запуск рекламы
+										.list__blue аналитика и корректировка
+									
+							.item
+								.img
+									img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/293843/content_ikondfka.png' alt='')
+								.text
+									p.section_h4.fat Бесплатное обучение продажам в интернете
+									.list
+										p.list__heading Проведение рекламной кампании на портале Пульс цен. Ваше объявление на главной странице и в товарных рубриках.
+										.list__blue Проведение рекламной кампании на портале Пульс цен. Ваше объявление на главной странице и в товарных рубриках.
+										.list__blue рекламная витрина в выдаче товарной рубрики
+										.list__blue премиум-блок (первые места в каталоге)
+			section.footerTop#tariff
+				.content
+					.wrapper
+						.text
+							.list
+								p.list__heading На Пульсе цен есть всё, что нужно для быстрого запуска и развития онлайн-продаж:
+								.list__li тарифы под любую потребность
+								.list__li отдельные услуги для дополнительного продвижения
+							.offer
+								p Посмотрите тарифы самостоятельно или закажите звонок менеджера для подробного рассказа о ваших возможностях на Пульсе цен.
+								.footerTop__btns
+									+buttonLink("{crm_analytics:click_link(Посмотреть тарифы,https://ekb.pulscen.ru/about/packets,network_actions,НК_РК_Татарстан-5_Тарифы)}", "Посмотреть тарифы", "section-buttonBlue", "ym(86954894,'reachGoal','Посмотреть тарифы')")
+									+button("{crm_analytics:click_link(Обратный звонок,#order,network_actions,НК_РК_Татарстан-5_Заявка)}", 'Обратный звонок', "section-buttonBlue", "ym(86954894,'reachGoal','Обратный звонок')")
+							.offer#support
+								p Посмотрите тарифы самостоятельно или закажите звонок менеджера для подробного рассказа о ваших возможностях на Пульсе цен.
+								.footerTop__btns
+									+button("{crm_analytics:click_link(Хочу бесплатную консультацию,#order,НК_РК_Татарстан-5_Заявка)}", 'Хочу бесплатную консультацию', "section-button", "ym(86954894,'reachGoal','Хочу бесплатную консультацию')")
+							
+
+
+
+	include ./components/footer.pug
+		p {crm_analytics:show_page(network_actions,НК_РК_Татарстан-5_Тройной_трафик)}
+	include ./components/metricks.pug
+
+
+
+
+

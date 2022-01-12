@@ -1,0 +1,344 @@
+/** @format */
+
+$corporate_color: #028dd8;
+$main_text_color: #3c598b;
+$forButton: #0d5490;
+
+@mixin mainContent($size, $color) {
+	max-width: 1920px;
+	width: 100%;
+	margin: auto;
+	font-size: $size;
+	// font-family: "Open Sans", sans-serif;
+	color: $color;
+	font-family: "Montserrat", sans-serif;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: inherit;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:link {
+	color: inherit;
+}
+
+a:visited {
+	color: inherit;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+@mixin content($padd...) {
+	max-width: 1520px;
+	width: 90%;
+	margin: auto;
+	padding: $padd;
+}
+
+@mixin grid($gap, $fr...) {
+	display: grid;
+	grid-template-columns: $fr;
+	grid-gap: $gap;
+}
+
+@mixin btn($size, $bg, $border, $color, $pad...) {
+	letter-spacing: 0.06em;
+	letter-spacing: 0.06em;
+	font-size: $size;
+	background: $bg;
+	border-radius: 5px;
+	width: fit-content;
+	padding: $pad;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	color: $color !important;
+	transition-duration: 0.5s;
+	border: 1px solid $border;
+	text-align: center;
+}
+
+.contact {
+	grid-row-gap: 16px;
+}
+
+.col_cintact_futer {
+	align-items: center;
+}
+
+.footer__massagers {
+	img {
+		width: 40px;
+	}
+}
+
+.contact__by {
+	@include grid(15px, auto);
+}
+
+.footer__call {
+	margin-right: 10px;
+}
+
+.futer_main a {
+	text-decoration: none;
+	color: $main_text_color;
+}
+
+.futer_main {
+	background: rgba(186, 223, 255, 0.5);
+	color: $main_text_color;
+}
+
+.content {
+	@include content(0px 0 0px);
+}
+
+.section-btns {
+	@include grid(60px, auto auto);
+	justify-content: left;
+}
+
+.section-button {
+	@include btn(14px, $forButton, $forButton, #fff, 15px 67px);
+	border-radius: 5px;
+}
+
+.section-buttonWhite {
+	@include btn(14px, #ffffff00, $forButton, $forButton, 15px 30px);
+	border-radius: 5px;
+}
+
+.section-buttonToolbar {
+	@include btn(14px, #ffffff00, $forButton, $forButton, 8px 30px);
+	border-radius: 5px;
+}
+
+.section-buttonFooter {
+	@include btn(14px, #ffffff00, $forButton, $forButton, 8px 30px);
+	border-radius: 5px;
+}
+
+.section_h1 {
+	font-size: 48px;
+	font-weight: 800;
+}
+.section_h2 {
+	font-size: 18px;
+	font-weight: 800;
+}
+.section_h3 {
+	font-size: 16px;
+}
+
+.section-button a {
+	color: inherit;
+	font-weight: 800;
+}
+.section-button:hover {
+	cursor: pointer;
+	background: #ffffff00;
+	color: $forButton !important;
+}
+.section-buttonWhite:hover {
+	cursor: pointer;
+	background: $forButton;
+	color: #fff !important;
+}
+.section-buttonToolbar:hover {
+	cursor: pointer;
+	background: $forButton;
+	color: #fff !important;
+}
+
+//как использовать - main_content{@include mainContent}
+
+.main_content {
+	@include mainContent(14px, $main_text_color);
+	height: 100vh;
+}
+.futer_main {
+	display: none;
+}
+header {
+	padding-top: 56px;
+	position: relative;
+	.img-ill {
+		height: auto;
+		min-width: 200px;
+		position: absolute;
+		top: 100px;
+		right: 0;
+		display: grid;
+		justify-content: right;
+		margin-left: 654px;
+		img {
+			max-width: 1170px;
+			width: 100%;
+		}
+	}
+	.wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.text {
+		max-width: 740px;
+		margin-right: 0px;
+	}
+	.heading {
+		margin-top: 115px;
+		max-width: 750px;
+	}
+	.offer {
+		@include grid(24px, 1fr);
+		margin: 40px 0 200px;
+		max-width: 600px;
+	}
+	.offer2 {
+		margin-bottom: 32px;
+		max-width: 560px;
+	}
+	.choice {
+		p {
+			font-size: 24px;
+		}
+	}
+	.toolbar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.toolbar__feedback {
+			@include grid(15px, 1fr 1fr 1fr);
+			align-items: center;
+		}
+		.toolbar__icon {
+			width: 20px;
+		}
+	}
+}
+
+@media (max-width: 1440px) {
+	.main_content {
+		font-size: 12px;
+	}
+	.section_h1 {
+		font-size: 36px;
+	}
+	.section_h2 {
+		font-size: 14px;
+	}
+	.content {
+		max-width: 1140px;
+	}
+	header {
+		.heading {
+			margin-top: 75px;
+		}
+		.offer {
+			margin: 30px 0 160px;
+		}
+		text {
+			max-width: 547px;
+			margin-right: 0px;
+		}
+		.img-ill {
+			margin-left: 557px;
+		}
+	}
+	.section-buttonWhite {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 1200px) {
+	header {
+		.heading {
+			font-size: 36px;
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	header {
+		.toolbar {
+			.toolbar__feedback {
+				grid-template-columns: 1fr;
+			}
+			.massenger_futer {
+				display: none;
+			}
+		}
+
+		.wrapper {
+			flex-direction: column-reverse;
+			align-items: baseline;
+			margin-top: 40px;
+		}
+		.heading {
+			margin-top: 20px;
+		}
+		.img {
+			display: grid;
+			align-self: center;
+			width: 200px;
+		}
+		.offer {
+			margin: 24px 0 36px;
+		}
+
+		.img-ill {
+			position: relative;
+			top: inherit;
+			right: inherit;
+			margin-left: 0;
+			margin-top: 30px;
+		}
+	}
+	.futer_main {
+		display: block;
+	}
+	.main_content {
+		@include mainContent(14px, $main_text_color);
+		height: 100%;
+	}
+}
+
+@media (max-width: 800px) {
+	header {
+		.heading {
+			font-size: 24px;
+		}
+	}
+	.futer_main {
+		margin-top: 0px;
+	}
+}
+
+@media (max-width: 660px) {
+	.section-btns {
+		grid-template-columns: 1fr;
+	}
+	.logo {
+		width: 100px;
+	}
+	.section-buttonToolbar {
+		padding: 8px 20px;
+		font-size: 12px;
+	}
+}

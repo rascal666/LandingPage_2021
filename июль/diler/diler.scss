@@ -1,0 +1,504 @@
+/** @format */
+
+$corporate_color: #028dd8;
+$main_text_color: #0b4870;
+$text_colorWhite: #ffffff;
+$color_accent: #ffbc55;
+* {
+	font-family: inherit;
+}
+
+@mixin mainContent($size, $color) {
+	max-width: 1920px;
+	width: 100%;
+	margin: auto;
+	font-size: $size;
+	// font-family: "Open Sans", sans-serif;
+	color: $color;
+	font-weight: 500;
+	font-family: "Montserrat", sans-serif;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+a {
+	color: inherit !important;
+}
+
+a:visited {
+	color: inherit !important;
+}
+
+a:link {
+	color: inherit !important;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+@mixin content($padd...) {
+	max-width: 1366px;
+	width: 90%;
+	margin: auto;
+	padding: $padd;
+}
+
+@mixin grid($gap, $fr...) {
+	display: grid;
+	grid-template-columns: $fr;
+	grid-gap: $gap;
+}
+
+@mixin btn($size, $bg, $border, $color, $pad...) {
+	letter-spacing: 0.06em;
+	letter-spacing: 0.06em;
+	font-size: $size;
+	background: $bg;
+	border-radius: 5px;
+	width: fit-content;
+	padding: $pad;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	color: $color !important;
+	transition-duration: 0.5s;
+	// text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+	border: 1px solid $border;
+	text-align: center;
+}
+
+.futer_main a {
+	text-decoration: none;
+	color: $main_text_color;
+}
+
+.futer_main {
+	background: none;
+	color: $main_text_color;
+	margin-top: 80px;
+	font-family: "Montserrat", sans-serif;
+}
+
+.content {
+	@include content(0px 0 0px);
+}
+
+.section-btns {
+	@include grid(60px, auto auto);
+	justify-content: left;
+}
+
+.section-button {
+	@include btn(14px, $color_accent, $color_accent, $main_text_color, 15px 67px);
+	border-radius: 5px;
+	font-weight: 600;
+}
+
+.section-buttonWhite {
+	@include btn(14px, #ffffff00, $color_accent, $color_accent, 8px 30px);
+	border-radius: 5px;
+}
+
+.section_h1 {
+	font-size: 36px;
+}
+.section_h2 {
+	font-size: 30px;
+	font-weight: 700;
+}
+.section_h3 {
+	font-size: 18px;
+}
+
+.section-button a {
+	color: inherit;
+	font-weight: 800;
+}
+.section-button:hover {
+	cursor: pointer;
+	background: #ffffff00;
+	color: $color_accent !important;
+}
+.section-buttonWhite:hover {
+	cursor: pointer;
+	background: $color_accent;
+	color: $main_text_color !important;
+}
+
+.section-list {
+	@include grid(43px, auto 1fr);
+}
+
+//как использовать - main_content{@include mainContent}
+
+.main_content {
+	@include mainContent(14px, $main_text_color);
+	background: url("https://www.pulscen.ru/system/ckeditor_assets/pictures/261918/content_vector_33.png") no-repeat 0% -5% / 100%, url("https://www.pulscen.ru/system/ckeditor_assets/pictures/261954/content_vector_31.png") no-repeat 100% 100% / 107%;
+}
+
+header {
+	padding-top: 56px;
+	color: $text_colorWhite;
+	.wrapper {
+		display: flex;
+		justify-content: space-between;
+		// align-items: center;
+		margin-bottom: 400px;
+		position: relative;
+		img {
+			max-width: 729px;
+			width: 42vw;
+			height: auto;
+			min-width: 200px;
+			position: absolute;
+			right: 0;
+			top: 100px;
+		}
+	}
+	.text {
+		max-width: 628px;
+		margin-right: 30px;
+	}
+	.heading {
+		font-size: 48px;
+		margin-top: 130px;
+		max-width: 750px;
+		font-weight: 700;
+	}
+	.offer {
+		@include grid(24px, 1fr);
+		margin: 24px 0 32px;
+		max-width: 600px;
+		font-weight: 500;
+		line-height: 1.8em;
+		// line-height: 24px;
+	}
+	.toolbar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.toolbar__feedback {
+			@include grid(15px, 1fr 1fr 1fr);
+			align-items: center;
+		}
+	}
+}
+
+.advantages {
+	margin-bottom: 128px;
+	.advantages__block {
+		margin-top: 56px + 20px;
+		@include grid(20px, (repeat(auto-fit, minmax(250px, auto))));
+		justify-content: start;
+		.item {
+			max-width: 295px;
+			background: #ffffff;
+			box-shadow: 0px 4px 30px rgba(11, 72, 112, 0.1);
+			border-radius: 8px;
+			padding: 30px;
+			margin-top: 60px;
+			.item__img {
+				display: grid;
+				justify-content: center;
+			}
+			img {
+				margin-top: -80px;
+				margin-bottom: 24px;
+			}
+		}
+	}
+}
+
+.forWhat {
+	margin-bottom: 128px;
+	.wrapper {
+		@include grid(96px, 0.5fr 1fr);
+		align-items: center;
+		.forWhat__text {
+			.heading {
+				margin-bottom: 55px;
+			}
+			.forWhat__list {
+				display: grid;
+				grid-gap: 46px;
+			}
+		}
+		.forWhat__img {
+			img {
+				width: 100%;
+				max-width: 469px;
+			}
+		}
+	}
+}
+
+.work {
+	font-weight: 600;
+	font-size: 18px;
+	text-align: center;
+	.wrapper {
+		@include grid(98px, repeat(3, auto));
+		margin-top: 56px;
+	}
+	.line {
+		height: 2px;
+		width: 75%;
+		background: #cad6de;
+		margin: auto;
+		position: relative;
+		top: 92px;
+	}
+	.item {
+		@include grid(36px, 1fr);
+		grid-template-rows: 70px 1fr;
+		place-items: center;
+		.item__icon {
+			background: rgb(255, 255, 255);
+			width: 139px;
+			position: relative;
+			z-index: 1;
+			height: 139px;
+			display: grid;
+		}
+		.icon {
+			width: 70px;
+			height: 70px;
+			border-radius: 50%;
+			background: $color_accent;
+			display: grid;
+			place-items: center;
+			margin: auto;
+		}
+	}
+}
+
+.cost {
+	margin-top: 168px;
+	.item {
+		grid-template-rows: 100px 1fr;
+		.item__icon {
+			background: none;
+			width: 100%;
+			position: relative;
+			z-index: 1;
+		}
+	}
+	.cost__btn {
+		margin: 90px auto 0;
+		display: grid;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 1450px) {
+	.main_content {
+		background: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/261918/content_vector_33.png) no-repeat 0% 0%/116%, url(https://www.pulscen.ru/system/ckeditor_assets/pictures/261954/content_vector_31.png) no-repeat 100% 100%/117%;
+	}
+	header {
+		.wrapper {
+			img {
+				max-width: 729px;
+				width: 44vw;
+				height: auto;
+				min-width: 200px;
+				position: absolute;
+				right: 0;
+				top: 100px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1360px) {
+	header {
+		.wrapper {
+			img {
+				max-width: 729px;
+				width: 44vw;
+				height: auto;
+				min-width: 200px;
+				position: absolute;
+				right: 0;
+				top: 198px;
+			}
+		}
+		.offer {
+			max-width: 443px;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	header {
+		.heading {
+			font-size: 36px;
+			margin-top: 80px;
+		}
+		.wrapper {
+			img {
+				top: 119px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.main_content {
+		background: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/261961/content_vector_34.png) no-repeat 0% 0%/100vw, url(https://www.pulscen.ru/system/ckeditor_assets/pictures/261954/content_vector_31.png) no-repeat 100% 100%/107%;
+	}
+	.toolbar {
+		.massenger_futer {
+			display: none;
+		}
+	}
+	header {
+		.toolbar {
+			.toolbar__feedback {
+				grid-template-columns: 1fr;
+			}
+		}
+		.heading {
+			max-width: 100%;
+		}
+		.text {
+			max-width: 628px;
+			margin-right: 30px;
+			order: 2;
+		}
+		.offer {
+			max-width: 100%;
+		}
+		.wrapper {
+			display: grid;
+			margin-top: 60px;
+			justify-content: normal;
+			margin-bottom: 100px;
+			.img {
+				display: grid;
+				justify-content: center;
+			}
+
+			img {
+				top: 0;
+				left: 0;
+				position: relative;
+			}
+		}
+	}
+
+	.forWhat {
+		margin-bottom: 104px;
+		.wrapper {
+			grid-template-columns: 1fr;
+			.forWhat__img {
+				display: grid;
+				justify-content: center;
+			}
+		}
+	}
+	.advantages {
+		margin-bottom: 104px;
+	}
+}
+
+@media (max-width: 900px) {
+	header {
+		.wrapper {
+			flex-direction: column-reverse;
+			align-items: baseline;
+			margin-top: 40px;
+		}
+		.heading {
+			margin-top: 20px;
+		}
+	}
+	.work {
+		font-size: 14px;
+		.line {
+			display: none;
+		}
+
+		.line_mobile {
+			height: 288px;
+			width: 75%;
+			margin: auto;
+			position: absolute;
+			border-left: 2px solid #cad6de;
+			margin-top: 59px;
+			margin-left: 33px;
+		}
+		.wrapper {
+			grid-template-columns: repeat(1, auto);
+			text-align: left;
+			grid-gap: 24px;
+		}
+		.item {
+			grid-template-columns: auto 1fr;
+			grid-template-rows: 1fr;
+			justify-items: left;
+			.item__icon {
+				width: fit-content;
+				height: 110px;
+			}
+		}
+	}
+	.cost {
+		margin-top: 104px;
+	}
+}
+
+@media (max-width: 800px) {
+	header {
+		.heading {
+			font-size: 24px;
+		}
+	}
+	.futer_main {
+		margin-top: 60px;
+	}
+}
+
+@media (max-width: 660px) {
+	.main_content {
+		background: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/261961/content_vector_34.png) no-repeat 0% 0%/770px, url(https://www.pulscen.ru/system/ckeditor_assets/pictures/261954/content_vector_31.png) no-repeat 100% 100%/107%;
+	}
+	.section-btns {
+		grid-template-columns: 1fr;
+	}
+
+	.logo {
+		width: 100px;
+	}
+	.section-buttonWhite {
+		padding: 8px 20px;
+		font-size: 10px;
+	}
+	.coat {
+		.cost__btn {
+			margin: 60px auto 0;
+		}
+	}
+}
+
+@media (max-width: 360px) {
+	.main_content {
+		background: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/261962/content_vector_3d3.png) no-repeat 0% -2%, url(https://www.pulscen.ru/system/ckeditor_assets/pictures/261968/content_vector_31d.png) no-repeat 100% 100%/107%;
+	}
+}
+@media (max-width: 340px) {
+	.main_content {
+		.work .item {
+			grid-gap: 24px;
+		}
+	}
+}

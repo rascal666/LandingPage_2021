@@ -1,0 +1,379 @@
+<!-- @format -->
+include miksins.pug
+
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		title= "миксы"
+	body.js-body
+		.main_content.body_pages3
+			.header_wrapper
+				include ./components/toolbar.pug
+				header
+					.content 
+						.header__wrapper
+							.header__text
+								p.section_h1 Дизайнерский сайт за 7 дней 
+								p.section_h4 И вы полностью готовы к продажам в Интернете.
+								.info
+									.info__item
+										p.section_h3.info__heading На Пульсе цен вам доступны:
+										.list
+											.list__li Конверсионный сайт без расходов на веб-дизайн и разработку
+											.list__li Оформление под ваш фирменный стиль и задачи
+											.list__li Интеграция с CRM Битрикс, службами доставки и оплаты.
+											.list__li Личный менеджер и команда техподдержки 
+									+button("{crm_analytics:click_link(Хочу сайт,#order,network_actions,НК_РК_Татарстан-3_Хочу_сайт)}", 'Хочу сайт', "section-button", "ym(86954894,'reachGoal','Хочу сайт')")
+						.img
+							img.des(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/268910/content_group_373.png' alt='')
+							img.mobile(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/268911/content_illyustratsiyaclavnaya.png' alt='')
+
+			section.possibilities
+				.content
+					p.section_h2 Кому подойдет готовый сайт
+					.block-left
+						.img
+							img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/268900/content_illyustratsiya_2_1.png")
+						.text
+							p.section_h3 Начинающему предпринимателю
+							.list
+								.list__li Полноценный продающий сайт с возможностью загрузить до 7 000 товаров в каталог.
+								.list__li Доступны инструменты аналитики для понимания целевой аудитории
+								.list__li Команда поддержки поможет избежать ошибок на старте, грамотно начать продвижение товаров и услуг.
+							
+							+button("{crm_analytics:click_link(Хочу продавать на Пульсе цен,#order,network_actions,НК_РК_Татарстан-3_Каталог)}", "Хочу продавать на Пульсе цен", "section-button", "ym(86954894,'reachGoal','Хочу продавать на Пульсе цен')")
+					#client.block-left.block-right
+						.text
+							p.section_h3 Компаниям с опытом продаж
+							.list
+								.list__li Минимум ручной работы, поддержка персонального контент-менеджера.
+								.list__li Экономия на ФОТ. За зарплату одного сотрудника вы получаете целую команду:
+								.list__li Автоматизация бизнес-процессов: от загрузки прайс-листа в каталог до обработки заказов в CRM-системе.
+							p Специалисты Пульса цен проведут аудит вашего бизнеса, настроят рекламные кампании по привлечению клиентов на ваш сайт. Вам не нужно разбираться в этом самому, мы всё сделаем.
+							+button("{crm_analytics:click_link(Посмотреть все инструменты,#order,network_actions,НК_РК_Татарстан-3_инструменты)}", "Посмотреть все инструменты", "section-button", "ym(86954894,'reachGoal','Посмотреть все инструменты')")
+						.img
+							img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/268899/content_illyustratsiya_2_2.png")
+			section.template
+				.content
+					p.section_h2.heading Примеры сайтов
+					.offer
+						p
+							| Оформление сайта подбирается в соответствии с отраслью, потребностями рынка и аудитории.
+					.wrapper
+						.block3
+							.item
+								.item__bg(rel='0')
+								p Металлопрокат
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/268908/content_group_356.png' alt='')
+							.item
+								.item__bg(rel='1')
+								p Оборудование, инструмент
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/268906/content_frame_357.png' alt='')
+							.item.item-mobile
+								.item__bg(rel='2')
+								p Стройматериалы
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/268930/content_frame_358.png' alt='')
+						.block4
+							.item
+								.item__bg(rel='3')
+								p Химия, нефтепродукты
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/268904/content_frame_360.png' alt='')
+							.item
+								.item__bg(rel='4')
+								p Спецтехника
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/268903/content_grodup_357.png' alt='')
+							.item
+								.item__bg(rel='5')
+								p Продукты питания
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/268902/content_frame_364.png' alt='')
+							.item
+								.item__bg(rel='6')
+								p Материалы
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/268901/content_frame_362.png' alt='')
+					.wrapper-accordion
+						.block
+							.item
+								.item__btn.item__btn_bg.accordion(start='cer')
+									p.fat Дизайн и навигация
+									img.accordion__img(imgn='cer' src='https://www.pulscen.ru/system/ckeditor_assets/pictures/266086/content_vector_235.png' alt='')
+								.noHidden
+									p.accordion__block Настройка цветовой гаммы сайта
+									p.accordion__block Загрузка иконки сайта (favicon)
+									p.accordion__block Настройка контактов в шапке сайта 
+								.hidden(end='cer')
+									p Настраиваемые кнопки обратной связи в шапке 
+									p Слайдер на главной странице 
+									p Виджет "Акции" для главной страницы
+									p Настраиваемый блок "Каталог" на главной странице сайта
+									p Настраиваемый блок "Популярные товары и услуги" на главной странице сайта
+									p Блок "Преимущества" на главной странице
+									p Смена логотипа сайта
+									p Возможность изменения порядка, количества, названий пунктов меню
+									p Возможность отключения горизонтального меню
+								.accordion__block_accent.item__btn.accordion(start='cer')
+									p смотреть полностью
+							.item
+								.item__btn.accordion.item__btn_bg(start='gold')
+									p.fat Каталог товаров и услуг
+									img.accordion__img(imgn='gold' src='https://www.pulscen.ru/system/ckeditor_assets/pictures/266086/content_vector_235.png' alt='')
+								.noHidden
+									p.accordion__block Дерево каталога до 4-х уровней вложенности
+									p.accordion__block Фильтрация товаров по нескольким параметрам и/или свойствам
+									p.accordion__block Сравнение товаров 
+								.hidden(end='gold')
+									p Поиск по товарам 
+									p Блок "Сопутствующие товары" 
+									p Кнопка "Уточнить наличие" или "Уточнить цену " для отсутствующих товаров 
+									p Блок "Поделиться в соц.сетях" в карточке товара 
+									p SEO - дружелюбный шаблон 
+									p Блок "Оплата и доставка" для товаров
+									p Оптовая и розничная цена
+									p Возможность добавлять скидку на товар
+									p Коммерческие метки на товарах
+								.accordion__block_accent.item__btn.accordion(start='gold')
+									p смотреть полностью
+							.item
+								.item__btn.accordion.item__btn_bg(start='plat')
+									p.fat Получение заказов
+									img.accordion__img(imgn='plat' src='https://www.pulscen.ru/system/ckeditor_assets/pictures/266086/content_vector_235.png' alt='')
+								.noHidden
+									p.accordion__block Кнопка "Заказать" в каталоге товаров и услуг
+									p.accordion__block Кнопка "В корзину" в каталоге товаров и услуг
+									p.accordion__block Кнопка "Обратный звонок" в каталоге товаров и услуг 
+								.hidden(end='plat')
+									p Кнопка "Обратный звонок" на всех страницах сайта
+									p Кнопка "Написать нам" в блоке контактов 
+									p Настройка конверсионных кнопок в шапке сайта 
+									p CRM-система по управлению заказами 
+									p Блок "История заказов покупателя" 
+									p Возможность просмотра товаров, отложенных покупателем в корзину
+									p Автоматизированная система информирования покупателей об изменении по заказам
+									p Автоматизированная система возврата покупателей (Забытая корзина)
+									p Блок "Планировщик звонков" для Продавца
+								.accordion__block_accent.item__btn.accordion(start='plat')
+									p смотреть полностью
+							.item
+								.item__btn.accordion.item__btn_bg(start='order')
+									p.fat Функционал сайта
+									img.accordion__img(imgn='order' src='https://www.pulscen.ru/system/ckeditor_assets/pictures/266086/content_vector_235.png' alt='')
+								.noHidden
+									p.accordion__block Возможность создания текстовых страниц и разделов
+									p.accordion__block Блок "Фотогалерея" 
+									p.accordion__block Новостная лента на сайте 
+								.hidden(end='order')
+									p Блок "Документы для скачивания"
+									p Создание Акций 
+									p Сбор "Отзывов клиентов" 
+									p Каталог статей 
+									p Мобильная версия основных разделов сайта 
+									p Сервисы для быстрой загрузки каталога товаров (XLS, YML, 1С, Мой склад) 
+									p
+										| Адаптация к требованиям законодательства РФ (политика конфиденциальности, пользовательское соглашение)
+								.accordion__block_accent.item__btn.accordion(start='order')
+									p смотреть полностью
+						.img
+							img.img-js(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/268936/content_sssr_1.png' alt='')
+
+			section.possibilities
+					.content
+							p.section_h2 Возможности сайта на Пульсе цен	
+					.newClient
+						.content
+							p.heading.section_h3 Новые клиенты
+							.section_wrapperBlock.section_h4
+								.item
+									.img
+										img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/268897/content_kanaly_prodazh.png' alt='')
+									.text
+										p.section_h4.fat 4 канала продаж
+										.item__block
+											.li
+												span.fat 1
+												p Заявки с поиска по товарам в Яндексе.
+											.li
+												span.fat 2
+												p Заявки с поиска по товарам в Google.
+											.li
+												span.fat 3
+												p Посетители товарного каталога Пульса цен.
+											.li
+												span.fat 4
+												p Посетители вашего сайта на Пульсе цен.
+										p
+											| Все просто: сосредоточьтесь на продажах, а Пульс цен станет вашим личным интернет-маркетологом.
+								.item
+									.img
+										img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/268896/content_tsa.png' alt='')
+									.text
+										p.section_h4.fat Целевая аудитория
+										.item__block
+											p
+												| Пульс цен - крупнейший B2B портал промышленно-строительного рынка. У нас продают оптом и в розницу. Продвигаемся по коммерческим запросам в Яндекс и Google: купить, цена, оптом.
+										p Качественная аудитория и выдача товаров в поисковиках.
+								.item
+									.img
+										img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/268895/content_regiony.png' alt='')
+									.text
+										p.section_h4.fat Продажа в любой регион или по всей России
+										.item__block
+											p
+												| Начните продажи в своем регионе, а затем выходите на новые рынки. Готовы приводить вам клиентов из любой точки России и стран СНГ.
+										p Продажи в новых регионах без открытия филиала и затрат на офис.
+								.item
+									.img
+										img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/268894/content_zakupki.png' alt='')
+									.text
+										p.section_h4.fat Доступ к базе готовых заявок «Закупки»
+										.item__block
+											p
+												| «Закупки» - готовая база заказов, где каждый день покупатели оставляют новые заявки. Мы мгновенно оповещаем о них продавцов.
+										p Готовые заявки на ваш ассортимент.
+			section.site
+				.content
+					p.heading.section_h3 Технологичный сайт
+					.offer
+						p Онлайн-магазин и консультант в одном лице.
+					.section_wrapperBlock.section_h4
+						.item
+							.img
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/268893/content_frame_2.png' alt='')
+							.text
+								p.section_h4.fat Безопасный и современный
+								.item__block
+									p
+										| Сайт защищен протоколом безопасности https (обязателен с 01.01.2021 для всех). Сайт безопасен и доступен клиентам, не важно с какого источника или устройства они зайдут.
+						.item
+							.img
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/268892/content_group_337.png' alt='')
+							.text
+								p.section_h4.fat Дружелюбное SEO
+								.item__block
+									p
+										| Все разделы сайта оптимизированы под SEO и требования поисковых систем. Продвижение сайта без лишних затрат на SEO-специалистов.
+						.item
+							.img
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/268891/content_group_349.png' alt='')
+							.text
+								p.section_h4.fat Превращение прайса в продающий каталог
+								.item__block
+									p
+										| Доступна массовая загрузка/выгрузка товаров через YML, XLS, 1С и Мой склад. Легко загрузим фото товаров из вашего XLS-прайса. Переведем прайс из валюты в рубли.
+								p Актуальность вашего каталога и цен.
+						.item
+							.img
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/268890/content_frame_3.png' alt='')
+							.text
+								p.section_h4.fat Маркетинговые инструменты
+								.item__block
+									p
+										| Для продвижения сайта и товаров на Пульсе цен есть полный арсенал инструментов: от контекстной рекламы до глубокой комплексной проработки.
+								p Удобно и для быстрых продаж и для долгоиграющего привлечения клиентов.
+						.item
+							.img
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/268889/content_3.png' alt='')
+							.text
+								p.section_h4.fat Мобильный трафик
+								.item__block
+									p
+										| Предоставим готовую мобильную версию сайта — вам не нужно тратить средства на ее разработку. Покупатели смогут найти и купить ваши товары с мобильных устройств.
+						.item
+							.img
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/268888/content_6.png' alt='')
+							.text
+								p.section_h4.fat Мобильный офис
+								.item__block
+									p
+										| В мобильном приложении Пульса цен настроены мгновенные оповещения о заказах и онлайн-чат с покупателем.
+								p Будьте на связи с клиентами — принимайте заявки в любой точке мира.
+			section.possibilities
+				.newClient
+					.content
+						p.heading.section_h3 Команда поддержки
+						.section_wrapperBlock.section_h4
+							.item
+								.img
+									img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/268887/content_1.png' alt='')
+								.text
+									p.section_h4.fat Персональный контент-менеджер
+									.item__block
+										p
+											| Знаем, как продавать товары и услуги в интернете. Персональный контент будет курировать работу вашего сайта. Поможет загрузить прайс-лист и оформить сайт.
+									p
+										| В комплексе с сайтом идет квалифицированная помощь и постоянный мониторинг эффективности.
+							.item
+								.img
+									img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/268886/content_frame_4.png' alt='')
+								.text
+									p.section_h4.fat Бесплатное обучение продажам в интернете
+									.item__block
+										p
+											| Проводим бесплатные обучающие вебинары по SEO и интернет-продвижению. Ведем канал на Youtube и группы в соцсетях. Подключайтесь там, где удобно.
+									p Для вас последние тренды и возможность узнать больше о продажах в интернете.
+			section.site
+				.content
+					p.heading.section_h3 Управление заказами
+					.section_wrapperBlock.section_h4
+						.item
+							.img
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/268885/content_1g.png' alt='')
+							.text
+								p.section_h4.fat Мультиканальные продажи
+								.item__block
+									p
+										| Подключим онлайн-заказ, быстрые сообщения, обратный звонок и корзину. Настроим обработку входящих обращений в одном окне.
+								p
+									| Оперативно принимать заказы клиентов помогут sms-оповещения и push-уведомления в мобильном приложении.
+						.item
+							.img
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/268884/content_2.png' alt='')
+							.text
+								p.section_h4.fat Возврат покупателя
+								.item__block
+									p Настроим автоматическую систему рассылок для возврата клиентов.
+								p
+									| Возможность связаться с покупателем, который уже ушел с сайта, или повторно продать товар.
+						.item
+							.img
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/274351/content_bitriks_2.png' alt='')
+							.text
+								p.section_h4.fat CRM-система по управлению заказами
+								.item__block
+									p
+										| Автоматизация бизнес-процессов с Битрикс24: обработка заказов из интернета онлайн, сбор базы постоянных покупателей, допродажи.
+								// <p>Автоматизация бизнес-процессов: обработка заказов из интернета онлайн, сбор базы постоянных покупателей, допродажи.</p>
+						.item
+							.img
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/268882/content_4.png' alt='')
+							.text
+								p.section_h4.fat Понятная аналитика
+								.item__block
+									p
+										| Статистика вашего сайта на Пульсе цен дает представление о географии покупателя, источниках трафика и показывает, какие товары интересны вашим клиентам.
+								p Оптимизация стратегии продаж, повышение конверсии сайта.
+
+			section.end
+				.content
+					.wrapper
+						.img
+							img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/268881/content_illyustratsiya_5.png' alt='')
+						.text
+							p.section_h2 Легкий старт продаж
+							.offer
+								p
+									| Мы сделаем каталог, настроим способы связи с покупателями и оформим дизайн. Предоставим персонального контент-менеджера, который будет мониторить эффективность сайта. Перенесем информацию с другой платформы. Давайте?
+								p
+									| Сайт будет оптимизирован и готов к продажам. Вам останется лишь принимать звонки и обрабатывать заявки.
+							.section-buttonWhite.feedback-js.weight_600.ab-order.js-apress-order-button.js-orders-callback-link(style='margin-top: 40px' data-button-type='order_callback' data-company='99572059 ' data-company-id='99572059 ' data-company-name='Пульс цен Онлайн' data-company-name-rest='' data-company-url='https://help.pulscen.ru/'  data-params='{"company_id":"99572059 "}' data-statistics='1' data-type='callback' onclick="ym(86954894,'reachGoal','Хочу легкий старт продаж')") 
+								| {crm_analytics:click_link(Хочу легкий старт продаж ,#order,network_actions,НК_РК_Татарстан-3_заявка)}
+
+
+
+	include ./components/footer.pug
+		p {crm_analytics:show_page(network_actions,НК_РК_Татарстан-3_Сайт_за_7_дней)}
+	include ./components/metricks.pug
+
+
+
+
+

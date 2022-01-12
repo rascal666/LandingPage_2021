@@ -1,0 +1,113 @@
+/** @format */
+
+//как использовать - main_content{@include mainContent}
+.main_content {
+	@include mainContent(18px, #fff);
+	background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/294730/content_star_3.png') no-repeat 2% 0% / cover;
+}
+
+* {
+	scroll-behavior: smooth;
+}
+
+.line {
+	margin: 0px 0 0px;
+	background: #e7eef4;
+	max-width: 100%;
+	width: 100%;
+	height: 2px;
+}
+.line-note {
+	font-weight: 700;
+}
+.header__wrapper {
+	margin-top: var(--section);
+	position: relative;
+	align-items: flex-start;
+	padding-bottom: 500px;
+}
+.header__text {
+	display: grid;
+	grid-gap: 30px;
+	max-width: 900px;
+}
+.header__img {
+	img {
+		position: absolute;
+		max-width: 900px;
+		width: 50vw;
+		top: -50px;
+		right: 0;
+	}
+}
+.header__img_mobile img {
+	display: none;
+}
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1366px) {
+	:root {
+		--section: 60px;
+		--block: 40px;
+	}
+	.header__text {
+		display: grid;
+		grid-gap: 30px;
+		max-width: 800px;
+	}
+	.header__img img {
+		top: 55px;
+		right: -20px;
+	}
+}
+
+@media (max-width: 1024px) {
+	:root {
+		--section: 40px;
+		--block: 24px;
+	}
+	.header__img img {
+		top: 181px;
+		right: -20px;
+	}
+}
+
+@media (max-width: 800px) {
+	.main_content {
+		background: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/294730/content_star_3.png) no-repeat 72% 100% / cover;
+		font-size: 14px;
+	}
+	.header__img {
+		width: fit-content;
+		margin: auto;
+		display: grid;
+		justify-items: center;
+		img {
+			display: none;
+			position: relative;
+			margin-top: 10px;
+			top: 0;
+			left: 0;
+			right: 0;
+			width: 100%;
+		}
+	}
+
+	.header__wrapper {
+		padding-bottom: 40px;
+	}
+	.section-button a {
+		background: #24adf3;
+		color: #ffffff !important;
+	}
+	.header__img_mobile img {
+		display: block;
+	}
+}
+
+@media (max-width: 660px) {
+}
+@media (max-width: 480px) {
+}

@@ -1,0 +1,23 @@
+mixin linkMassagers
+	a(href="https://wa.me/+79292690013").numder_futer
+		img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/266954/content_group_282.png")
+	a(href="viber://chat?number=+79292690013").numder_futer
+		img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/266952/content_group_283.png")
+	a(href="mailto:tolstova@pulscen.ru").numder_futer
+		img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/266951/content_group_286.png")
+	a(href="https://t.me/PulscenKC").numder_futer
+		img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/268037/content_telega.png")
+
+- var dev = true
+
+mixin button(textButton, textButtonDev, style, purpose)
+	if dev == true
+		.button.feedback-js.weight_600.ab-order.js-apress-order-button.js-orders-callback-link(class=style data-button-type="order_callback" data-company="99572059 " data-company-id="99572059 " data-company-name="Пульс цен Онлайн" data-company-name-rest="" data-company-url="https://help.pulscen.ru/" data-params='{"company_id":"99572059 "}' data-statistics="1" data-type="callback" onclick=purpose)=textButton
+	else 
+		.button.feedback-js.weight_600.ab-order.js-apress-order-button.js-orders-callback-link(class=style data-button-type="order_callback" data-company="99572059 " data-company-id="99572059 " data-company-name="Пульс цен Онлайн" data-company-name-rest="" data-company-url="https://help.pulscen.ru/" data-params='{"company_id":"99572059 "}' data-statistics="1" data-type="callback")=textButtonDev
+
+mixin buttonLink(textButton,textButtonDev, style, purpose)
+	if dev == true
+		.cl(class=style onclick=purpose)=textButton
+	else
+		.cl(class=style)=textButtonDev

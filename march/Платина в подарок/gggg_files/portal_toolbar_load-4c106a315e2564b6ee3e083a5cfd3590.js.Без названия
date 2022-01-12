@@ -1,0 +1,1 @@
+app.modules.toolbarLoad=function(o){function a(){app.config.toolbarLoad&&$.get(app.config.toolbarLoad.toolbarUrl).done(function(o){$(".js-toolbar").html(o),$doc.trigger("toolbarLoadedSuccess:toolbarLoad")})}return o.load=function(){a()},o}(app.modules.toolbarLoad||{});

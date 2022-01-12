@@ -1,0 +1,186 @@
+/** @format */
+
+//как использовать - main_content{@include mainContent}
+.main_content {
+	@include mainContent(18px, #fff);
+	background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/291733/content_volny_i_illyustrashka.png') no-repeat 2% 0%/1920px, #e6eeee;
+}
+
+* {
+	scroll-behavior: smooth;
+}
+
+.line {
+	margin: 0px 0 0px;
+	background: #e7eef4;
+	max-width: 100%;
+	width: 100%;
+	height: 2px;
+}
+.line-note {
+	font-weight: 700;
+}
+
+.header {
+	padding: 0px 0 80px;
+	margin-top: 80px;
+	z-index: 2;
+	position: relative;
+
+	.header__heading {
+		display: grid;
+		grid-auto-flow: column;
+		justify-content: start;
+		align-items: center;
+		.header__heading-end,
+		img {
+			position: relative;
+			left: -30px;
+		}
+	}
+
+	.header__wrapper {
+		margin: auto;
+		@include grid(25px, 3.2fr 1fr);
+	}
+	.offer {
+		max-width: 612px;
+		margin-top: 18px;
+	}
+	.header__img {
+		img {
+			position: absolute;
+			right: 0%;
+			top: 0%;
+			max-width: 35%;
+		}
+	}
+}
+.tariff {
+	color: $main_text_color;
+	padding-bottom: var(--section);
+	.tariff__heading {
+		max-width: 728px;
+		color: #fff;
+	}
+	.blocks {
+		margin: var(--block) auto;
+		@include grid(var(--block), 1fr 1fr);
+
+		.item {
+			background: #ffffff;
+			border-radius: 16px;
+			filter: drop-shadow(0px 4px 10px rgba(13, 74, 128, 0.1));
+			text-align: center;
+			padding: var(--block) 16px;
+			display: grid;
+			grid-template-rows: 1fr 2fr auto;
+			.item__subtitle {
+				max-width: 480px;
+				margin: 19px auto var(--block);
+			}
+			.section-buttonAccent a,
+			.section-buttonAccent {
+				margin: auto;
+			}
+		}
+	}
+}
+
+@media (max-width: 1440px) {
+	.header {
+		.header__wrapper {
+			grid-template-columns: 2.2fr 1fr;
+		}
+		.header__img {
+			img {
+				position: absolute;
+				right: 0%;
+				max-width: 100%;
+				width: 40%;
+			}
+		}
+	}
+}
+
+@media (max-width: 1366px) {
+}
+
+@media (max-width: 1024px) {
+	.main_content {
+		background: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/291733/content_volny_i_illyustrashka.png) no-repeat 2% 0% / cover, #e6eeee;
+	}
+	.content {
+		padding: 0px 20px 0px;
+		width: 100%;
+	}
+	.header {
+		padding: 0px 0 40px;
+		.header__wrapper {
+			grid-template-columns: 1fr;
+		}
+		.btns {
+			grid-auto-flow: dense;
+			margin-top: 24px;
+		}
+		.offer {
+			grid-gap: 16px;
+		}
+		.header__img {
+			width: fit-content;
+			margin: auto;
+			display: grid;
+			justify-items: end;
+			img {
+				position: relative;
+				right: 0%;
+				top: 0%;
+				left: 20px;
+				width: 100%;
+			}
+		}
+	}
+	.tariff {
+		.tariff__heading {
+			font-size: 26px;
+			max-width: 523px;
+		}
+	}
+	:root {
+		--section: 40px;
+		--block: 24px;
+	}
+}
+
+@media (max-width: 800px) {
+	.tariff {
+		.blocks {
+			grid-template-columns: 1fr;
+			.item {
+				grid-template-rows: auto;
+			}
+		}
+		.section-buttonAccent a {
+			padding: 12px 40px;
+		}
+	}
+	.header {
+		.header__heading {
+			.header__heading-end,
+			img {
+				left: -10px;
+			}
+		}
+	}
+}
+
+@media (max-width: 660px) {
+	.main_content {
+		font-size: 14px;
+	}
+	.header {
+		margin-top: 40px;
+	}
+}
+@media (max-width: 480px) {
+}

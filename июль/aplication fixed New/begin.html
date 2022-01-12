@@ -1,0 +1,182 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Месяц подарков на Пульсе цен</title>
+
+		<!-- мой шаблон -->
+		<link rel="stylesheet" href="https://www.pulscen.ru/system/ckeditor_assets/attachments/204266/template.css" />
+		<!-- futer -->
+		<link rel="stylesheet" href="https://www.pulscen.ru/system/ckeditor_assets/attachments/220420/futer.css" />
+		<!-- шрифт -->
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&family=Raleway&display=swap" rel="stylesheet" />
+		<!-- обнуление -->
+		<link rel="stylesheet" href="https://www.pulscen.ru/system/ckeditor_assets/attachments/204203/zeroing.css" />
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+		<!-- popap -->
+		<link rel="stylesheet" href="https://www.pulscen.ru/system/ckeditor_assets/attachments/226405/popap.css" />
+		<link rel="stylesheet" href="https://www.pulscen.ru/system/ckeditor_assets/attachments/265458/begin.css" />
+		<!-- <link rel="stylesheet" href="css/begin.css" /> -->
+	</head>
+
+	<body class="js-body">
+		<div class="main_content">
+			<div class="content">
+				<div class="header">
+					<p class="section_h1">Ваша заявка зафиксирована</p>
+					<a target="_blank" href="https://pulscen.ru"><img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/183694/content_content_logo-pc_2.png" alt="" class="logo" /></a>
+				</div>
+
+				<div class="column">
+					<div class="text">
+						<p class="section_h2">Благодарим за интерес к нашему порталу</p>
+						<p class="section_h2">Специалист Пульса цен свяжется с вами.</p>
+
+						<div class="line"></div>
+
+						<div class="footer">
+							<b>Если у вас есть вопросы по работе портала,</b>
+							<p>вы можете задать их по телефону <a href="tel:78002344310">+7 (800) 234 43-10</a></p>
+							<p>или написать нам WahatsApp, Viber <a href="tel:79292690013">+7 (929) 269 00-13</a> </p>
+						</div>
+					</div>
+					<div class="img">
+						<img class="desctop" src="https://www.pulscen.ru/system/ckeditor_assets/pictures/265452/content_frame_140.png" alt="" />
+						<img class="modile" src="https://www.pulscen.ru/system/ckeditor_assets/pictures/265453/content_illyustrashka.png" alt="" />
+					</div>
+				</div>
+			</div>
+			<!-- {crm_analytics:click_link(Позвоните мне,#order,network_actions,МР_РФ_Консультация_090221)} -->
+		</div>
+
+		<!-- {crm_analytics:show_page(network_actions,ДР_ПП_РФ_080920)} -->
+
+		<script>
+			let feedback_Company = document.querySelectorAll(".feedback-js");
+
+			let dataCompany_value = "99572059"; //id компании - основа
+			let dataParamsValue = '{"company_id":99572059}'; //id компании - основа
+			let dataCompanyUrl = "https://help.pulscen.ru/"; //адрес компании - основа
+
+			let dataCompany_value_by = "99593226"; //id компании - беларусь
+			let dataParamsValue_by = '{"company_id":99593226}'; //id компании - беларусь
+			let dataCompanyUrl_by = "https://testovaya-blaginina-kv.pulscen.ru/"; //адрес компании - беларусь
+
+			//number
+			let phone = document.querySelectorAll(".phone-js");
+			let namberFree = "8 800 234 43 10"; //номер телефона - бесплатники
+			let namber_KZ = "8 10 800 1000 91 91"; //номер телефона - казахстан
+			let namber_UA_Don = "+380 (89) 120 50 46"; //номер телефона - украина и донецк
+			let namber_By = "8 10 800 1000 91 91"; //номер телефона - беларусь
+
+			//noteNumber
+			let phoneNote = document.querySelectorAll(".phoneNote-js");
+			let phoneNote_KZ = "Казахстана"; //номер телефона - казахстан
+			let phoneNote_Don = "Донецка и Луганска"; //номер телефона -  донецк и луганск
+			let phoneNote_UA = "Украины"; //номер телефона - украина
+			let phoneNote_By = "Беларуси"; //номер телефона - беларусь
+
+			let eventON = document.querySelector(".js-body");
+			let re = /_РФ_/gi;
+			let url = window.location.href;
+
+			//контакты по беларусии
+			let contact__by = document.querySelector(".contact__by");
+			let contact__main = document.querySelector(".contact__main");
+			contact__by.style.display = "none";
+
+			// основной id компании, если нужно параметры меняются под каждый случай
+			feedbackF("data-company", "data-company-id", "data-params", dataCompany_value, dataParamsValue);
+
+			//____________________ УА
+			if (url.indexOf("utm_rascal=ua") != -1) {
+				numberF(namber_UA_Don, "tel:380891205046", phoneNote_UA);
+				eventON.innerHTML = eventON.innerHTML.replace(re, "_УА_");
+
+				//____________________ КЗ
+			} else if (url.indexOf("utm_rascal=kz") != -1) {
+				numberF(namber_KZ, "tel:81080010009191", phoneNote_KZ);
+				eventON.innerHTML = eventON.innerHTML.replace(re, "_КЗ_");
+
+				//____________________ BY
+			} else if (url.indexOf("utm_rascal=by") != -1) {
+				feedbackF("data-company", "data-company-id", "data-params", dataCompany_value_by, dataParamsValue_by);
+				feedbackF_attr("data-company-url", dataCompanyUrl_by);
+				numberF(namber_By, "tel:81080010009191", phoneNote_By);
+				contact__by.style.display = "grid";
+				contact__main.style.display = "none";
+				eventON.innerHTML = eventON.innerHTML.replace(re, "_Беларусь_");
+
+				//____________________ ДНР+ЛНР
+			} else if (url.indexOf("utm_rascal=dnr") != -1) {
+				numberF(namber_UA_Don, "tel:380891205046", phoneNote_Don);
+				eventON.innerHTML = eventON.innerHTML.replace(re, "_ДНР&ЛНР_");
+			}
+
+			//телефонные параметры
+			function numberF(numberV_phone, numberV_link, numberV_text) {
+				// phone
+				for (let index = 0; index < phone.length; index++) {
+					phone[index].innerHTML = numberV_phone;
+				}
+				//link
+				for (let index = 0; index < phone.length; index++) {
+					phone[index].setAttribute("href", numberV_link);
+				}
+				//text
+				for (let index = 0; index < phoneNote.length; index++) {
+					phoneNote[index].innerHTML = numberV_text;
+				}
+			}
+
+			//если нужно поменять аттребут
+			function feedbackF_attr(Feedback_Key, Feedback_value) {
+				for (let index = 0; index < feedback_Company.length; index++) {
+					const element = feedback_Company[index];
+					element.setAttribute(Feedback_Key, Feedback_value);
+				}
+			}
+
+			//id компании без
+			function feedbackF(D_company, D_company_id, D_params_id, id_value, params_value) {
+				for (let index = 0; index < feedback_Company.length; index++) {
+					const element = feedback_Company[index];
+					element.setAttribute(D_company, id_value);
+					element.setAttribute(D_company_id, id_value);
+					element.setAttribute(D_params_id, params_value);
+				}
+			}
+		</script>
+
+		<!-- Begin Me-Talk -->
+		<script type="text/javascript">
+			window.MeTalkSetup = {
+				domain: "comkc.pulscen.ru",
+			};
+			(function (d, w, m) {
+				window.supportAPIMethod = m;
+				var s = d.createElement("script");
+				s.type = "text/javascript";
+				s.id = "supportScript";
+				s.charset = "utf-8";
+				s.async = true;
+				var id = "9e71060b780fc267cbbfff6f8dec56ba";
+				s.src = "//me-talk.ru/support/support.js?h=" + id;
+				var sc = d.getElementsByTagName("script")[0];
+				w[m] =
+					w[m] ||
+					function () {
+						(w[m].q = w[m].q || []).push(arguments);
+					};
+				if (sc) sc.parentNode.insertBefore(s, sc);
+				else d.documentElement.firstChild.appendChild(s);
+			})(document, window, "MeTalk");
+		</script>
+		<!-- End Me-Talk -->
+	</body>
+</html>

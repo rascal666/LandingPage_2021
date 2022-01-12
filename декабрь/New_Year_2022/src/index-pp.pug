@@ -1,0 +1,86 @@
+<!-- @format -->
+include ./miksins.pug
+
+
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		title= "все включено"
+	body.js-body
+		.main_content.main_content-pp
+			header
+				include ./modules/toolbar-pp.pug
+				.header
+					.content
+						.header__wrapper
+							.header__text
+								.header__heading.section_h1 
+									| #[span.section_h1 Нов] 
+									| #[img.ogo(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/291834/content_mazok_i_ogo.png", alt="")]
+									| #[span.header__heading-end.section_h1 дние бонусы]
+								.offer
+									p Каждому, кто успеет в декабре:
+									.list 	
+										.list__li продлить текущий пакет размещения на 12 месяцев
+										.list__li подключить более приоритетный пакет на 12 месяцев
+										.list__li перейти на тариф «Бизнес» с оплатой годового размещения
+									p подарим бонус по эффективной поддержке бизнеса в 2022 году.
+									
+								.header__btns 	
+									.section-buttonAccent {crm_analytics:click_link(Выбрать бонус,#tariff,network_actions,ПП_НГ_Бонусы_curData)}
+									+button('{crm_analytics:click_link(Расскажите мне про бонусы,#order,network_actions,ПП_НГ_Консультация_Бонусы_curData)}', "Расскажите мне про бонусы","section-button")
+							.header__img
+								img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/291833/content_frame_1.png")
+			section.tariff#tariff
+				.content
+					p.tariff__heading.section_h2 Новогодние бонусы
+					p.tariff__subtitle Забирайте 1 любой из 3-х бонусов на свой выбор:
+					.blocks 
+						.item
+							.item__heading.section_h3 Звезда в подарок
+							div
+								.item__subtitle Повысим ваш пакет размещения до более эффективного до 2 месяцев.
+								.item__line
+								.list 	
+									.list__heading.fat Бонус работает на:
+									.list__li.list__li_gray Усиление продаж в период, когда это особенно важно
+									.list__li.list__li_gray Возможность протестировать повышенный пакет размещения
+									.list__li.list__li_gray Оптимизацию рекламного бюджета
+							+button('{crm_analytics:click_link(Хочу повысить пакет,#order,network_actions,ПП_НГ_Бонусы_звезда_curData)}', "Хочу повысить пакет","section-buttonAccent")
+							p.item__note *Бонус действителен для тарифов «Старт.Серебро» и «Старт.Золото»  
+						.item
+							.item__heading.section_h3  1 месяц продвижения в регионы
+							div
+								.item__subtitle Покажем ваши товары и услуги новой целевой аудитории в ключевых регионах.
+								.item__line
+								.list 	
+									.list__heading.fat Бонус работает на:
+									.list__li.list__li_gray Возможность тестировать новые рынки
+									.list__li.list__li_gray Проверку финансовой привлекательности выбранных регионов
+									.list__li.list__li_gray Повышение узнаваемости компании
+									.list__li.list__li_gray Увеличение продаж
+							+button('{crm_analytics:click_link(Хочу продвижение в регионы,#order,network_actions,ПП_НГ_Бонусы_1_месяц_curData)}', "Хочу продвижение в регионы","section-buttonAccent")
+						.item
+							.item__heading.section_h3 Один из сервисов интеграции в подарок:
+							div
+								.list.list__circle
+									.list__li.list__li_circle Интеграция с CRM Битрикс24
+									.list__li.list__li_circle Интеграция с ТК доставки Boxberry, СДЭК, Деловые линии
+									.list__li.list__li_circle Интеграция с платежными системами Paykeeper, ЮKassa
+									.list__li.list__li_circle Интернет-эквайринг Сбербанка
+									.list__li.list__li_circle Интернет-эквайринг Альфа-Банка
+								.item__line
+								.list 	
+									.list__heading.fat Бонус работает на:
+									.list__li.list__li_gray Сокращение времени на ручные операции;
+									.list__li.list__li_gray Увеличение продаж;
+									.list__li.list__li_gray Получение оплат в кратчайшие сроки;
+									.list__li.list__li_gray Убеждение покупателей завершить покупку.
+							+button('{crm_analytics:click_link(Хочу интеграцию,#order,network_actions,ПП_НГ_Бонсуы_Интеграция_curData)}', "Хочу интеграцию","section-buttonAccent")
+					.tariff__end Выбирайте и забирайте новогодний бонус, который больше всего подходит для решения ваших бизнес-задач. Предложение действует до 25 декабря.
+					.tariff__end #[span.fat Внимание!] Тариф «Старт.Платина+» в акции не участвует.
+			
+
+		include ./modules/footer-pp.pug
+	p {crm_analytics:show_page(network_actions,ПП_Новый_год_Бонусы_curData)}

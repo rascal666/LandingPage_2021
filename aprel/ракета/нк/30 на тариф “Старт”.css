@@ -1,0 +1,417 @@
+/** @format */
+
+body {
+	min-width: 0 !important;
+	background-color: white;
+}
+
+.wrapper-text p {
+	margin-bottom: 0px;
+}
+
+.wrapper-text {
+	color: #5e7491;
+	line-height: normal;
+	overflow: hidden;
+}
+
+.base-width {
+	background-color: transparent;
+	margin: 0;
+	max-width: none;
+	min-width: 0;
+}
+
+.catalogue {
+	padding: 0;
+}
+
+#content,
+#searchline {
+	margin-top: 0em;
+	min-width: 0px;
+}
+
+.cms-page .col-middle {
+	background: none;
+	border: none;
+	box-shadow: none;
+	padding: 0 !important;
+}
+
+.catalogue h1 {
+	display: none;
+}
+
+#content {
+	margin-top: 0;
+}
+
+.wrapper-text ul li {
+	list-style-type: none !important;
+}
+
+.wrapper-text table td {
+	padding: 20px;
+}
+
+.simple-breadcrumbs {
+	display: none !important;
+}
+
+/* --- */
+
+.heading_Button {
+	font-family: "Russo One", sans-serif;
+	background: #f97878;
+	border-radius: 3px;
+	padding: 20px 20px;
+	margin-top: 60px;
+	max-width: 400px;
+	width: 100%;
+	text-align: center;
+	letter-spacing: 0.04em;
+	color: #ffffff;
+	white-space: nowrap !important;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	letter-spacing: 0.08em;
+	background: linear-gradient(101.03deg, #fdc109 6.83%, #f79f1a 94.01%);
+	text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+	color: #ffffff;
+	border-radius: 50px;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+p {
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+.content {
+	font-family: "Open Sans", sans-serif;
+	color: #5e7491;
+	letter-spacing: 0.02em;
+	font-size: 16px;
+	display: grid;
+	grid-row-gap: 150px;
+	max-width: 1366px;
+	margin: 0 13vw;
+	padding-top: 30px;
+	padding-bottom: 140px;
+}
+
+.bg {
+	max-width: 1920px;
+	background: url("https://www.pulscen.ru/system/ckeditor_assets/pictures/191590/content_nk_skidka_1920_fon.png") no-repeat top / 100%;
+	margin: auto;
+}
+
+.content a {
+	text-decoration: none;
+}
+
+.heading {
+	font-family: "Russo One", sans-serif;
+	font-size: 40px;
+	line-height: 55px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	padding-bottom: 40px;
+}
+
+.span {
+	color: #f79f1a;
+}
+
+.heading2 {
+	margin-top: 60px;
+	margin-left: 50px;
+}
+
+.fat {
+	font-weight: 800;
+}
+
+.subtitle {
+	font-size: 20px;
+}
+
+.per30 {
+	font-size: 40px;
+}
+
+.subtitle_tarif_sale_on_start {
+	padding: 30px 0px 60px 0px;
+	width: 461px;
+}
+.blocks_tarif_sale_on_start__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.listing img {
+	max-width: 750px;
+	width: 100%;
+}
+
+.blocks_tarif_sale_on_start {
+	grid-column-gap: 161px;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-row-gap: 36px;
+	margin-right: 15px;
+}
+
+.cart_tarif_sale_on_start {
+	display: grid;
+	grid-template-columns: 0.15fr 1fr;
+	grid-column-gap: 20px;
+	align-items: flex-start;
+}
+
+.line {
+	width: 112px;
+	height: 6px;
+	background: #2f70f0;
+	border-radius: 5px;
+	margin: 30px 0px 30px -50px;
+}
+a:link {
+	color: #fff;
+}
+
+.bg_futer_sale_on_start {
+	margin: auto;
+	box-sizing: border-box;
+	background: linear-gradient(180deg, #5f2fd5 0%, #2f70f0 100%);
+
+	font-size: 14px;
+}
+
+.bg_futer_sale_on_start a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.futer_sale_on_start {
+	max-width: 1366px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 120px 0px;
+	color: #ffffff;
+	margin: 0 13vw;
+}
+
+.heading_futer_sale_on_start {
+	font-weight: bold;
+	letter-spacing: 0.04em;
+	padding-bottom: 30px;
+}
+
+.text_futer_sale_on_start {
+	padding-bottom: 20px;
+}
+
+.futer_sale_on_startPL {
+	padding-left: 10px;
+}
+
+.futer_sale_on_start_mobil {
+	display: none;
+}
+
+.widthP {
+	max-width: 470px;
+}
+
+.sogl_futter_tolbar_complex {
+	display: grid;
+	justify-content: end;
+	height: fit-content;
+}
+
+.mob {
+	display: none;
+}
+
+.collMeborder_futter_tolbar_complex {
+	border-bottom: 1px dashed #ffffff;
+	cursor: pointer;
+}
+
+@media (min-width: 2000px) {
+	.content {
+		margin: auto;
+		width: 90%;
+	}
+}
+
+@media (max-width: 1700px) {
+	.blocks_tarif_sale_on_start {
+		grid-column-gap: 92px;
+	}
+	.content {
+		grid-row-gap: 9vw;
+		padding-top: 1.5vw;
+		padding-bottom: 10vw;
+	}
+	.heading {
+		font-size: 2.4vw;
+		line-height: 3.1vw;
+	}
+	.logo img {
+		width: 9vw;
+	}
+	.per30 {
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 1450px) {
+	.blocks_tarif_sale_on_start {
+		grid-column-gap: 92px;
+	}
+}
+
+@media (max-width: 1320px) {
+	.blocks_tarif_sale_on_start {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+@media (max-width: 1100px) {
+	.bg {
+		background: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/191603/content_nk_skidka_1024_fon.png) no-repeat top / 100%;
+	}
+	.content {
+		margin: 0 9vw;
+	}
+	.heading {
+		font-size: 3vw;
+		line-height: 4.1vw;
+	}
+	.logo img {
+		width: 14vw;
+	}
+	.content {
+		padding-top: 3vw;
+	}
+	.subtitle {
+		font-size: 2.4vw;
+	}
+}
+
+@media (max-width: 1000px) {
+	.futer_sale_on_start {
+		grid-template-columns: 1fr;
+		padding: 9vw 0px;
+		grid-row-gap: 5vw;
+	}
+	.heading_futer_sale_on_start {
+		padding-bottom: 5vw;
+	}
+	.sogl_futter_tolbar_complex {
+		display: grid;
+		justify-content: start;
+		height: fit-content;
+	}
+}
+
+@media (max-width: 900px) {
+	.blocks_tarif_sale_on_start {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+@media (max-width: 768px) {
+	.bg {
+		background: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/191604/content_nk_skidka_768_fon.png) no-repeat top / 100%;
+	}
+	.mob {
+		display: block;
+	}
+	.mai {
+		display: none;
+	}
+	.content {
+		padding-top: 60vw;
+	}
+	.logo img {
+		width: 20vw;
+	}
+	.heading {
+		font-size: 4.2vw;
+		line-height: 5.5vw;
+	}
+	.heading {
+		padding-bottom: 5vw;
+	}
+	.heading2 {
+		margin-top: 7vw;
+		margin-left: 0px;
+	}
+	.line {
+		margin: 4vw 0px 4vw 0px;
+	}
+	.subtitle {
+		font-size: 20px;
+	}
+	.heading_Button {
+		margin-top: 7vw;
+	}
+	.subtitle_tarif_sale_on_start {
+		width: 100%;
+	}
+	.blocks_tarif_sale_on_start__wrapper {
+		flex-direction: column;
+		display: grid;
+		grid-gap: 40px;
+	}
+}
+
+@media (max-width: 500px) {
+	.blocks_tarif_sale_on_start {
+		grid-row-gap: 30px;
+	}
+	.cart_tarif_sale_on_start {
+		display: grid;
+		grid-template-columns: 0.15fr 1fr;
+		grid-column-gap: 10px;
+		align-items: start;
+	}
+	.heading {
+		font-size: 6vw;
+		line-height: 8vw;
+	}
+	.heading_Button {
+		font-size: 14px !important;
+		white-space: normal !important;
+		padding: 15px 25px;
+		width: inherit;
+	}
+	.widthP {
+		width: 100%;
+	}
+	.subtitle {
+		font-size: 14px;
+	}
+	.line {
+		height: 2px;
+	}
+	.content {
+		font-size: 14px;
+	}
+	.subtitle_tarif_sale_on_start {
+		padding: 6vw 0px 9vw;
+	}
+	.per30 {
+		font-size: 20px;
+	}
+}

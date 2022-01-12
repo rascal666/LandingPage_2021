@@ -1,0 +1,124 @@
+/** @format */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.works_for_your_success {
+	.toolbar {
+		background: #ffffff;
+	}
+	.header_wrapper {
+		position: relative;
+		// background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/293836/content_illyustratsiya_glavnaya.png') no-repeat 100% 68% / 46%, #d8ebfb;
+		background: #d8ebfb;
+		padding-top: 80px;
+		.heading__img {
+			max-width: 100%;
+			right: 2em;
+			position: absolute;
+		}
+		.heading__img_mobile {
+			display: none;
+		}
+		.header__wrapper {
+			grid-template-columns: 2fr 1fr;
+		}
+	}
+	.section_wrapperBlock {
+		margin-top: 0;
+	}
+	.possibilities {
+		padding-top: 0;
+		.section_h3_top {
+			margin-top: 40px;
+		}
+		.list {
+			margin: 24px 0;
+		}
+		.list__heading {
+			margin-bottom: 16px;
+		}
+		.newClient {
+			margin-top: 0;
+		}
+		.newClient-top {
+			margin-top: var(--block60);
+		}
+		.newClient {
+			padding: var(--block60) 0;
+		}
+	}
+	.site {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.footerTop {
+		font-size: 18px;
+		.offer {
+			padding-bottom: var(--block60);
+			margin-top: 30px;
+			max-width: 900px;
+		}
+		.footerTop__btns {
+			@include grid(24px, auto 1fr);
+			margin-top: 24px;
+		}
+	}
+}
+
+@media (max-width: 1440px) {
+	.works_for_your_success {
+		.header_wrapper {
+			.heading__img {
+				max-width: 48%;
+				right: 0%;
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.works_for_your_success {
+		.header_wrapper {
+			padding-top: 0px;
+			.header__wrapper {
+				grid-template-columns: 1fr;
+			}
+			.heading__img {
+				display: none;
+			}
+			.heading__img_mobile {
+				display: block;
+				max-width: 100%;
+				margin-top: 24px;
+			}
+		}
+	}
+	.toolbar {
+		margin-top: 0px;
+	}
+}
+
+@media (max-width: 660px) {
+	.works_for_your_success {
+		.possibilities {
+			.list {
+				margin: 16px 0;
+				font-size: 14px;
+			}
+		}
+		header {
+			padding-bottom: 40px;
+		}
+		.footerTop {
+			.footerTop__btns {
+				grid-template-columns: 1fr;
+			}
+		}
+		.section-buttonBlue {
+			width: 100%;
+		}
+		.section-button {
+			width: 100%;
+		}
+	}
+}

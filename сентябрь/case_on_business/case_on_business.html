@@ -1,0 +1,600 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Месяц подарков на Пульсе цен</title>
+
+		<!-- мой шаблон -->
+		<link rel="stylesheet" href="https://www.pulscen.ru/system/ckeditor_assets/attachments/204266/template.css" />
+		<!-- futer -->
+		<link rel="stylesheet" href="https://www.pulscen.ru/system/ckeditor_assets/attachments/220420/futer.css" />
+		<!-- шрифт -->
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&family=Raleway&display=swap" rel="stylesheet" />
+		<!-- обнуление -->
+		<link rel="stylesheet" href="https://www.pulscen.ru/system/ckeditor_assets/attachments/204203/zeroing.css" />
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="https://www.pulscen.ru/system/ckeditor_assets/attachments/268933/accordion.css" />
+		<link rel="stylesheet" href="https://www.pulscen.ru/system/ckeditor_assets/attachments/267642/style.css" />
+		<!-- popap -->
+		<link rel="stylesheet" href="https://www.pulscen.ru/system/ckeditor_assets/attachments/273658/popap.css" />
+
+		<link rel="stylesheet" href="https://www.pulscen.ru/system/ckeditor_assets/attachments/273592/case_on_business.css" />
+		<!-- <link rel="stylesheet" href="css/case_on_business.css" /> -->
+	</head>
+
+
+
+	<style>
+			.case .case__block {
+		grid-template-columns: 1fr 1fr;
+	}
+	.case__block .case__img {
+		justify-content: center;
+	}
+		* {
+			font-family: inherit;
+			text-decoration: none;
+		}
+		.modal-close {
+			width: 13px;
+			height: 13px;
+		}
+		.button {
+			text-align: inherit;
+		}
+		.cases .wrapper .result {
+			z-index: 1;
+			max-width: 385px;
+		}
+		.cases .wrapper .subtitle {
+			margin-top: 16px;
+			max-width: 403px;
+			z-index: 1;
+		}
+		.case__img_{
+			display: grid;
+    justify-self: center;
+		}
+		::-webkit-scrollbar {
+    width: 6px;
+    height: auto;
+    background-color: #ebf4ff;
+}
+header .wrapper {
+    grid-template-columns: 1.1fr 1fr;
+}
+	</style>
+
+	<body class="js-body">
+		<div class="main_content">
+			<header>
+				<div class="content">
+					<div class="toolbar">
+						<a target="_blank" href="https://pulscen.ru"><img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/183694/content_content_logo-pc_2.png" alt="" class="logo" /></a>
+						<div class="toolbar__feedback">
+							<div class="massenger_futer">
+								<a class="numder_futer fat" href="https://wa.me/+79292690013"> <img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/266954/content_group_282.png" alt="" /></a>
+								<a class="numder_futer fat" href="viber://chat?number=+79292690013"> <img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/266952/content_group_283.png" alt="" /></a>
+								<a class="numder_futer fat" href="mailto:tolstova@pulscen.ru"> <img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/266951/content_group_286.png" alt="" /></a>
+								<a class="numder_futer fat" href="https://t.me/PulscenKC"> <img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/268037/content_telega.png" alt="" /></a>
+							</div>
+							<div class="feedback-js section-buttonToolbar weight_600 ab-order js-apress-order-button js-orders-callback-link" data-button-type="order_callback" data-company="99572059 " data-company-id="99572059 " data-company-name="Пульс цен Онлайн" data-company-name-rest="" data-company-url="https://help.pulscen.ru/" data-params='{"company_id":"99572059 "}' data-statistics="1" data-type="callback">
+								<!-- Позвоните мне -->
+								{crm_analytics:click_link(Позвоните мне,#order,network_actions,НК_РФ_Бонусы_Консультация_210921)}
+							</div>
+							<div class="massenger_futer toolbar_number">
+								<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/204255/content_r.png" alt="" />
+								<a class="phone-js numder_futer" href="tel:88002344310">8 800 234 43 10</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="wrapper">
+						<div class="text">
+							<p class="heading">Осенние бонусы от Пульса цен сгорят через 72 часа!</p>
+							<p class="subtitle">
+								<span class="accent-blue">2 месяца</span> мега усиления продаж<br />
+								или<br />
+								<span class="accent-blue">2 месяца</span> продаж в дополнительном регионе РФ
+							</p>
+							<p class="subtitle2"> При подключении любого тарифа «Старт» на 12 месяцев до 24 сентября. </p>
+						</div>
+						<div class="img_ill">
+							<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/273396/content_podarok_illyustrashka.png" alt="" />
+						</div>
+					</div>
+				</div>
+			</header>
+			<section class="cases wrapper-accordion">
+				<div class="content">
+					<div class="cases__heading section_h1"> Как выбрать бонус? </div>
+					<div class="cases__subtitle"> Посмотрите, какие задачи решает каждый из них. Выберите подходящий и оставьте заявку, указав номер телефона. </div>
+					<div class="wrapper">
+						<div class="item">
+							<p class="heading section_h1"> Мега усиление продаж </p>
+							<div class="heading-note section_h3">
+								При подключении
+								<div class="section-displayContents button" id="button4" rel="popup4">
+									<b style="text-decoration: underline">«Старт.СЕРЕБРО»</b>
+								</div>
+								или
+								<div class="section-displayContents button" id="button5" rel="popup5">
+									<b style="text-decoration: underline">«Старт.ЗОЛОТО»</b>
+								</div>
+							</div>
+							<p class="subtitle"> На 2 месяца повысим ваш основной тариф до более эффективного. </p>
+							<div class="result">
+								<div class="item__btn accordion" start="cer">
+									<p>Решает задачи</p>
+									<img class="accordion__img" imgN="city" src="https://www.pulscen.ru/system/ckeditor_assets/pictures/273413/content_strelochka.png" alt="" />
+								</div>
+								<div class="hidden" end="cer">
+									<p> &bull; дополнительное усиление продаж</p>
+									<p> &bull; тестирование нового канала привлечения клиентов </p>
+									<p> &bull; мгновенное увеличение трафика в период, когда это особенно нужно </p>
+								</div>
+							</div>
+							<div class="btn-present">
+								<div class="section-button">
+									<div class="feedback-js weight_600 ab-order js-apress-order-button js-orders-callback-link" data-button-type="order_callback" data-company="99572059 " data-company-id="99572059 " data-company-name="Пульс цен Онлайн" data-company-name-rest="" data-company-url="https://help.pulscen.ru/" data-params='{"company_id":"99572059 "}' data-statistics="1" data-type="callback"> {crm_analytics:click_link(Выбираю этот бонус,#order,network_actions,НК_РФ_2_месяца_тариф_210921 )} </div>
+								</div>
+								<div class="img-present button" id="button3" rel="popup3">
+									<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/273397/content_podarok.png" alt="" />
+								</div>
+							</div>
+							<div class="img-mega">
+								<img class="" src="https://www.pulscen.ru/system/ckeditor_assets/pictures/273398/content_illyustrashka.png" alt="" />
+							</div>
+						</div>
+						<div class="item">
+							<p class="heading section_h1"> Клиенты из другого региона </p>
+							<div class="heading-note section_h3">
+								При подключении
+								<b>«Старт.Платина»</b>
+							</div>
+							<p class="subtitle">2 месяца ваши товары будут размещаться в каталоге Пульса цен любого региона РФ. </p>
+							<div class="result">
+								<div class="item__btn accordion" start="reg">
+									<p>Решает задачи</p>
+									<img class="accordion__img" imgN="city" src="https://www.pulscen.ru/system/ckeditor_assets/pictures/273413/content_strelochka.png" alt="" />
+								</div>
+								<div class="hidden" end="reg">
+									<p> &bull; привлечение дополнительных клиентов </p>
+									<p> &bull; расширение географии продаж </p>
+									<p> &bull; тестирование нового рынка </p>
+									<p> &bull; повышение узнаваемости компании и лояльности целевой аудитории </p>
+								</div>
+							</div>
+							<div class="btn-present">
+								<div class="section-button">
+									<div class="feedback-js weight_600 ab-order js-apress-order-button js-orders-callback-link" data-button-type="order_callback" data-company="99572059 " data-company-id="99572059 " data-company-name="Пульс цен Онлайн" data-company-name-rest="" data-company-url="https://help.pulscen.ru/" data-params='{"company_id":"99572059 "}' data-statistics="1" data-type="callback"> {crm_analytics:click_link(Выбираю этот бонус,#order,network_actions,НК_РФ_2_месяца_регион_210921)} </div>
+								</div>
+								<div class="img-present button" id="button2" rel="popup3">
+									<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/273397/content_podarok.png" alt="" />
+								</div>
+							</div>
+							<div class="img-mega img-mega-cart">
+								<img class="" src="https://www.pulscen.ru/system/ckeditor_assets/pictures/273399/content_illyustrashka2.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="cases cases2">
+				<div class="content">
+					<div class="cases__heading section_h1"> Кейсы компаний на тарифе Старт</div>
+
+					<div class="wrapper">
+						<div class="item">
+							<p class="heading section_h111"> Компания из Челябинска </p>
+							<div class="subtitle"> Продажа пиломатериалов и сопутствующих материалов для мебельного производства </div>
+							<div class="line"></div>
+							<div class="offer">
+								<div>
+									<span class="accent">+ 121%</span>
+									<span>рост просмотров товаров</span>
+								</div>
+								<div>
+									<span class="accent"> + 118%</span>
+									<span>увеличение количества посетителей</span>
+								</div>
+							</div>
+							<div style="margin-top: 16px; margin-bottom: 16px" class=""><b class="accent">5 868</b> посетителей на сайт с Пульса цен за 2021 год.</div>
+							<div class="btn-present">
+								<div class="section-button button" id="button1" rel="popup1">
+									<!-- <p>Смотерть кейс полностью</p> -->
+									{crm_analytics:click_link(Смотреть кейс полностью,#order,network_actions,НК_РФ_Кейс_СФОМеталл54_210921)}
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<p class="heading section_h111"> Компания из Новосибирска </p>
+							<div class="subtitle">
+								Металлопрокат, ЖБИ. <br />
+								Песок, Щебень.
+							</div>
+							<div class="line"></div>
+							<!-- <div class="offer">
+								<div>
+									<span class="accent">+335%</span>
+									<span> рост просмотров товаров</span>
+								</div>
+								<div>
+									<span class="accent"> +351%</span>
+									<span>увеличение количества посетителей</span>
+								</div>
+							</div> -->
+							<div style="margin-top: 16px; margin-bottom: 16px" class="">За 10 месяцев трафик с Пульса цен вырос с 0 до <b class="accent">4 000</b> посетителей в месяц ​(значение среднее).</div>
+							<div class="btn-present">
+								<div class="section-button button" id="button2" rel="popup2">
+									<!-- <p>Смотерть кейс полностью</p> -->
+									{crm_analytics:click_link(Посмотреть кейс полностью,#order,network_actions,НК_РФ_Кейс_Боманс_210921)}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<p class="phoneNote-js" style="display: none"></p>
+
+			<div class="modal-wrapper">
+				<div class="modal-wrapper-block" data-popup="popup1" >
+					<div class="modal-block">
+						<img class="modal-close" src="https://www.pulscen.ru/system/ckeditor_assets/pictures/273400/content_krestik.png" alt="" />
+						<div class="modal-content case case1">
+							<p class="heading section_h0"> Компания Bumans (Боманс), г. Челябинск </p>
+							<p class="subtitle section_h3">Продажа пиломатериалов, натурального шпона, плит и сопутствующих материалов для мебельного производства. </p>
+
+							<div class="task case__block">
+								<div class="div">
+									<p class="podHeading-popap section_h0">Поставленные задачи </p>
+									<!-- <p class="podSubtitle">Клиент уже размещал товары на платном тарифе «Старт.Серебро». Но развитие компании требовало расширенных инструментов продвижения. Для достижения цели были поставлены следующие задачи: </p> -->
+									<div class="block">
+										<div class="item">
+											<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/273422/content_s1.png" alt="" />
+											<p>Создать сайт для продаж пиломатериалов в Челябинске и загрузить каталог товаров в короткие сроки.</p>
+										</div>
+										<div class="item">
+											<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/273423/content_s2.png" alt="" />
+											<p>Обеспечить рост трафика сайта. </p>
+										</div>
+										<div class="item">
+											<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/273424/content_s3.png" alt="" />
+											<p>Обеспечить узнаваемость компании в нужных регионах. </p>
+										</div>
+										<div class="item">
+											<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/273425/content_s4.png" alt="" />
+											<p>Увеличить количество заявок и звонков из городов Сибири и Урала. </p>
+										</div>
+									</div>
+
+									<div class="solution">
+										<p class="section_h0"> Решение: </p>
+										<div class="solution__p">
+											<b class="">Основное:</b>
+											<div>
+												С учетом небольшой товарной массы для клиенту был предложен тариф «Серебро» в Челябинске, а также в городах Урало-Сибирского
+												<p class="section-displayContents accent button" id="button6" rel="popup6">
+													<span>кластера</span>
+												</p>
+											</div>
+										</div>
+										<div class="solution__p">
+											<b class="">Дополнительно:</b>
+											<p> Для повышения узнаваемости компании и привлечения клиентов из Яндекса и Google было решено провести рекламные кампании приоритетных товаров.</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="case__img case__img_">
+									<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/274471/content_ill_zadachi.png" alt="" />
+								</div>
+							</div>
+
+							<div class="made case__block">
+								<div class="div">
+									<p class="podHeading-popap section_h0">Что было сделано </p>
+									<p class="podSubtitle section_h3">В рамках выбранной стратегии были выполнены следующие работы. </p>
+									<div class="site">
+										<p class="section_h1 accent">Сайт</p>
+										<div class="doogs__list">
+											<div class="list-item"> Разработали оформление сайта в соответствии с фирменным стилем компании, требованиями юзабилити и трендами интернет-продаж. </div>
+											<div class="list-item"> Подключен протокол безопасности соединения клиента с сайтом (SSL-сертификат). </div>
+											<div class="list-item"> Привязка сайта к сервисам Вебмастер Яндекс и Google для старта поисковой оптимизации. </div>
+											<div class="list-item"
+												>Проработка каталога:
+
+												<p>• удобная навигация по группам товаров;</p>
+												<p>• структура групп и распределение по ним позиций товаров.</p>
+											</div>
+											<div class="list-item">Наполнены информационные разделы сайта: страницы «о компании», «контакты» и «доставка и оплата». </div>
+											<div class="list-item">Создана матрица элементов для активных действий покупателя: кнопки «заказать», «в корзину», «заказать звонок». </div>
+											<div class="list-item">Подключен счетчик Яндекс Метрики для отслеживания активности посетителей, настройка целей для получения более глубоких данных.</div>
+											<div class="list-item">Регулярная аналитика по сайту, для улучшения пользовательских характеристик.</div>
+										</div>
+									</div>
+									<div class="site">
+										<p class="section_h1 accent">Товары</p>
+										<div class="doogs__list">
+											<div class="list-item"> Загрузили товарную массу: 748 товарных позиций. </div>
+											<div class="list-item">Привязали товары к рубрикам Пульса цен, чтобы покупатели могли быстро их находить. </div>
+											<div class="list-item"> Выявили приоритетные товары и проработали их оформление. </div>
+										</div>
+									</div>
+									<div class="site">
+										<p class="section_h1 accent">Другое</p>
+										<div class="doogs__list">
+											<div class="list-item"> На главной странице разместили витрину приоритетных товаров: МДФ, шпон, пиломатериалы. </div>
+											<div class="list-item">Подключили выделенный телефонный номер для оценки звонков и возможности допродажи не дозвонившимся клиентам. </div>
+											<div class="list-item">Настроена реклама в Яндекс Директ. </div>
+											<div class="list-item"> Подключили заказчика к базе готовых заказов — уникальная разработка Пульса цен — сервису «Закупки». Клиенты, у которых нет времени искать большой перечень товаров поштучно, загружают весь список и алгоритм автоматически подбирает поставщиков. Уведомления о заказе приходит на почту к тем компаниям, кто может закрыть сделку. </div>
+										</div>
+									</div>
+								</div>
+
+								<div class="case__img case__img_">
+									<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/274469/content_ill_sdelano.png" alt="" />
+								</div>
+							</div>
+
+							<div class="work case__block">
+								<div class="div">
+									<p class="podHeading-popap podHeading-popap2 section_h0">Результаты </p>
+									<p class="podSubtitle">Тариф «Серебро» был подключен в октябре 2020 года. За 10 месяцев на сайт клиента с Пульса цен пришло 6400 посетителей (из них 1712 без рекламы и 4688 с помощью рекламной кампании в Директе). Каждый месяц стабильно поступают целевые заявки из Челябинска и городов Урало-Сибирского кластера. </p>
+									<p class="indicators-heading section_h1"> За 2021 год на сайт клиента пришло 5 868 целевых посетителей с Пульса цен. </p>
+									<p class="accent-blue"> до запуска рекламной кампании </p>
+									<div class="block">
+										<div class="item">
+											<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/273406/content_11.png" alt="" />
+											<p><span>+ 121%</span> рост просмотров товаров</p>
+										</div>
+										<div class="item">
+											<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/273406/content_11.png" alt="" />
+											<p><span>+ 118%</span> увеличение количества посетителей </p>
+										</div>
+									</div>
+
+									<p class="accent accent-top"> после запуска рекламы </p>
+									<div class="block">
+										<div class="item">
+											<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/273407/content_d1.png" alt="" />
+											<p><span>+ 233%</span> к среднемесячному количеству просмотров товаров</p>
+										</div>
+										<div class="item">
+											<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/273407/content_d1.png" alt="" />
+											<p><span>+ 241% </span> к показателю посещаемости сайта </p>
+										</div>
+									</div>
+								</div>
+
+								<div class="case__img">
+									<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/273405/content_grafik.png" alt="" />
+								</div>
+							</div>
+
+							<div class="end">
+								<p class="heading">Вы можете так же! Хотите?</p>
+								<div class="section-btns">
+									<div class="feedback-js section-button weight_600 ab-order js-apress-order-button js-orders-callback-link" data-button-type="order_callback" data-company="99572059 " data-company-id="99572059 " data-company-name="Пульс цен Онлайн" data-company-name-rest="" data-company-url="https://help.pulscen.ru/" data-params='{"company_id":"99572059 "}' data-statistics="1" data-type="callback">
+										<!-- Хочу такие же результаты -->
+										{crm_analytics:click_link(Хочу такие же результаты,#order,network_actions,НК_РФ_Кейс_заявка_210921 )}
+									</div>
+									<div class="modal-close section-buttonWhite2"> Хочу посмотреть другой кейс</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-wrapper-block" data-popup="popup2">
+					<div class="modal-block">
+						<img class="modal-close" src="https://www.pulscen.ru/system/ckeditor_assets/pictures/273400/content_krestik.png" alt="" />
+						<div class="modal-content case case1">
+							<p class="heading section_h0"> Компания из Новосибирска </p>
+							<p class="subtitle section_h3">Продажа металлопроката, ЖБИ. Реализация щебня и песка. </p>
+
+							<div class="task case__block">
+								<div class="div">
+									<p class="podHeading-popap section_h0">Поставленные задачи </p>
+									<!-- <p class="podSubtitle">Клиент уже размещал товары на платном тарифе «Старт.Серебро». Но развитие компании требовало расширенных инструментов продвижения. Для достижения цели были поставлены следующие задачи: </p> -->
+									<div class="block">
+										<div class="item">
+											<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/273422/content_s1.png" alt="" />
+											<p>Сделать продающий сайт и загрузить каталог товаров в короткие сроки.</p>
+										</div>
+										<div class="item">
+											<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/273423/content_s2.png" alt="" />
+											<p>Запустить и стабилизировать интернет-трафик на сайт </p>
+										</div>
+										<div class="item">
+											<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/273424/content_s3.png" alt="" />
+											<p>Обеспечить узнаваемость компании. </p>
+										</div>
+										<div class="item">
+											<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/273425/content_s4.png" alt="" />
+											<p>Увеличить количество заявок и звонков из городов Сибири, УрФО, ЦФО. </p>
+										</div>
+									</div>
+
+									<div class="solution">
+										<p class="section_h0"> Решение: </p>
+										<div class="solution__p">
+											<p> Выполнение задач быстрее всего обеспечит тариф «Платина». Он включает сайт с загруженным прайсом на платформе Пульса цен, а также размещение товаров в общем онлайн-каталоге. Дополнительно подключили платное размещение в 6 городах регионов, откуда нужны клиенты.</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="case__img case__img_">
+									<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/274471/content_ill_zadachi.png" alt="" />
+								</div>
+							</div>
+
+							<div class="made case__block">
+								<div class="div">
+									<p class="podHeading-popap section_h0">Что было сделано </p>
+									<p class="podSubtitle section_h3">В рамках выбранной стратегии были выполнены следующие работы. </p>
+									<div class="site">
+										<p class="section_h1 accent">Сайт</p>
+										<div class="doogs__list">
+											<div class="list-item"> Разработан дизайн в соответствии с пожеланиями компании и структура согласно законами юзабилити и стилевыми решениями. </div>
+											<div class="list-item"> Подключен протокол безопасности соединения клиента с сайтом (SSL-сертификат). </div>
+											<div class="list-item"> Привязка сайта к сервисам Вебмастер Яндекс и Google для старта поисковой оптимизации. </div>
+											<div class="list-item"> Проработка каталога: </div>
+											<div class="list-item"
+												>Проработка каталога:
+
+												<p>• удобная навигация по группам товаров;</p>
+												<p>• структура групп и распределение по ним позиций товаров.</p>
+											</div>
+											<div class="list-item">Наполнены информационные разделы сайта: страницы «о компании», «контакты» и «доставка и оплата». </div>
+											<div class="list-item">Создана матрица элементов для активных действий покупателя: кнопки «заказать», «в корзину», «заказать звонок». </div>
+											<div class="list-item">Подключен счетчик Яндекс Метрики для отслеживания активности посетителей, настройка целей для получения более глубоких данных.</div>
+											<div class="list-item">Регулярная аналитика по сайту, для улучшения пользовательских характеристик.</div>
+										</div>
+									</div>
+									<div class="site">
+										<p class="section_h1 accent">Товары</p>
+										<div class="doogs__list">
+											<div class="list-item"> Загрузили товарную массу (2163 позиций) и привязали их к рубрикам, Пульса цен, чтобы покупатели могли быстро их находить. </div>
+											<div class="list-item">Выявили приоритетные товары и детально проработали их оформление. </div>
+										</div>
+									</div>
+									<div class="site">
+										<p class="section_h1 accent">Другое</p>
+										<div class="doogs__list">
+											<div class="list-item"> На главной странице создана витрина приоритетных товаров. </div>
+											<div class="list-item">Подключили выделенный телефонный номер для оценки звонков и возможности допродажи не дозвонившимся клиентам. </div>
+											<div class="list-item"> Подключили заказчика к базе готовых заказов — уникальная разработка Пульса цен — сервису «Закупки». Клиенты, у которых нет времени искать большой перечень товаров поштучно, загружают весь список и алгоритм автоматически подбирает поставщиков. Уведомления о заказе приходит на почту к тем компаниям, кто может закрыть сделку. </div>
+										</div>
+									</div>
+								</div>
+
+								<div class="case__img case__img_">
+									<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/274469/content_ill_sdelano.png" alt="" />
+								</div>
+							</div>
+
+							<div class="work case__block">
+								<div class="div">
+									<p class="podHeading-popap podHeading-popap2 section_h0">Результаты </p>
+
+									<div class="block">
+										<div class="item">
+											<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/273406/content_11.png" alt="" />
+											<p><span>+ 335%</span> рост просмотров товаров</p>
+										</div>
+										<div class="item">
+											<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/273406/content_11.png" alt="" />
+											<p><span>+ 351%</span> увеличение количества посетителей </p>
+										</div>
+									</div>
+									<p class="podSubtitle">Тариф «Платина» был подключен в октябре 2020 года. За 10 месяцев трафик с Пульса цен вырос с 0 до 4000 посетителей (значение среднее). Каждый месяц стабильно поступают целевые заявки из городов Сибири, УрФО и ЦФО. </p>
+								</div>
+
+								<div class="case__img">
+									<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/273408/content_grafsik.png" alt="" />
+								</div>
+							</div>
+
+							<div class="end">
+								<p class="heading">Вы можете так же! Хотите?</p>
+								<div class="section-btns">
+									<div class="feedback-js section-button weight_600 ab-order js-apress-order-button js-orders-callback-link" data-button-type="order_callback" data-company="99572059 " data-company-id="99572059 " data-company-name="Пульс цен Онлайн" data-company-name-rest="" data-company-url="https://help.pulscen.ru/" data-params='{"company_id":"99572059 "}' data-statistics="1" data-type="callback">
+										<!-- Хочу такие же результаты -->
+										{crm_analytics:click_link(Хочу такие же результаты,#order,network_actions,НК_РФ_Кейс_заявка_210921 )}
+									</div>
+
+									<div class="modal-close section-buttonWhite2"> Хочу посмотреть другой кейс</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-wrapper-block" data-popup="popup3">
+					<div class="modal-block modal-blockPresentNote">
+						<img class="modal-close modal-closeAb" src="https://www.pulscen.ru/system/ckeditor_assets/pictures/273400/content_krestik.png" alt="" />
+						<div class="modal-content buttonNotePresent__wrapper">
+							<img src="https://www.pulscen.ru/system/ckeditor_assets/pictures/273401/content_group_82.png" alt="" />
+							<p>К каждому бонусу идет дополнительный подарок от специалиста по продвижению товаров на Пульсе цен. Чтобы получить его, нажмите на кнопку “Выбираю этот бонус” и оставьте телефон для связи.</p>
+						</div>
+					</div>
+				</div>
+				<div class="modal-wrapper-block" data-popup="popup4">
+					<div class="modal-block modal-blockPresentNote">
+						<img class="modal-close modal-closeAb" src="https://www.pulscen.ru/system/ckeditor_assets/pictures/273400/content_krestik.png" alt="" />
+						<div class="modal-content buttoninfo__wrapper">
+							<div class="text">
+								<p class="section_h11">10 месяцев «Старт.СЕРЕБРО» </p>
+								<div class="text__list">
+									<p> &bull; Загрузка до 1000 товаров в каталог </p>
+									<p> &bull; Места в каталоге выше тарифа Базовый </p>
+									<p> &bull; SSL-сертификат сайта </p>
+									<p> &bull; Модули доставки и онлайн-оплаты </p>
+									<p> &bull; Доступ к базе готовых заказов</p>
+								</div>
+							</div>
+							<div class="section_h0">+</div>
+
+							<div class="text">
+								<p class="section_h11">2 месяца «Старт.ЗОЛОТО»</p>
+								<div class="text__list">
+									<p> &bull; Загрузка до 3000 товаров в каталог </p>
+									<p> &bull; Места в каталоге выше тарифа Старт.СЕРЕБРО </p>
+									<p> &bull; SSL-сертификат сайта </p>
+									<p> &bull; Модули доставки и онлайн-оплаты </p>
+									<p> &bull; Доступ к базе готовых заказов </p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-wrapper-block" data-popup="popup5">
+					<div class="modal-block modal-blockPresentNote">
+						<img class="modal-close modal-closeAb" src="https://www.pulscen.ru/system/ckeditor_assets/pictures/273400/content_krestik.png" alt="" />
+						<div class="modal-content buttoninfo__wrapper">
+							<div class="text">
+								<p class="section_h11">10 месяцев «Старт.ЗОЛОТО»</p>
+								<div class="text__list">
+									<p> &bull;Загрузка до 3000 товаров в каталог </p>
+									<p> &bull; Места в каталоге выше Старт. СЕРЕБРО </p>
+									<p> &bull; SSL-сертификат сайта </p>
+									<p> &bull; Модули доставки и онлайн-оплаты </p>
+									<p> &bull; Доступ к базе готовых заказов </p>
+								</div>
+							</div>
+							<div class="section_h0">+</div>
+							<div class="text">
+								<p class="section_h11">2 месяца «Старт.ПЛАТИНА» </p>
+								<div class="text__list">
+									<p> &bull; Загрузка до 7000 товаров в каталог </p>
+									<p> &bull; Места в каталоге выше тарифа Старт.ЗОЛОТО </p>
+									<p> &bull; SSL-сертификат сайта </p>
+									<p> &bull; Модули доставки и онлайн-оплаты </p>
+									<p> &bull; Доступ к базе готовых заказов </p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-wrapper-block" data-popup="popup6">
+					<div class="modal-block">
+						<img class="modal-close" src="https://www.pulscen.ru/system/ckeditor_assets/pictures/273400/content_krestik.png" alt="" />
+						<div class="claster__city Uralo_Sibirskiy"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		{crm_analytics:show_page(network_actions,НК_РФ_Осенние_Бонусы_210921)}
+
+		<!-- <script src="claster.js"></script> -->
+		<script src="https://www.pulscen.ru/system/ckeditor_assets/attachments/266836/consultant.js"></script>
+		<script src="https://www.pulscen.ru/system/ckeditor_assets/attachments/273535/claster.js"></script>
+		<script src="https://www.pulscen.ru/system/ckeditor_assets/attachments/273660/script.js"></script>
+		<script src="https://www.pulscen.ru/system/ckeditor_assets/attachments/275427/bundle.js"></script>
+	</body>
+</html>

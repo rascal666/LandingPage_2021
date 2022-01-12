@@ -1,0 +1,28 @@
+<!-- @format -->
+include ./miksins.pug
+
+
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		title= "Черная пятница"
+	body.js-body
+		.main_content.ChP_PP.ChP_PP_shortened
+			toolbar
+				include ./modules/toolbar_pp.pug
+			header(style="margin-bottom:90px")
+				.content
+					.offer 
+						p.section_h0 Черная пятница #[br] на Пульсе цен
+						p Самые интересные предложения для компаний, которые хотят подключить повышенный пакет или тариф*.
+						p.section_h2.section-accent Мега черный sale на всё!
+						p Мы не можем показать размеры скидок, потому что они неприлично огромные. Оставьте заявку для личного общения, там и расскажем.
+						+button("{crm_analytics:click_link(Хочу огромные скидки,#order,network_actions,МР_Черная_пятница_Заявка)}", "Хочу огромные скидки","section-buttonAccent btn_bonus fat", )
+						p Мы за личное общение без QR-кода. А вы?
+
+						
+			
+			include ./modules/modal.pug
+			include ./modules/footer_pp.pug
+			p {crm_analytics:show_page(network_actions,ПП_Черная_пятница)}

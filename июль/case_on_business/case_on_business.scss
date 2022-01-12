@@ -1,0 +1,568 @@
+/** @format */
+
+$corporate_color: #028dd8;
+$main_text_color: #013a59;
+$text_white: #ffffff;
+$text_blue: #3320c8;
+
+@mixin mainContent($size, $color) {
+	max-width: 1920px;
+	width: 100%;
+	margin: auto;
+	font-size: $size;
+	// font-family: "Open Sans", sans-serif;
+	color: $color;
+	font-family: "Montserrat", sans-serif;
+	background: url("https://www.pulscen.ru/system/ckeditor_assets/pictures/261738/content_group_82.png") no-repeat 100% 30% / 90%, radial-gradient(73.44% 107.83% at 23.05% 18.98%, #1c1b40 0%, #7534dc 0.01%, #273088 100%) no-repeat;
+	padding-bottom: 60px;
+}
+
+.modal-close {
+	position: sticky;
+	width: 40px;
+	height: 40px;
+	z-index: 5;
+	left: 20px;
+	top: 20px;
+	margin-left: auto;
+	display: grid;
+}
+
+.modal-close:hover {
+	filter: grayscale(1);
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+a:link {
+	color: inherit;
+}
+a:visited {
+	color: inherit;
+}
+
+a {
+	color: inherit;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+@mixin content($padd...) {
+	max-width: 1660px;
+	width: 90%;
+	margin: auto;
+	padding: $padd;
+}
+
+@mixin grid($gap, $fr...) {
+	display: grid;
+	grid-template-columns: $fr;
+	grid-gap: $gap;
+}
+
+@mixin btn($size, $bg, $border, $color, $pad...) {
+	letter-spacing: 0.06em;
+	letter-spacing: 0.06em;
+	font-size: $size;
+	background: $bg;
+	border-radius: 5px;
+	width: fit-content;
+	padding: $pad;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	color: $color !important;
+	transition-duration: 0.5s;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+	border: 1px solid $border;
+	text-align: center;
+}
+
+.futer_main a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.futer_main {
+	background: radial-gradient(317.4% 1805.73% at 112.11% 75%, #041c80 0%, #dde5ff 100%), #002fcc;
+	color: #fff;
+	margin-top: 120px;
+}
+
+.content {
+	@include content(0px 0 0px);
+}
+
+.section-btns {
+	@include grid(60px, auto auto);
+	justify-content: left;
+}
+
+.section-button {
+	@include btn(14px, (radial-gradient(317.4% 1805.73% at 150.11% 50%, $text_blue 15%, $text_blue 100%), $text_blue), $text_blue, #fff, 15px 67px);
+	border-radius: 5px;
+	font-weight: 600;
+}
+
+.section-buttonWhite {
+	@include btn(14px, #ffffff00, #ffffff, #ffffff, 8px 30px);
+	border-radius: 5px;
+	font-weight: 600;
+}
+
+.section-buttonWhite2 {
+	@include btn(14px, #ffffff00, $text_blue, $text_blue, 15px 30px);
+	border-radius: 5px;
+	font-weight: 600;
+	height: auto;
+}
+
+.section_h0 {
+	font-size: 48px;
+}
+
+.section_h1 {
+	font-size: 32px;
+}
+.section_h2 {
+	font-size: 18px;
+}
+.section_h3 {
+	font-size: 16px;
+}
+
+.section-button a {
+	color: inherit;
+	font-weight: 800;
+}
+.section-button:hover {
+	cursor: pointer;
+	background: #ffffff00;
+	color: $text_blue !important;
+}
+.section-buttonWhite:hover {
+	cursor: pointer;
+	background: $text_white;
+	color: $corporate_color !important;
+}
+
+.section-buttonWhite2:hover {
+	cursor: pointer;
+	background: $text_blue;
+	color: $text_white !important;
+	filter: none;
+}
+
+.accent {
+	color: $corporate_color;
+	font-weight: 600;
+}
+
+.link-statick {
+	color: $corporate_color !important;
+}
+
+$sliderWidth: 60%;
+// $sliderHeight: 60%;
+
+//как использовать - main_content{@include mainContent}
+.template-img {
+	position: relative;
+	max-width: 700px;
+	height: 454px;
+
+	.img {
+		position: absolute;
+		width: $sliderWidth;
+		cursor: pointer;
+		transition-duration: 0.5s;
+	}
+	.img:hover {
+		z-index: 4;
+		width: $sliderWidth * 1.2;
+		// height: $sliderHeight * 1.2;
+	}
+	.img1 {
+		z-index: 1;
+	}
+	.img2 {
+		left: 205px;
+		top: 62px;
+		z-index: 3;
+	}
+	.img3 {
+		left: 34px;
+		top: 182px;
+		z-index: 2;
+	}
+}
+.main_content {
+	@include mainContent(16px, $text_white);
+}
+
+header {
+	padding-top: 56px;
+
+	.text {
+		// max-width: 628px;
+		margin-right: 30px;
+	}
+	.heading {
+		font-size: 48px;
+		margin-top: 130px;
+		max-width: 930px;
+	}
+	.subtitle {
+		margin-top: 48px;
+	}
+	.subtitle2 {
+		margin-top: 24px;
+	}
+	.choice {
+		p {
+			font-size: 24px;
+		}
+	}
+	.toolbar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.toolbar__feedback {
+			@include grid(15px, 1fr 1fr 1fr);
+			align-items: center;
+		}
+	}
+}
+
+.cases {
+	margin: 120px 0;
+	.wrapper {
+		@include grid(60px, repeat(auto-fit, minmax(400px, 1fr)));
+		.result {
+			margin: 36px 0;
+			display: grid;
+			grid-gap: 12px;
+		}
+		.heading {
+			font-weight: 600;
+		}
+		.subtitle {
+			margin-top: 12px;
+		}
+		.item {
+			background: $text_white;
+			padding: 50px 40px;
+			color: $main_text_color;
+			border-radius: 10px;
+		}
+	}
+	.feedback {
+		margin-top: 80px;
+		p {
+			padding-bottom: 48px;
+		}
+	}
+}
+
+.modal-block {
+	top: 0%;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	width: 95%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	overflow-y: scroll;
+	height: 100%;
+	padding: 30px 40px;
+	padding-top: 0;
+	max-width: 1920px;
+	border: none;
+	background: #f1f4ff;
+}
+
+.modal-content {
+	color: $main_text_color;
+	border: none;
+	background: #f1f4ff;
+}
+.list-item {
+	position: relative;
+	margin-left: 20px;
+}
+.list-item::before {
+	content: "";
+	background: url("https://www.pulscen.ru/system/ckeditor_assets/pictures/245597/content_vector_59_stroke.png") no-repeat;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	left: -20px;
+}
+.case {
+	.podHeading-popap {
+		font-size: 24px;
+	}
+	.podSubtitle {
+		margin-top: 24px;
+	}
+	.headingWidtnLine {
+		width: fit-content;
+		margin-top: 36px;
+		div {
+			background: $text_blue;
+			height: 1px;
+			width: 100%;
+			position: relative;
+			left: 20px;
+		}
+	}
+	.toolbar {
+		display: flex;
+		align-items: end;
+		grid-gap: 40px;
+		justify-content: space-between;
+		.heading {
+			margin-right: 60px;
+		}
+		.subtitle {
+			margin-top: 24px;
+		}
+		.text {
+			background: #e4f0ff;
+			padding: 40px 40px;
+			margin-left: -40px;
+			margin-bottom: 80px;
+			margin-top: -40px;
+			border-radius: 0px 0px 30px 0px;
+		}
+	}
+	.block {
+		margin: 48px 0;
+		justify-content: start;
+		@include grid(60px, repeat(auto-fit, minmax(150px, auto)));
+		.item {
+			@include grid(24px, 30px auto);
+			align-items: start;
+		}
+		.list {
+			margin-left: 50px;
+			margin-top: 24px;
+			display: grid;
+			grid-gap: 8px;
+		}
+	}
+	.made {
+		margin-top: 80px;
+		.block {
+			@include grid(60px, repeat(auto-fit, minmax(300px, 1fr)));
+		}
+		.item {
+			@include grid(24px, 10px auto);
+			align-items: start;
+		}
+	}
+	.work {
+		padding-bottom: 40px;
+		.general {
+			display: grid;
+			grid-gap: 12px;
+		}
+		.podHeading-popap {
+			padding-bottom: 48px;
+		}
+		.wrapper {
+			@include grid(20px, 0.8fr 1fr);
+		}
+		.work__result {
+			max-width: 570px;
+			margin-top: 24px;
+			display: grid;
+			grid-gap: 12px;
+			.item {
+				@include grid(20px, 1fr auto);
+			}
+		}
+		.pharag {
+			margin-top: 24px;
+		}
+	}
+	.doogs__list {
+		display: grid;
+		grid-gap: 12px;
+	}
+}
+
+.case2 {
+	.toolbar {
+		.text {
+			background: radial-gradient(125.27% 2372.36% at 91.89% 0%, #6d33d3 0%, #273088 100%);
+			backdrop-filter: blur(4px);
+			color: $text_white;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	header {
+		.heading {
+			font-size: 36px;
+		}
+		.img {
+			width: 150px;
+		}
+	}
+	.case {
+		.work {
+			.wrapper {
+				grid-template-columns: 1fr;
+			}
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	header {
+		.wrapper {
+			flex-direction: column-reverse;
+			align-items: baseline;
+			margin-top: 40px;
+		}
+		.heading {
+			margin-top: 20px;
+		}
+		.img {
+			display: grid;
+			align-self: center;
+			width: 200px;
+		}
+		.toolbar {
+			.toolbar__feedback {
+				grid-template-columns: 1fr;
+			}
+		}
+	}
+	.cases {
+		margin: 60px 0;
+		.wrapper {
+			grid-gap: 20px;
+			grid-template-columns: 1fr;
+			.result {
+				margin: 24px 0;
+			}
+			.item {
+				padding: 40px 30px;
+			}
+		}
+		.feedback {
+			margin-top: 60px;
+		}
+	}
+	.massenger_futer {
+		display: none;
+	}
+}
+
+@media (max-width: 1024px) {
+	.case {
+		.toolbar {
+			img {
+				display: none;
+			}
+			.heading {
+				margin-right: 0px;
+			}
+			.text {
+				margin-bottom: 60px;
+			}
+		}
+		.block {
+			grid-gap: 20px;
+		}
+		.made {
+			margin-top: 20px;
+			.block {
+				grid-gap: 20px;
+				grid-template-columns: 1fr;
+			}
+		}
+	}
+	.section_h0 {
+		font-size: 36px;
+	}
+	.main_content {
+		font-size: 14px;
+	}
+	.template-img {
+		height: 34vw;
+		.img {
+			width: 40%;
+		}
+		.img:hover {
+			z-index: 4;
+			width: 40% * 1.2;
+		}
+		.img2 {
+			left: 90px;
+			top: 51px;
+		}
+		.img3 {
+			left: 30px;
+			top: 90px;
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	header {
+		.heading {
+			font-size: 24px;
+		}
+	}
+	.futer_main {
+		margin-top: 60px;
+	}
+	.case {
+	}
+}
+
+@media (max-width: 660px) {
+	.section-btns {
+		grid-template-columns: 1fr;
+	}
+	.section_h0 {
+		font-size: 24px;
+	}
+	.modal-block {
+		padding: 0px 30px 20px;
+	}
+	.template-img {
+		height: 38vw;
+	}
+}
+
+@media (max-width: 470px) {
+	.template-img {
+		height: 46vw;
+	}
+	.logo {
+		width: 100px;
+	}
+	.section-buttonWhite {
+		padding: 8px 16px;
+	}
+	.section-button {
+		padding: 15px 11px;
+	}
+	.main_content {
+		background: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/261738/content_group_82.png) no-repeat 100% 8%/172%, radial-gradient(73.44% 107.83% at 23.05% 18.98%, #1c1b40 0%, #7534dc 0.01%, #273088 100%) no-repeat;
+	}
+}

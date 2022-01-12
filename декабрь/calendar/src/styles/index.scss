@@ -1,0 +1,245 @@
+/** @format */
+
+//как использовать - main_content{@include mainContent}
+.main_content {
+	@include mainContent(18px, $main_text_color);
+	background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/295460/content_fon.png') no-repeat 2% 0%/1920px, linear-gradient(155.6deg, #028dd8 -202.79%, #ebebeb 75.15%);
+	position: relative;
+}
+
+* {
+	scroll-behavior: smooth;
+}
+
+.scar {
+	background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/295538/content_sneyzhinki.png') no-repeat 100% 100% / cover;
+	height: 500px;
+	width: 100%;
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 0px;
+	margin-top: 50px;
+	z-index: 0;
+	animation: anima 2s ease infinite;
+}
+
+@keyframes anima {
+	0% {
+		background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/295537/content_snezhinki_2x.png') no-repeat 100% 100% / cover;
+	}
+	50% {
+		background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/295538/content_sneyzhinki.png') no-repeat 100% 100% / cover;
+	}
+	100% {
+		background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/295537/content_snezhinki_2x.png') no-repeat 100% 100% / cover;
+	}
+}
+
+.line {
+	margin: 0px 0 0px;
+	background: #e7eef4;
+	max-width: 100%;
+	width: 100%;
+	height: 2px;
+}
+.line-note {
+	font-weight: 700;
+}
+
+.header {
+	margin-top: 70px;
+	position: relative;
+	z-index: 1;
+	.offer {
+		margin-top: 16px;
+		display: grid;
+		grid-gap: 16px;
+		max-width: 850px;
+	}
+}
+
+.carts {
+	margin-top: 40px;
+	.carts__wrapper {
+		@include grid(32px, repeat(auto-fit, minmax(350px, 1fr)));
+		position: relative;
+		padding-bottom: 40px;
+	}
+	.carts__item {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+	}
+	.item {
+		border-radius: 5px;
+		min-height: 360px;
+		height: 100%;
+		perspective: 500px;
+		transition: 1s ease;
+
+		.item__img {
+			display: grid;
+			height: 100%;
+			align-content: end;
+			img {
+				max-width: 100%;
+				position: absolute;
+				display: grid;
+				align-self: self-end;
+			}
+		}
+		.item__text {
+			position: relative;
+			z-index: 1;
+			p {
+				font-weight: 700;
+				width: fit-content;
+				margin-left: auto;
+			}
+		}
+		.item__front {
+			background: #fff;
+			display: grid;
+			grid-template-columns: 1fr 1.2fr;
+			justify-content: space-between;
+			align-items: center;
+			padding-right: 20px;
+			border-radius: 5px;
+			position: relative;
+		}
+		.item__back {
+			transform: rotateX(180deg);
+			padding: 20px;
+			background: #fff;
+			display: grid;
+			grid-gap: 20px;
+			align-content: start;
+			font-size: 14px;
+			position: relative;
+		}
+
+		.item__front,
+		.item__back {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			transition: 1s;
+			backface-visibility: hidden;
+			border-radius: 5px;
+		}
+		.back__offer {
+			display: grid;
+			grid-gap: 4px;
+		}
+	}
+	.item:hover .item__front {
+		transform: rotateX(180deg);
+	}
+	.item:hover .item__back {
+		transform: rotateX(360deg);
+		position: relative;
+	}
+	// .item .item__front {
+	// 	transform: rotateX(180deg);
+	// }
+	// .item .item__back {
+	// 	transform: rotateX(360deg);
+	// 	position: relative;
+	// }
+}
+
+footer {
+	padding-bottom: 40px;
+	.footer__wrapper {
+		width: fit-content;
+		margin: auto;
+		text-align: center;
+	}
+	.massenger_futer {
+		margin: auto;
+		color: $corporate_color;
+		img {
+			margin-right: 6px;
+		}
+	}
+	.footer__Massagers {
+		margin: 16px 0;
+		img {
+			width: 40px;
+		}
+	}
+}
+
+@media (max-width: 1440px) {
+	.scar {
+		background: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/295538/content_sneyzhinki.png) no-repeat 91% -7% / cover;
+		height: 500px;
+		width: 100%;
+		position: absolute;
+		right: 0;
+		left: 0;
+		top: 0px;
+		margin-top: 105px;
+		z-index: 0;
+	}
+	@keyframes anima {
+		0% {
+			background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/295537/content_snezhinki_2x.png') no-repeat 91% -7% / cover;
+		}
+		50% {
+			background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/295538/content_sneyzhinki.png') no-repeat 91% -7% / cover;
+		}
+		100% {
+			background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/295537/content_snezhinki_2x.png') no-repeat 91% -7% / cover;
+		}
+	}
+}
+
+@media (max-width: 1366px) {
+}
+
+@media (max-width: 1024px) {
+	:root {
+		--section: 40px;
+		--block: 24px;
+	}
+}
+
+@media (max-width: 800px) {
+	.scar {
+		margin-top: -204px;
+	}
+}
+
+@media (max-width: 660px) {
+	.header {
+		margin-top: 40px;
+	}
+	.section_h1 {
+		font-size: 27px;
+	}
+	.carts {
+		.carts__wrapper {
+			grid-template-columns: 1fr;
+		}
+		.item {
+			.item__front {
+				grid-template-columns: auto;
+				align-items: start;
+			}
+			.item__img {
+				order: 2;
+			}
+			.item__text {
+				padding: 26px 0 0 24px;
+			}
+		}
+	}
+}
+@media (max-width: 480px) {
+}

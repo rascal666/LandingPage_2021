@@ -1,0 +1,104 @@
+/** @format */
+.main_content-pp {
+	background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/292009/content_volny_i_illyustrashkad.png') no-repeat 0% 0% / 2040px, #e6eeee;
+	.header {
+		padding-bottom: 60px;
+		.header__img img {
+			max-width: 100%;
+			width: 50vw;
+		}
+		.offer {
+			margin-top: 0px;
+		}
+		.ogo {
+			max-width: 100%;
+		}
+	}
+	.header__btns {
+		@include grid(16px, auto 1fr);
+		margin-top: 24px;
+	}
+
+	.tariff {
+		.tariff__subtitle {
+			margin-top: 10px;
+			color: #fff;
+		}
+		.tariff__end {
+			margin-top: 10px;
+			max-width: 854px;
+		}
+		.blocks {
+			margin: var(--block) auto;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-gap: var(--block);
+			.item {
+				grid-template-rows: 1fr 6fr 1fr 1fr;
+				padding-bottom: 0px;
+				.item__line {
+					height: 2px;
+					width: 100%;
+					background: #1d426241;
+				}
+				.list__li {
+					text-align: left;
+				}
+				.list__heading {
+					color: $corporate_color;
+				}
+				.item__subtitle {
+					margin-top: 0;
+				}
+				.list__circle {
+					grid-gap: 0px;
+					margin-top: 0;
+				}
+				.item__note {
+					margin-top: 8px;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1240px) {
+	.main_content-pp {
+		.header {
+			.header__img {
+				img {
+					top: 20%;
+					width: 40vw;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.main_content-pp {
+		background: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/292009/content_volny_i_illyustrashkad.png) no-repeat 0% 0% / cover, #e6eeee;
+		.header {
+			.header__img {
+				img {
+					width: 100%;
+					top: 6%;
+				}
+			}
+		}
+		.tariff {
+			.blocks {
+				grid-template-columns: 1fr;
+			}
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	.main_content-pp {
+		.header__btns {
+			grid-template-columns: 1fr;
+		}
+	}
+}

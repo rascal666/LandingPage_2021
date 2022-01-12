@@ -1,0 +1,46 @@
+
+mixin linkMassagers
+	a(href="https://wa.me/+79292690013").numder_futer
+		img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/288478/content_vayber.png")
+	a(href="viber://chat?number=+79292690013").numder_futer
+		img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/288477/content_vats.png")
+	a(href="mailto:tolstova@pulscen.ru").numder_futer
+		img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/288476/content_pochta.png")
+	a(href="https://t.me/PulscenKC").numder_futer
+		img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/288475/content_telega.png")
+
+-var cell = "{crm_analytics:click_link(Позвоните мне,#order,network_actions,НК_Доступ_ЛК_консультация_231121)}"
+
+mixin modal(identifier, city)
+	.modal-wrapper
+		.modal-wrapper-block(data-popup=identifier)
+			.modal-block
+				img.modal-close(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/195450/content_union_3.png")
+				.claster__city(class=city)
+
+- var dev = true
+
+
+mixin button(textButton, textButtonDev, style)
+	if dev == true
+		.button.feedback-js.weight_600.ab-order.js-apress-order-button.js-orders-callback-link(class=style data-button-type="order_callback" data-company="99572059 " data-company-id="99572059 " data-company-name="Пульс цен Онлайн" data-company-name-rest="" data-company-url="https://help.pulscen.ru/" data-params='{"company_id":"99572059 "}' data-statistics="1" data-type="callback")=textButton
+	else 
+		.button.feedback-js.weight_600.ab-order.js-apress-order-button.js-orders-callback-link(class=style data-button-type="order_callback" data-company="99572059 " data-company-id="99572059 " data-company-name="Пульс цен Онлайн" data-company-name-rest="" data-company-url="https://help.pulscen.ru/" data-params='{"company_id":"99572059 "}' data-statistics="1" data-type="callback")=textButtonDev
+	
+
+
+
+mixin buttonEvent(textButton,textButtonDev, style, id, modal)
+	if dev == true
+		.button(class=style id=id rel=modal)=textButton
+	else 
+		.button(class=style id=id rel=modal)=textButtonDev
+
+
+
+mixin buttonLink(textButton,textButtonDev, style, id)
+	if dev == true
+		a.button(class=style href=id)=textButton
+	else
+		a.button(class=style href=id)=textButtonDev
+		

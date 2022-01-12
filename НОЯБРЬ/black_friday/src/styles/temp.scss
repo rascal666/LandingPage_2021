@@ -1,0 +1,297 @@
+/** @format */
+
+//как использовать - main_content{@include mainContent}
+.main_content {
+	@include mainContent(18px, #fff);
+	font-weight: 500;
+	background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/285509/content_mazok.png') no-repeat 100% 0% / contain, $forButton;
+}
+img {
+	max-width: 100%;
+}
+
+header {
+	margin-top: 150px;
+	.offer {
+		@include grid(20px, 1fr);
+		.btns {
+			@include grid(20px, auto 1fr);
+			margin-top: 20px;
+		}
+		.btn p {
+			margin-top: 16px;
+			opacity: 0.6;
+		}
+	}
+}
+.sale {
+	margin-top: 200px;
+	.subtitle {
+		margin-top: 20px;
+		max-width: 545px;
+	}
+	.block-number {
+		margin-top: var(--section);
+		@include grid(120px, 1fr 1fr 1fr);
+		.item {
+			color: $accent;
+			width: fit-content;
+			text-align: center;
+			font-weight: 700;
+			.item__number {
+				font-size: 173px;
+				font-weight: bold;
+				background-image: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/285330/content_group_24.png');
+				background-position: 50% 50%;
+				background-size: 125%;
+				background-clip: text;
+				-moz-background-clip: text;
+				-webkit-background-clip: text;
+				color: rgba(255, 255, 255, 0);
+				display: flex;
+				span {
+					font-weight: bolder;
+				}
+			}
+		}
+	}
+	.block-info {
+		margin-top: var(--section);
+		display: grid;
+		.block-info__wrapper {
+			@include grid(20px, 1fr 1fr);
+		}
+		.heading {
+			margin-bottom: 16px;
+		}
+		.list {
+			grid-gap: 10px;
+			border-left: 2px solid rgba(255, 255, 255, 0.281);
+			padding-left: 16px;
+			color: #fff;
+		}
+		.item {
+			max-width: 680px;
+			.heading {
+				margin-bottom: 20px;
+				text-align: center;
+			}
+			.textaria {
+				margin-top: 37px;
+				@include grid(20px, 1fr);
+
+				// grid-template-rows: 5.2fr 1fr auto;
+				.text {
+					display: grid;
+					grid-gap: 20px;
+				}
+			}
+		}
+	}
+	.end {
+		margin-top: 60px;
+		max-width: 840px;
+		line-height: 24px;
+	}
+}
+.item__modal-button {
+	color: $accent;
+	font-weight: 700;
+	@include grid(20px, auto 1fr);
+	align-items: center;
+}
+.bonus {
+	margin-top: var(--section);
+	margin-bottom: var(--section);
+	.subtitle {
+		margin-top: 20px;
+		grid-gap: 20px;
+		display: grid;
+	}
+	.block {
+		margin-top: 213px;
+
+		@include grid(40px, 1fr 1fr);
+
+		border-radius: 8px;
+
+		.item {
+			text-align: center;
+			background: linear-gradient(#282a2d -43.72%, #181a1d 110.7%);
+			padding: 35px;
+			display: grid;
+
+			grid-template-rows: 1fr 1fr 1fr 1fr;
+		}
+		.heading {
+			margin-top: 20px;
+			span {
+				color: $accent;
+			}
+		}
+		.subtitle {
+			margin-bottom: 40px;
+		}
+		.item__block {
+			max-width: 490px;
+			display: grid;
+			grid-template-rows: 1fr 1fr;
+			width: 100%;
+			border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+			padding-bottom: 20px;
+			margin: auto;
+			.heading {
+				@include grid(20px, auto 1fr);
+				align-items: baseline;
+				justify-items: end;
+				margin-bottom: 20px;
+			}
+			img {
+				max-width: fit-content;
+			}
+			p {
+				text-align: left;
+			}
+		}
+		.end {
+			font-size: 14px;
+		}
+		.item__img {
+			position: relative;
+			margin-top: -143px;
+			justify-self: center;
+		}
+		.btn_bonus {
+			margin: auto;
+			margin-top: 40px;
+			margin-bottom: 30px;
+		}
+	}
+}
+.list {
+	color: $accent;
+}
+
+@media (max-width: 1680px) {
+}
+
+@media (max-width: 1460px) {
+	.sale {
+		.block-number {
+			grid-gap: 60px;
+			.item {
+				.item__number {
+					font-size: 11vw;
+				}
+			}
+		}
+	}
+	.main_content {
+		background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/285509/content_mazok.png') no-repeat 100% 0%/150%, #181a1d;
+	}
+}
+
+@media (max-width: 1366px) {
+}
+
+@media (max-width: 1024px) {
+	.main_content {
+		font-size: 14px;
+	}
+	header {
+		margin-top: 80px;
+	}
+	.sale {
+		margin-top: 60px;
+	}
+	.section_h0 {
+		font-size: 48px;
+	}
+	.section_h1 {
+		font-size: 40px;
+		font-weight: 800;
+	}
+	.section_h2 {
+		font-size: 24px;
+	}
+	.section_h3 {
+		font-size: 20px;
+	}
+	.bonus {
+		.block {
+			grid-template-columns: 1fr;
+			grid-gap: 100px;
+			.item {
+				grid-template-rows: 1fr;
+			}
+			.item__block {
+				grid-template-rows: 1fr;
+			}
+		}
+	}
+	:root {
+		--section: 60px;
+		--block40: 20px;
+		--block30: 16px;
+	}
+}
+
+@media (max-width: 800px) {
+	.sale {
+		.block-info {
+			.item {
+				.textaria {
+					grid-template-rows: 1fr;
+					margin-top: 24px;
+				}
+			}
+			.block-info__wrapper {
+				grid-template-columns: 1fr;
+				grid-gap: 0px;
+			}
+		}
+	}
+	header {
+		.offer {
+			.btns {
+				grid-template-columns: 1fr;
+			}
+		}
+	}
+}
+
+@media (max-width: 660px) {
+	.sale {
+		.block-number {
+			grid-template-columns: 1fr;
+			grid-gap: 20px;
+			justify-items: center;
+			.item {
+				.item__number {
+					font-size: 64px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 480px) {
+	.bonus {
+		.block {
+			margin-top: 170px;
+			.item {
+				padding: 16px;
+			}
+			.item__block {
+				.heading {
+					align-items: baseline;
+				}
+			}
+		}
+	}
+	.section_h0 {
+		font-size: 32px;
+	}
+	:root {
+		--section: 40px;
+	}
+}

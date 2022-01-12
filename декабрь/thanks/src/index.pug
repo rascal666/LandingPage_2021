@@ -1,0 +1,27 @@
+<!-- @format -->
+include ./miksins.pug
+
+
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		title= "все включено"
+	body.js-body
+		.main_content
+			header
+				include ./modules/toolbar.pug
+				.header
+					.content
+						.header__wrapper
+							.header__text
+								p.section_h1 Благодарим за ваш интерес!
+								.offer
+									p Чтобы получить бесплатную консультацию по эффективному привлечению клиентов в 2022 году, оставьте номер телефона, по которому можно связаться с вами.
+								.header__img.header__img_mobile
+									img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/294722/content_illyustratsiya.png")
+								+button('{crm_analytics:click_link(Оставить номер для консультации,#order,want_orders,МР_Тренды_заявка)}', "Оставить номер для консультации","section-button")
+							.header__img
+								img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/294722/content_illyustratsiya.png")
+			
+	p {crm_analytics:show_page(want_orders,МР_Тренды_2022)}

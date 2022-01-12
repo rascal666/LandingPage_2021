@@ -1,0 +1,97 @@
+<!-- @format -->
+include ./miksins.pug
+
+
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		title= "Черная пятница"
+	body.js-body
+		.main_content
+			toolbar
+				include ./modules/toolbar.pug
+			header
+				.content
+					.offer 
+						p.section_h0 Черная пятница #[br] на Пульсе цен
+						p #[span.section-accent.fat.section_h3 МЕГА]скидки на всё!
+			
+			.bonus#bonus
+				.content 	
+					.block.block_by
+						.item.block_by_width
+							div
+								img.item__img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/285627/content_galochka.png", alt="")
+								.sale.section_h3 -30%
+								.heading.section_h3 Приоритетное размещение товаров
+								.list 
+									.list__li Самые конверсионные места в каталоге
+									.list__li Больше охват целевой аудитории
+									.list__li Продажи в любой регион или на всю страну
+									.list__li Заказов больше, чем у 80% компаний
+
+							+button("{crm_analytics:click_link(Хочу больше заказов,#order,network_actions,НК_ЧП_РФ_Тарифы_curData)}", "Хочу больше заказов","section-buttonAccent btn_bonus fat", )
+						.item.block_by_width
+							div
+								img.item__img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/285627/content_galochka.png", alt="")
+								.sale.section_h3 -30%
+								.heading.section_h3 Продающий сайт на Пульсе цен
+								.list 
+									.list__li 100% готовность за 7 дней
+									.list__li Работает сразу и без перебоев
+									.list__li Включено обслуживание и поддержка
+
+							+button("{crm_analytics:click_link(Хочу готовый сайт,#order,network_actions,НК_ЧП_РФ_Сайт_curData)}", "Хочу готовый сайт","section-buttonAccent btn_bonus fat", )
+						.item.by_block_none.ua_block_none
+							div
+								img.item__img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/285627/content_galochka.png", alt="")
+								.sale.section_h3 -30%
+								.heading.section_h3 Дополнительные сервисы на сайт
+								.list 
+									.list__li Битрикс24, AmoCRM
+									.list__li 1С, Мой склад
+									.list__li Сбербанк, Альфа-банк, Paykeeper, ЮKassa
+									.list__li СДЭК, ПЭК, Деловые линии и Boxberry
+
+							+button("{crm_analytics:click_link(Хочу сервисы на сайт,#order,network_actions,НК_ЧП_РФ_Интеграции_curData)}", "Хочу сервисы на сайт","section-buttonAccent btn_bonus fat", )
+					.block.block2 
+						.wrapper
+							.item.item1.by_block_none
+								div
+									img.item__img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/285627/content_galochka.png", alt="")
+									.sale.section_h3 -30%
+									.heading.section_h3 Дополнительное продвижение на Пульсе цен
+									.list 
+										.list__li Усиление продаж в нужный период
+										.list__li Полный охват вашей аудитории на Пульсе цен
+
+								+button("{crm_analytics:click_link(Хочу продвижение на Пульсе цен,#order,network_actions,НК_ЧП_РФ_Продвиж.ПЦ_curData)}", "Хочу продвижение на Пульсе цен","section-buttonAccent btn_bonus fat", )
+							.item.by_block_none.ua_block_none
+								div
+									img.item__img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/285627/content_galochka.png", alt="")
+									.sale.section_h3 -30%
+									.heading.section_h3 Дополнительное продвижение в Яндекс и Google
+									.list 
+										.list__li Мгновенное усиление продаж
+										.list__li Полный охват целевой аудитории Яндекс и Google
+
+								+button("{crm_analytics:click_link(Хочу продвижение в Яндекс и Google,#order,network_actions,НК_ЧП_РФ_Продвиж.Яндекс-Google_curData)}", "Хочу продвижение в Яндекс и Google","section-buttonAccent btn_bonus fat", )
+							.item.item-ua
+								div
+									img.item__img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/285627/content_galochka.png", alt="")
+									.sale.section_h3 -30%
+									.heading.section_h3 Дополнительные сервисы на сайт
+									.list 
+										.list__li Битрикс24, AmoCRM
+										.list__li 1С, Мой склад
+										.list__li Сбербанк, Альфа-банк, Paykeeper, ЮKassa
+										.list__li СДЭК, ПЭК, Деловые линии и Boxberry
+
+								+button("{crm_analytics:click_link(Хочу сервисы на сайт,#order,network_actions,НК_ЧП_РФ_Интеграции_curData)}", "Хочу сервисы на сайт","section-buttonAccent btn_bonus fat", )
+			.end 
+				.content 
+					p  Успевайте подключить эффективный канал продаж по самым низким ценам года! Закажите бесплатную консультацию, специалист Пульса цен поможет подобрать услугу, которая решит ваши задачи.		
+			include ./modules/modal.pug
+			include ./modules/footer.pug
+			p {crm_analytics:show_page(network_actions,НК_ЧП_РФ_curData)}

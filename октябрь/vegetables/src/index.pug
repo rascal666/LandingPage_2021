@@ -1,0 +1,74 @@
+<!-- @format -->
+include ./miksins.pug
+
+
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		title= "овощи"
+	body.js-body
+		.main_content
+			header
+				include ./modules/toolbar.pug
+				.header
+					.content
+						.header__wrapper
+							.header__text
+								p.section_h1 Высокий спрос на овощи и фрукты 
+								.header__img
+									img.mobile(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/281063/content_illyustratsiya.png") 
+								.offer Количество просмотров в рубрике «фрукты и овощи» в сентябре 2021 выросло на 35%. Клиенты ищут своих поставщиков. Это могут быть ваши покупатели.
+								.section-btns
+									+buttonEvent("{crm_analytics:click_link(Смотреть заявки,#template,network_actions,НК_Овощи_и_фрукты_currentData)}","section-button netButton")
+									+button("Хочу консультацию по продажам","section-buttonWhite netButton", "#template" )
+							.header__img
+								img.desktop(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/281063/content_illyustratsiya.png")
+			section.template#template
+				.content
+					.section_h2 Примеры заказов в сентябре 2021
+					.section-subtitle Посмотрите, что ищут покупатели.
+					.block
+						img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/281062/content_frame_935.png")
+					.section-offer.offer
+						p Кроме этих позиций у компаний на Пульсе цен заказывают капусту цветную, капусту белокочанную, свеклу столовую фасованную, груши, виноград и другие овощи и фрукты.
+						p В личном кабинете сайта компании заявки выглядят так:
+					.block-before
+						img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/281076/content_illyustatsiya_lk.png")
+					p Посмотрите, как зарабатывают поставщики овощей и фруктов на Пульсе цен осенью 2021.
+					+buttonLink("Смотреть кейсы компаний","section-button", "#case" )
+			section.number#case
+				.content
+					.section_h2 Доказательно в цифрах 
+					.section-subtitle Эти компании успешно продают овощи и фрукты на Пульсе цен. 
+					p Посмотрите на их результаты. Вы можете так же!
+					.block
+						.item
+							.section_h3.item__heading Компания РТС, г. Красноярск
+							.item__subtitle Продажа овощей от региональных сельхозпроизводителей.
+							.item__zone.fat 
+								p.heading За сентябрь 2021:
+								p <span >на 58,8%</span> увеличилось кол-во просмотров товаров;
+								p <span>на 49,4% </span> выросло количество посетителей на сайт.
+							.line
+							.line-note Всего за 2021г компания заработала 28 млн.руб. на заказах с Пульса цен.
+							+buttonEvent("{crm_analytics:click_link(Посмотреть кейс полностью,#order,network_actions,ПП_Кейс_РТС_currentData)}", "section-buttonWhite", "popup1", "popup1")
+						.item
+							.section_h3.item__heading Компания ООО МТК Санфрут, г. Челябинск
+							.item__subtitle Оптовая продажа сухофруктов. Прямые вагонные поставки сухофруктов из стран Экспортеров. 
+							.item__zone 
+								p.heading.fat За сентябрь 2021:
+								p <span class="fat" >на 32,4% </span> увеличилось кол-во просмотров товаров;
+								p <span class="fat" >на 26,3% </span> выросло количество посетителей на сайт.
+							.line
+							.line-note Всего за 2021г компания заработала более 5 млн.руб. на заказах с Пульса цен. 
+							+buttonEvent("{crm_analytics:click_link(Посмотреть кейс полностью,#order,network_actions,ПП_Кейс_Санфрут_currentData)}", "section-buttonWhite", "popup2", "popup2")
+
+					p.section-subtitle Хотите так же? Обратитесь к своему менеджеру за консультацией. Расскажите о своих задачах и планах, и наш специалист подберет наиболее подходящее решение. 
+					+button("{crm_analytics:click_link(Заказать консультацию по продаже на Пульсе цен,#order,network_actions,НК_Овощи_Продажи_на_ПЦ_currentData)}", "section-button btn")
+			.modal-wrapper
+				include ./modules/krasnoyalsk.pug
+				include ./modules/chel.pug
+			include ./modules/footer.pug
+		p {crm_analytics:show_page(network_actions,НК_РФ_Овощи_currentData)}
+

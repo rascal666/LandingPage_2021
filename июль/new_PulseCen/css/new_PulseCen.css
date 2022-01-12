@@ -1,0 +1,637 @@
+/** @format */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a:link {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.futer_main a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.futer_main {
+  background: radial-gradient(317.4% 1805.73% at 112.11% 75%, #041c80 0%, #dde5ff 100%), #002fcc;
+  color: #fff;
+  margin-top: 120px;
+}
+
+.content {
+  max-width: 1440px;
+  width: 90%;
+  margin: auto;
+  padding: 0px 0 0px;
+}
+
+.section-btns {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  grid-gap: 60px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.section-button {
+  letter-spacing: 0.06em;
+  letter-spacing: 0.06em;
+  font-size: 14px;
+  background: linear-gradient(124.65deg, #48cfef -44.37%, #164b97 159.21%);
+  border-radius: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 15px 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: #fff !important;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  border: 1px solid #3499cb;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.section-buttonWhite {
+  letter-spacing: 0.06em;
+  letter-spacing: 0.06em;
+  font-size: 14px;
+  background: #ffffff00;
+  border-radius: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: #3499cb 15px 30px !important;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  border: 1px solid #3499cb;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.section-buttonToolbar {
+  letter-spacing: 0.06em;
+  letter-spacing: 0.06em;
+  font-size: 14px;
+  background: #ffffff00;
+  border-radius: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 8px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: #fff !important;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  border: 1px solid #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.section_h1 {
+  font-size: 48px;
+}
+
+.section_h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.section_h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.section_accent {
+  color: #3499cb;
+}
+
+.section-button a {
+  color: inherit;
+  font-weight: 800;
+}
+
+.section-button:hover {
+  cursor: pointer;
+  background: #ffffff00;
+  color: #3499cb !important;
+}
+
+.section-buttonWhite:hover {
+  cursor: pointer;
+  background: #3499cb;
+  color: #fff !important;
+}
+
+.section-buttonToolbar:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #3499cb !important;
+}
+
+.general-heading {
+  font-size: 48px;
+  font-weight: 900;
+  background: linear-gradient(88.17deg, #48cfef -131.03%, #164b97 323.72%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main_content {
+  max-width: 1920px;
+  width: 100%;
+  margin: auto;
+  font-size: 14px;
+  color: #05304c;
+  font-family: "Montserrat", sans-serif;
+  background: url("https://www.pulscen.ru/system/ckeditor_assets/pictures/262418/content_fon1.png") no-repeat 100% 0%;
+  font-weight: 500;
+}
+
+.list {
+  margin: 16px 0;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 4px;
+}
+
+.list .list__item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  grid-gap: 9px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.list .list__item div {
+  background: #3499cb;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+header {
+  padding-top: 56px;
+}
+
+header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 93px;
+}
+
+header .wrapper img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  min-width: 200px;
+}
+
+header .text {
+  max-width: 628px;
+  margin-right: 30px;
+}
+
+header .offer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 24px;
+  margin: 24px 0 40px;
+  max-width: 600px;
+  line-height: 1.8em;
+}
+
+header .offer .list {
+  margin-top: 0;
+  margin-left: 24px;
+  max-width: 500px;
+}
+
+header .choice p {
+  font-size: 24px;
+}
+
+header .toolbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .toolbar .toolbar__feedback {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.fuction {
+  margin-top: 160px;
+}
+
+.fuction .block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 24px;
+  margin-top: 46px;
+}
+
+.fuction .block .item {
+  max-width: 359px;
+}
+
+.intergation {
+  margin-top: 150px;
+}
+
+.intergation .heading {
+  padding-bottom: 8px;
+}
+
+.intergation .block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+
+.intergation .block .img img {
+  max-width: 100%;
+}
+
+.intergation .icon-wrapper {
+  margin-top: 32px;
+}
+
+.intergation .icon-wrapper .icons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  grid-auto-flow: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  grid-gap: 16px;
+  margin-bottom: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intergation .icon-wrapper .text {
+  margin-top: 8px;
+}
+
+.intergation .function__feedback {
+  margin-top: 40px;
+}
+
+.site {
+  margin-top: 150px;
+}
+
+.site .block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 40px;
+  margin-top: 40px;
+}
+
+.site .block .heading {
+  font-size: 24px;
+  color: #3499cb;
+  padding-bottom: 8px;
+  font-weight: 800;
+}
+
+.site .note {
+  margin-top: 24px;
+}
+
+.site .swiper-rascal .image-slider {
+  max-width: 750px;
+}
+
+.site .swiper-rascal .bg {
+  bottom: 11px;
+}
+
+.site .swiper-rascal .bg img {
+  height: 100%;
+}
+
+.site .swiper-rascal .swiper-slide-active img {
+  width: 100%;
+  max-width: 720px;
+  height: 100%;
+}
+
+.site .swiper-rascal .swiper-pagination-bullet {
+  background: #3499cb;
+}
+
+.finish {
+  margin-top: 80px;
+}
+
+.finish .general-heading {
+  font-size: 36px;
+}
+
+.textaria {
+  margin: 24px 0 32px;
+}
+
+.swiper-rascal {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin: auto;
+  width: 100%;
+  margin-top: 168px;
+  position: relative;
+}
+
+.swiper-rascal .bg {
+  position: absolute;
+  width: 100%;
+  bottom: -92px;
+}
+
+.swiper-rascal .bg img {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.swiper-rascal .swiper-container {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-rascal .image-slider {
+  text-align: center;
+  max-width: 400px;
+  margin: auto;
+}
+
+.swiper-rascal .pagination-swiper {
+  position: relative;
+  margin-top: 47px;
+  text-align: center;
+}
+
+.swiper-rascal .swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+.swiper-rascal .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+}
+
+.swiper-rascal .swiper-button-next,
+.swiper-rascal .swiper-button-prev {
+  color: #fff;
+}
+
+.swiper-rascal .image-slider img {
+  width: 85%;
+  max-width: 400px;
+}
+
+.swiper-rascal .swiper-slide-active img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.swiper-rascal .swiper-wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiper-rascal .swiper-button-prev,
+.swiper-rascal .swiper-container-rtl .swiper-button-next {
+  left: 23%;
+  right: auto;
+}
+
+.swiper-rascal .swiper-button-next,
+.swiper-rascal .swiper-container-rtl .swiper-button-prev {
+  right: 23%;
+  left: auto;
+}
+
+.function__feedback {
+  margin-top: 125px;
+  border-top: 1.5px solid #164c9725;
+  padding: 20px 0;
+}
+
+@media (max-width: 1200px) {
+  .fuction {
+    margin-top: 80px;
+  }
+  .main_content {
+    background: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/262418/content_fon1.png) no-repeat 100% 0%/586px;
+  }
+  .general-heading {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 900px) {
+  header .toolbar .toolbar__feedback {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  header .toolbar .massenger_futer {
+    display: none;
+  }
+  header .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-top: 40px;
+    grid-gap: 40px;
+  }
+  header .heading {
+    margin-top: 20px;
+  }
+  header .img {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row-align: center;
+        align-self: center;
+    width: 200px;
+  }
+  header .offer {
+    margin: 24px 0 36px;
+  }
+}
+
+@media (max-width: 800px) {
+  header .heading {
+    font-size: 24px;
+  }
+  .futer_main {
+    margin-top: 60px;
+  }
+  .site {
+    margin-top: 80px;
+  }
+  .site .swiper-rascal .bg {
+    position: absolute;
+    width: 100%;
+    bottom: 35px;
+  }
+}
+
+@media (max-width: 703px) {
+  .swiper-rascal {
+    margin-top: 80px;
+  }
+  .function__feedback {
+    margin-top: 60px;
+  }
+  .fuction {
+    background: none;
+  }
+  .fuction .block .item {
+    max-width: 100%;
+  }
+  .intergation {
+    margin-top: 80px;
+  }
+  .intergation .block {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+  .intergation .block .text {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .intergation .icon-wrapper .icons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 660px) {
+  .section-btns {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .logo {
+    width: 100px;
+  }
+  .section-buttonToolbar {
+    padding: 8px 20px;
+    font-size: 12px;
+  }
+  .swiper-rascal .swiper-btn {
+    display: none;
+  }
+  .swiper-rascal .bg {
+    position: absolute;
+    width: 100%;
+    bottom: -11px;
+  }
+  .swiper-rascal .bg img {
+    height: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .main_content {
+    background: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/262418/content_fon1.png) no-repeat 100% 0%/416px;
+  }
+}
+/*# sourceMappingURL=new_PulseCen.css.map */

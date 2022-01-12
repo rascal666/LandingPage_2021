@@ -1,0 +1,119 @@
+<!-- @format -->
+include miksins.pug
+
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		title= "миксы"
+	body.js-body
+		.main_content.body_pages2
+			.header_wrapper
+				include ./components/toolbar.pug
+				header
+					.content
+						.header__wrapper
+							.header__text
+								p.section_h1 Универсальный сервис для продаж и продвижения в интернете
+								p.section_h4 От создания сайта до стабильного потока клиентов и узнаваемого бренда.
+								.info
+									.info__item
+										
+										.list
+											p.section_h3.info__heading На Пульсе цен вам доступны:
+											.list__li продающий сайт (работает сразу, обслуживать не надо)
+											.list__li стабильный поток покупателей (только целевая аудитория)
+											.list__li реклама в Яндексе, Google и на 1000+ популярных сайтах РСЯ
+											.list__li интеграции с популярной Битрикс-24, AmoCRM и другими сервисами
+											.list__li техническая и административная поддержка от личного менеджера и команды специалистов
+									+button("{crm_analytics:click_link(Хочу подключиться,#order,network_actions,НК_РК_Татарстан-2_Сервис_продаж)}", "Хочу подключиться", "section-button", "ym(86954894,'reachGoal','Хочу подключиться')")
+			section.this#all
+				.content
+					.section_h2.this__heading Чем ещё хорош Пульс цен?
+					.section_h4 Пульс цен — это маркетплейс для B2B. Здесь оптовые и розничные покупатели легко находят поставщиков стройматериалов, изделий из металла, спецтехнику и другие товары — то, что людям всегда нужно. А это значит, что клиентский поток стабилен и долговечен. 
+					.this__block
+						.item
+							.item__img
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/279845/content_galochka.png')
+							.item__text
+								p.section_h3.item__heading Свыше 6 000 000 целевой аудитории
+								p.section_h4 Столько человек каждый месяц ищет свои товары на Пульсе цен.
+						.item
+							.item__img
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/279845/content_galochka.png')
+							.item__text
+								p.section_h3.item__heading Более 100 000 потенциально ваших клиентов
+								p.section_h4 Столько посетителей заходит в товарную рубрику.   
+						.item
+							.item__img
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/279845/content_galochka.png')
+							.item__text
+								p.section_h3.item__heading В среднем 200 000 обращений от клиентов  
+								p.section_h4 Получают компании на платных тарифах на Пульса цен.     
+			section.possibilities
+				.content
+					p.section_h2 Что я получу, подключив платный тариф
+					#sate.block-left.block-right
+						.text
+							p.section_h3 Продающий сайт за 7 дней
+							.text__block
+								p Сайт, который работает сразу и не требует технического обслуживания с вашей стороны. При этом вы не тратите ресурсы на разработку, дизайн и дорогостоящую поддержку.
+								.list
+									.list__li поможем загрузить и оформить товары
+									.list__li настроим конверсионные элементы (кнопки «Написать», «Отправить заказ», «Добавить в корзину» и т.д)
+									.list__li наладим каналы связи покупатель-продавец
+									.list__li интегрируем заказы в вашу CRM-систему (Битрикс24 или AmoCRM)
+							+button("{crm_analytics:click_link(Хочу такой сайт,https://www.pulscen.ru/online-shop/site-start,network_actions,НК_РК_Татарстан-2_Сайт)}", "Хочу такой сайт", "section-button", "ym(86954894,'reachGoal','Хочу такой сайт')")
+						.img
+							img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/279866/content_ill_3.png")
+					.block-left
+						.img
+							img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/294553/content_ill.png")
+						.text
+							p.section_h3 Заполненный и оформленный каталог
+							p Разместите до 7 000 товаров в каталоге Пульса цен. 
+							p Покупатель ищет товар, попадает в нужную рубрику каталога, среди поставщиков находит ваше предложение и оставляет заявку. Дальше вы либо берете заказ в обработку, либо нет.
+							p Все посетители Пульса цен — целевые. Человек, ищущий спортивный костюм, просто не попадет в наш каталог.
+							+button("{crm_analytics:click_link(Хочу продавать на Пульсе цен,#order,НК_РК_Татарстан-2_Каталог)}","Хочу продавать на Пульсе цен", "section-button", "ym(86954894,'reachGoal','Хочу продавать на Пульсе цен')")
+					#client.block-left.block-right
+						.text
+							p.section_h3 Рекламные кампании в Google и Яндекс
+							p Только на платных тарифах открывается доступ к дополнительным услугам по запуску рекламных кампаний: 
+							.list
+								.list__li контекстная реклама в поисковиках
+								.list__li текстово-графическая реклама на 1000+ популярных сайтах РСЯ и  KMC
+								.list__li таргетированная реклама в социальных сетях (VK, Одноклассники, Instagram, Facebook)
+							p Специалисты Пульса цен проведут аудит вашего бизнеса, настроят рекламные кампании по привлечению клиентов на ваш сайт. Вам не нужно разбираться в этом самому, мы всё сделаем.
+							+button("{crm_analytics:click_link(Посмотреть все инструменты,https://www.pulscen.ru/online-shop/seo?convead_muid=Gm1cNhYeycoSrCWNf:1640084467252,network_actions,НК_РК_Татарстан-2_Яндекс)}", "Посмотреть все инструменты", "section-button", "ym(86954894,'reachGoal','Посмотреть все инструменты')")
+						.img
+							img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/279863/content_frame_6.png")
+					#support.block-left
+						.img
+							img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/279867/content_ill_4.png")
+						.text
+							p.section_h3 Персональный менеджер
+							p Подскажет и расскажет всё о Пульсе цен, поможет заполнить каталог и сориентирует по порталу.
+							p В зависимости от задачи вашего бизнеса, менеджер привлекает узких специалистов из команды (дизайнер, таргетолог, копирайтер, техрадектор и тд).
+							+button("{crm_analytics:click_link(Хочу сайт с поддержкой,#order,network_actions,НК_РК_Татарстан-2_Менджер)}", "Хочу сайт с поддержкой", "section-button", "ym(86954894,'reachGoal','Хочу сайт с поддержкой')")
+					.block-left.block-right
+						.text
+							p.section_h3 Регулярный аудит вашего сайта
+							p Мы постоянно мониторим сайты клиентов Пульса цен на предмет улучшений и изменений. 
+							p Ваш сайт просто не сможет сломаться или устареть.
+						.img
+							img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/279865/content_group_890.png")
+			section.end
+				.content
+					.end__block
+						p Сейчас действуют специальные условия на подключение любого тарифа! Закажите бесплатную консультацию.
+						+button("{crm_analytics:click_link(Хочу бесплатную консультацию,#order,network_actions,НК_РК_Татарстан-2_Консультация)}", 'Хочу бесплатную консультацию', "section-button", "ym(86954894,'reachGoal','Хочу бесплатную консультацию')")
+
+
+	include ./components/footer.pug
+		p {crm_analytics:show_page(network_actions,НК_РК_Татарстан-2_Универсальный_сервис)}
+	include ./components/metricks.pug
+
+
+
+
+

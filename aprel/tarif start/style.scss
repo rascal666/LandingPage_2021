@@ -1,0 +1,380 @@
+/** @format */
+
+$corporate_color: #028dd8;
+$main_text_color: #013a59;
+
+@mixin mainContent($size, $color) {
+	max-width: 1920px;
+	width: 100%;
+	margin: auto;
+	font-size: $size;
+	// font-family: "Open Sans", sans-serif;
+	color: $color;
+	font-family: "Montserrat", sans-serif;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+a {
+	color: inherit !important;
+	text-decoration: none;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+@mixin content($padd...) {
+	max-width: 1366px;
+	width: 90%;
+	margin: auto;
+	padding: $padd;
+}
+
+@mixin grid($gap, $fr...) {
+	display: grid;
+	grid-template-columns: $fr;
+	grid-gap: $gap;
+}
+
+@mixin btn($size, $bg, $border, $color, $pad...) {
+	letter-spacing: 0.06em;
+	letter-spacing: 0.06em;
+	font-size: $size;
+	background: $bg;
+	border-radius: 5px;
+	width: fit-content;
+	padding: $pad;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	color: $color !important;
+	transition-duration: 0.5s;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+	border: 1px solid $border;
+	text-align: center;
+	align-items: center;
+}
+
+.futer_main a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.futer_main {
+	background: none;
+	color: #fff;
+	margin-top: 0px;
+}
+
+.content {
+	@include content(0px 0 0px);
+}
+
+.section_h1 {
+	font-size: 22px;
+}
+.section_h2 {
+	font-size: 18px;
+}
+.section_h3 {
+	font-size: 16px;
+}
+
+.section-btns {
+	@include grid(60px, auto auto);
+	justify-content: left;
+}
+
+.section-button {
+	@include btn(14px, #c79c4c, #c79c4c, #fff, 15px 67px);
+	border-radius: 5px;
+}
+
+.section-buttonWhite {
+	@include btn(14px, #ffffff00, #ffffff, #ffffff, 8px 30px);
+	border-radius: 5px;
+}
+
+.section-buttonYel {
+	@include btn(14px, #ffffff00, #c79c4c, #ffa600, 15px 67px);
+	border-radius: 5px;
+}
+
+.section-button a {
+	color: inherit;
+	font-weight: 800;
+}
+.section-button:hover {
+	cursor: pointer;
+	background: #ffffff00;
+	color: #ffa600 !important;
+}
+.section-buttonWhite:hover {
+	cursor: pointer;
+	background: #ffffff;
+	color: rgb(0, 0, 0) !important;
+}
+.section-buttonYel:hover {
+	cursor: pointer;
+	background: #c79c4c;
+	color: rgb(255, 255, 255) !important;
+}
+
+//как использовать - main_content{@include mainContent}
+
+.main_content {
+	@include mainContent(16px, $main_text_color);
+	background: url("https://www.pulscen.ru/system/ckeditor_assets/pictures/247582/content_tarif_start.png") no-repeat 91% 17% / 64%, linear-gradient(57.65deg, #5659a6 44.43%, #9537c6 85.07%);
+	color: #fff;
+}
+
+header {
+	padding-top: 56px;
+	.wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		img {
+			max-width: 100%;
+			width: 100%;
+			height: auto;
+			min-width: 200px;
+		}
+	}
+	.text {
+		margin-right: 30px;
+	}
+	.heading {
+		font-size: 48px;
+		margin-top: 130px;
+	}
+	.subtitle {
+		font-size: 18px;
+		margin-top: 18px;
+	}
+	.offer {
+		margin-top: 60px;
+		font-size: 18px;
+		max-width: 628px;
+		.offer__list {
+			margin-top: 28px;
+			@include grid(4px, 1fr);
+			font-size: 14px;
+			margin-left: 32px;
+		}
+	}
+
+	.choice {
+		p {
+			font-size: 24px;
+		}
+	}
+	.toolbar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.toolbar__feedback {
+			@include grid(15px, 1fr 1fr 1fr);
+			align-items: center;
+		}
+	}
+}
+
+.tools {
+	margin-top: 80px;
+	.wrapper-item {
+		margin-top: 62px;
+		@include grid(60px, (repeat(auto-fit, minmax(250px, 1fr))));
+	}
+	.item__heading {
+		text-transform: uppercase;
+	}
+	.item__popap {
+		display: flex;
+		cursor: pointer;
+		transition-duration: 2s;
+		font-weight: bold;
+		img {
+			margin-right: 10px;
+		}
+	}
+	.item__popap:hover > img {
+		animation: anim 2s infinite;
+	}
+	.item {
+		display: grid;
+		grid-template-rows: auto 1fr 1fr;
+		grid-gap: 15px;
+	}
+	.item__img {
+		img {
+			margin-bottom: 15px;
+		}
+	}
+}
+
+.feedback {
+	margin-top: 80px;
+	.section-btns {
+		margin-top: 40px;
+	}
+}
+.video {
+	margin-top: 35px;
+	display: grid;
+	justify-items: center;
+	margin: 35px auto 0;
+	iframe {
+		max-width: 730px;
+		width: 100%;
+
+		max-height: 500px;
+		height: 100%;
+		min-height: 420px;
+	}
+}
+.modal-content {
+	color: $main_text_color;
+	max-width: 600px;
+	.note {
+		margin-top: 15px;
+		margin-bottom: 20px;
+	}
+	.list {
+		@include grid(5px, 1fr);
+		margin-top: 15px;
+		font-size: 14px;
+
+		margin-left: 15px;
+	}
+	.heading {
+		font-weight: bold;
+	}
+	.gray {
+		margin-top: 15px;
+		color: rgb(175, 175, 175);
+		font-size: 13px;
+	}
+	.heading-list2 {
+		margin-top: 24px;
+	}
+}
+
+@keyframes anim {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@media (max-width: 1200px) {
+	header {
+		.heading {
+			font-size: 36px;
+		}
+		.toolbar {
+			.toolbar__feedback {
+				display: none;
+			}
+		}
+		.img {
+			width: 150px;
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	header {
+		.wrapper {
+			flex-direction: column-reverse;
+			align-items: baseline;
+			margin-top: 40px;
+		}
+		.heading {
+			margin-top: 20px;
+		}
+		.img {
+			display: grid;
+			align-self: center;
+			width: 200px;
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	.main_content {
+		background: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/247582/content_tarif_start.png) no-repeat 91% 5%/82%, linear-gradient(57.65deg, #5659a6 44.43%, #9537c6 85.07%);
+	}
+	header {
+		.heading {
+			font-size: 24px;
+		}
+	}
+	.futer_main {
+		margin-top: 60px;
+	}
+
+	.section-button {
+		@include btn(14px, #c79c4c, #c79c4c, #fff, 15px 20px);
+		border-radius: 5px;
+		width: 100%;
+	}
+
+	.section-buttonYel {
+		@include btn(14px, #ffffff00, #c79c4c, #ffa600, 15px 20px);
+		border-radius: 5px;
+		width: 100%;
+	}
+	.section-btns {
+		grid-gap: 20px;
+	}
+	header {
+		.offer {
+			.offer__list {
+				margin-top: 28px;
+				display: grid;
+				grid-gap: 14px;
+				margin-left: 10px;
+			}
+		}
+	}
+	.tools {
+		margin-top: 50px;
+		.item {
+			.item__img {
+				display: grid;
+				justify-content: center;
+				img {
+					width: 50px;
+				}
+			}
+		}
+	}
+	.feedback {
+		margin-top: 50px;
+	}
+	.video {
+		iframe {
+			min-height: 305px;
+		}
+	}
+}
+
+@media (max-width: 660px) {
+	.section-btns {
+		grid-template-columns: 1fr;
+	}
+}

@@ -1,0 +1,148 @@
+/** @format */
+
+.contact {
+	grid-row-gap: 16px;
+}
+
+.content {
+	@include content(0px 0 0px);
+}
+
+.section-btns {
+	@include grid(60px, auto auto);
+	justify-content: left;
+}
+
+.section-button {
+	@include btn(14px, $forButton, $forButton, #fff, 15px 60px);
+	border-radius: 5px;
+}
+
+.section-buttonBlue {
+	@include btn(14px, #7dc1fb, #7dc1fb, #fff, 15px 60px);
+	border-radius: 5px;
+}
+
+.section-buttonWhite {
+	@include btn(14px, #ffffff00, #fff, #fff, 15px 30px);
+	border-radius: 5px;
+}
+
+.section-buttonToolbar {
+	@include btn(14px, #ffffff00, $forButton, $forButton, 8px 30px);
+	border-radius: 5px;
+}
+
+.section-buttonFooter {
+	@include btn(14px, #ffffff00, $main_text_color, $main_text_color, 8px 30px);
+	border-radius: 5px;
+}
+
+.section_h1 {
+	font-size: 48px;
+	font-weight: 800;
+	color: $color_white;
+}
+.section_h2 {
+	font-size: 36px;
+	font-weight: 800;
+}
+.section_h3 {
+	font-size: 24px;
+	font-weight: 700;
+}
+.section_h4 {
+	font-size: 18px;
+}
+
+.section-button a {
+	color: inherit;
+	font-weight: 800;
+}
+.section-button:hover {
+	cursor: pointer;
+	background: #ffffff00;
+	color: $forButton !important;
+}
+
+.section-buttonBlue:hover {
+	cursor: pointer;
+	background: $corporate_color;
+}
+
+.section-buttonWhite:hover {
+	cursor: pointer;
+	background: #fff;
+	color: $corporate_color !important;
+}
+.section-buttonToolbar:hover {
+	cursor: pointer;
+	background: $forButton;
+	color: #fff !important;
+}
+.section-offer {
+	max-width: 800px;
+	margin: 16px 0;
+}
+
+.section-buttonFooter:hover {
+	cursor: pointer;
+	background: $main_text_color;
+	color: #fff !important;
+}
+
+.list {
+	display: grid;
+	grid-gap: 16px;
+	.list__li {
+		position: relative;
+		padding-left: 30px;
+		min-height: 18px;
+		display: grid;
+		align-content: center;
+	}
+	.list__li::before {
+		content: '';
+		position: absolute;
+		width: 18px;
+		left: 0;
+		height: 18px;
+		background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/293837/content_check.png') no-repeat 100% 100% / cover;
+	}
+	.list__blue {
+		position: relative;
+		padding-left: 50px;
+		min-height: 32px;
+		display: grid;
+		align-content: center;
+	}
+	.list__blue::before {
+		content: '';
+		position: absolute;
+		width: 32px;
+		left: 0;
+		height: 32px;
+		background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/293838/content_checks.png') no-repeat 100% 100% / contain;
+	}
+}
+
+@media (max-width: 660px) {
+	.section-btns {
+		grid-template-columns: 1fr;
+	}
+	.logo {
+		width: 100px;
+	}
+	.section_h1 {
+		font-size: 26px;
+	}
+	.section_h2 {
+		font-size: 24px;
+	}
+	.section_h3 {
+		font-size: 16px;
+	}
+	.section_h4 {
+		font-size: 14px;
+	}
+}

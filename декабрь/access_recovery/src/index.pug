@@ -1,0 +1,102 @@
+<!-- @format -->
+include ./miksins.pug
+
+
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		title= "все включено"
+	body.js-body
+		.main_content
+			header
+				include ./modules/toolbar.pug
+				.header
+					.content
+						.header__wrapper
+							.header__text
+								p.header__heading.section_h1 Восстановление доступа  к сайту
+								.offer
+									p Выберите способ восстановления пароля:
+									.btns
+										+buttonLink('Восстановить по e-mail', 'Восстановить по e-mail', "section-button", '#mail')
+										+buttonLink('Восстановить по телефону', 'Восстановить по телефону',"section-button", '#phone')
+									
+							.header__img
+								picture
+									source(srcset='https://www.pulscen.ru/system/ckeditor_assets/pictures/288312/content_ikonka.png' media='(min-width: 900px')
+									source(srcset='https://www.pulscen.ru/system/ckeditor_assets/pictures/288322/content_ikonkba.png' media='( min-width: 300px)')
+									img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/288312/content_ikonka.png' alt='MDN')
+			section.instruction#mail
+				.content 
+					.instruction__heading.section_h2 Восстановление доступа по e-mail
+					.instruction__subtitle Если вы помните адрес электронной почты, на которую регистрировали компанию на Пульсе цен, выполните 3 простых шага:
+					.block
+						.block__line 
+						.item 
+							.item__icon
+								img.item__icon(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/288316/content_1.png", alt="")
+							div.item__right
+								.item__text Зайдите на 
+								| #[a.accent(href="https://www.pulscen.ru/" target="blank") Пульс цен,] и в правом верхнем углу нажмите «Войти» (вкладка «Войти в кабинет»)
+								.item__img 
+									picture
+										source(srcset='https://www.pulscen.ru/system/ckeditor_assets/pictures/288310/content_skrin_1.png' media='(min-width: 900px')
+										source(srcset='https://www.pulscen.ru/system/ckeditor_assets/pictures/288309/content_skrin_m1.png' media='( min-width: 300px)')
+										img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/288310/content_skrin_1.png' alt='MDN')
+						.item 
+							.item__icon
+								img.item__icon(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/288315/content_2.png", alt="")
+							div.item__right
+								.item__text Введите электронную почту в поле «Логин», и далее вы сможете восстановить пароль по email (вам придет письмо на эту почту, нужно будет просто перейти по ссылке из письма). 
+								.item__img 
+									picture
+										source(srcset='https://www.pulscen.ru/system/ckeditor_assets/pictures/288308/content_skrin_2.png' media='(min-width: 900px')
+										source(srcset='https://www.pulscen.ru/system/ckeditor_assets/pictures/288313/content_framem_1023.png' media='( min-width: 300px)')
+										img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/288310/content_skrin_1.png' alt='MDN')
+						.item 
+							.item__icon
+								img.item__icon(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/288314/content_3.png", alt="")
+							div.item__right
+								.item__text Придумайте новый пароль для входа и запишите его, чтобы больше не потерять. 
+					+buttonLink('Восстановить пароль', 'Восстановить пароль',"section-buttonAccent instruction__btn", 'https://www.pulscen.ru/')
+			section.instruction#phone
+				.content 
+					.instruction__heading.section_h2 Восстановление доступа по номеру телефона
+					.instruction__subtitle Если вы помните номер телефона, который указывали при регистрации компании на Пульсе цен, сделайте следующее:
+					.block
+						.block__line 
+						.item 
+							.item__icon
+								img.item__icon(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/288316/content_1.png", alt="")
+							div.item__right
+								.item__text Зайдите на Пульс цен, нажмите на кнопку «Войти» в правом верхнем углу экрана и кликните по вкладке «Войти в кабинет».
+								.item__img 
+									picture
+										source(srcset='https://www.pulscen.ru/system/ckeditor_assets/pictures/288310/content_skrin_1.png' media='(min-width: 900px')
+										source(srcset='https://www.pulscen.ru/system/ckeditor_assets/pictures/288309/content_skrin_m1.png' media='( min-width: 300px)')
+										img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/288310/content_skrin_1.png' alt='MDN')
+						.item 
+							.item__icon
+								img.item__icon(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/288315/content_2.png", alt="")
+							div.item__right
+								.item__text Введите в поле «Логин» номер телефона. Запросите восстановление пароля по смс и введите полученный код для авторизации. 
+								| #[a.accent(href="https://www.pulscen.ru/" target="blank") Внимание! Код одноразовый].
+								.item__img 
+									picture
+										source(srcset='https://www.pulscen.ru/system/ckeditor_assets/pictures/288306/content_skrin_s2.png' media='(min-width: 900px')
+										source(srcset='https://www.pulscen.ru/system/ckeditor_assets/pictures/288307/content_skrinm_2.png' media='( min-width: 300px)')
+										img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/288310/content_skrin_1.png' alt='MDN')
+						.item 
+							.item__icon
+								img.item__icon(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/288314/content_3.png", alt="")
+							div.item__right
+								.item__text Придумайте новый пароль для входа и запишите его, чтобы больше не потерять.  
+					+buttonLink('Восстановить пароль', 'Восстановить пароль',"section-buttonAccent instruction__btn", 'https://www.pulscen.ru/')
+			section.end 
+				.content
+					.end__wrapper
+						p.end__p Если у вас возникли проблемы, или просто нет времени разбираться с настройками, обратитесь к специалисту Пульса цен. Для этого нажмите кнопку «Хочу восстановить доступ», которая находится ниже, и закажите звонок. Технический менеджер свяжется с вами по указанному номеру телефона.
+						+button('{crm_analytics:click_link(Хочу восстановить доступ,#order,НК_Хочу_доступ_ЛК_currentData)}', 'Хочу восстановить доступ',"section-buttonAccent instruction__btn")
+			include ./modules/footer.pug
+		p {crm_analytics:show_page(network_actions,network_actions,НК_Доступ_ЛК_currentData)}

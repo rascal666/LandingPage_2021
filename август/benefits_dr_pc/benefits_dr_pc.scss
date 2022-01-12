@@ -1,0 +1,464 @@
+/** @format */
+
+$corporate_color: #3b8dd2;
+$main_text_color: #0d5490;
+$forButton: #e57443;
+
+@mixin mainContent($size, $color) {
+	max-width: 1920px;
+	width: 100%;
+	margin: auto;
+	font-size: $size;
+	// font-family: "Open Sans", sans-serif;
+	color: $color;
+	font-family: "Montserrat", sans-serif;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+a {
+	color: inherit;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+@mixin content($padd...) {
+	max-width: 1366px;
+	width: 90%;
+	margin: auto;
+	padding: $padd;
+}
+
+@mixin grid($gap, $fr...) {
+	display: grid;
+	grid-template-columns: $fr;
+	grid-gap: $gap;
+}
+
+@mixin btn($size, $bg, $border, $color, $pad...) {
+	letter-spacing: 0.06em;
+	letter-spacing: 0.06em;
+	font-size: $size;
+	background: $bg;
+	border-radius: 5px;
+	width: fit-content;
+	padding: $pad;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	color: $color !important;
+	transition-duration: 0.5s;
+	border: 1px solid $border;
+	text-align: center;
+	text-decoration: none;
+}
+
+.contact {
+	grid-row-gap: 16px;
+}
+
+.col_cintact_futer {
+	align-items: center;
+}
+
+.footer__massagers {
+	img {
+		width: 40px;
+	}
+}
+
+.contact__by {
+	@include grid(15px, auto);
+}
+
+.footer__call {
+	margin-right: 10px;
+}
+
+.futer_main a {
+	text-decoration: none;
+	color: $main_text_color;
+}
+
+.futer_main {
+	background: rgba(186, 223, 255, 0.5);
+	color: $main_text_color;
+	margin-top: 120px;
+}
+
+.content {
+	@include content(0px 0 0px);
+}
+
+.section-btns {
+	@include grid(60px, auto auto);
+	justify-content: left;
+}
+
+.section-button {
+	@include btn(14px, $forButton, $forButton, #fff, 15px 67px);
+	border-radius: 5px;
+}
+
+.section-buttonWhite {
+	@include btn(14px, #ffffff00, $forButton, $forButton, 15px 30px);
+	border-radius: 5px;
+}
+
+.section-buttonToolbar {
+	@include btn(14px, #ffffff00, #fff, #fff, 8px 30px);
+	border-radius: 5px;
+}
+
+.section-buttonFooter {
+	@include btn(14px, #ffffff00, $main_text_color, $main_text_color, 8px 30px);
+	border-radius: 5px;
+}
+
+.section_h1 {
+	font-size: 32px;
+}
+.section_h2 {
+	font-size: 24px;
+	font-weight: bold;
+}
+.section_h3 {
+	font-size: 16px;
+}
+
+.section-button a {
+	color: inherit;
+	font-weight: 800;
+}
+.section-button:hover {
+	cursor: pointer;
+	background: #ffffff00;
+	color: $forButton !important;
+}
+.section-buttonWhite:hover {
+	cursor: pointer;
+	background: $forButton;
+	color: #fff !important;
+}
+.section-buttonToolbar:hover {
+	cursor: pointer;
+	background: $forButton;
+	color: #fff !important;
+}
+
+* {
+	font-family: inherit;
+}
+a {
+	text-decoration: none;
+}
+
+.massenger_futer {
+	align-items: center;
+}
+
+//как использовать - main_content{@include mainContent}
+.main_content {
+	@include mainContent(18px, $main_text_color);
+	background: url("https://www.pulscen.ru/system/ckeditor_assets/pictures/267349/content_group_296.png") no-repeat 100% 0% / contain;
+	font-weight: 500;
+}
+
+.img-masseger {
+	@include grid(16px, repeat(auto-fit, minmax(40px, auto)));
+	justify-content: start;
+}
+
+header {
+	padding-top: 56px;
+	.wrapper {
+		display: flex;
+		justify-content: space-between;
+		text-align: right;
+		color: #fff;
+		margin-top: 30px;
+		width: 100%;
+		.img {
+			margin-left: -10%;
+			max-width: 100%;
+			width: 39%;
+		}
+		img {
+			max-width: 100%;
+			width: 100%;
+			height: auto;
+			min-width: 200px;
+		}
+		.iconSet {
+			width: 40px !important;
+			min-width: 40px !important;
+		}
+	}
+	.choice {
+		display: grid;
+		justify-content: end;
+	}
+	.heading {
+		font-size: 48px;
+		margin-top: 130px;
+		font-weight: 800;
+	}
+	.offer {
+		@include grid(24px, 1fr);
+		margin: 80px 0;
+		max-width: 810px;
+		margin-left: auto;
+	}
+	.choice {
+		p {
+			font-size: 24px;
+		}
+	}
+	.toolbar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: #fff;
+		.toolbar__feedback {
+			@include grid(15px, 1fr 1fr 1fr);
+			align-items: center;
+		}
+		.ws {
+			max-width: 20px;
+		}
+	}
+}
+
+.services {
+	.wrapper-accordion .item .item__btn {
+		align-items: center;
+		display: grid;
+		grid-template-columns: repeat(2, auto);
+		justify-content: left;
+		grid-gap: 16px;
+		color: $main_text_color !important;
+	}
+
+	.accordion__block {
+		grid-gap: 16px;
+		color: $corporate_color;
+		font-style: italic;
+	}
+	.wrapper-accordion {
+		align-items: end;
+		margin-bottom: 60px;
+		.item {
+			padding: 0px;
+			background: none;
+			box-shadow: none;
+			grid-template-rows: 1fr;
+			.header {
+				margin-bottom: 28px;
+			}
+			.hidden__head {
+				margin-top: 24px;
+			}
+		}
+	}
+	.description {
+		margin-top: 8px;
+	}
+	.item__grid {
+		display: grid;
+		grid-gap: 28px;
+	}
+	.note {
+		font-size: 12px;
+		color: $corporate_color;
+		margin-top: 8px;
+	}
+}
+
+.appeal {
+	.appeal__block {
+		max-width: 60%;
+		display: grid;
+		grid-gap: 24px;
+	}
+	.line {
+		width: 100%;
+
+		height: 2px;
+		background: $corporate_color;
+	}
+}
+
+.img-masseger-modile {
+	display: none;
+}
+
+@media (max-width: 1650px) {
+	header {
+		.wrapper {
+			.img {
+				margin-left: -0%;
+				width: 31%;
+			}
+		}
+
+		.heading {
+			margin-top: 80px;
+			font-size: 36px;
+		}
+		.offer {
+			margin: 30px 0 60px;
+		}
+	}
+	.services {
+		.wrapper-accordion {
+			margin-top: 0;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	header {
+		.heading {
+			font-size: 36px;
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	header {
+		.heading {
+			font-size: 24px;
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	.wrapper-accordion {
+		grid-template-columns: 1fr;
+		grid-gap: 48px;
+	}
+	.services {
+		.wrapper-accordion {
+			.item {
+				.header {
+					margin-bottom: 4px;
+				}
+			}
+		}
+		.item__grid {
+			grid-gap: 4px;
+		}
+	}
+	header {
+		.toolbar {
+			.toolbar__feedback {
+				grid-template-columns: 1fr;
+			}
+			.massenger_futer {
+				display: none;
+			}
+		}
+
+		.wrapper {
+			flex-direction: column-reverse;
+			align-items: baseline;
+			margin-top: 40px;
+			text-align: left;
+		}
+		.heading {
+			margin-top: 20px;
+		}
+		.img {
+			display: grid;
+			align-self: center;
+			width: 200px;
+		}
+		.offer {
+			margin: 24px 0 36px;
+		}
+		.choice {
+			justify-content: start;
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	header {
+		.heading {
+			font-size: 24px;
+		}
+	}
+	.futer_main {
+		margin-top: 60px;
+	}
+}
+
+@media (max-width: 660px) {
+	.main_content {
+		background: url("https://www.pulscen.ru/system/ckeditor_assets/pictures/267453/content_group_297.png") no-repeat 100% 0% / contain;
+		font-weight: 500;
+		font-size: 14px;
+	}
+	.img-masseger-modile {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 8px;
+		margin-top: 24px;
+	}
+	.img-masseger-desk {
+		display: none;
+	}
+	.section-btns {
+		grid-template-columns: 1fr;
+	}
+	.logo {
+		width: 100px;
+	}
+	.section-buttonToolbar {
+		padding: 8px 20px;
+		font-size: 12px;
+	}
+	header {
+		.wrapper {
+			grid-gap: 60px;
+			display: grid;
+			.img {
+				margin-left: 0%;
+				width: 100%;
+				order: 2;
+			}
+		}
+	}
+	.services {
+		margin-top: 36%;
+	}
+	.appeal {
+		.appeal__block {
+			grid-gap: 24px;
+			max-width: 100%;
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.main_content {
+		background: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/267453/content_group_297.png) no-repeat 100% 0%/115%;
+	}
+}
+
+@media (max-width: 360px) {
+	.main_content {
+		background: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/267453/content_group_297.png) no-repeat 100% 0%/125%;
+	}
+}

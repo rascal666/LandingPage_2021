@@ -1,0 +1,240 @@
+/** @format */
+
+$corporate_color: #028dd8;
+$main_text_color: #013a59;
+
+@mixin mainContent($size, $color) {
+	max-width: 1920px;
+	width: 100%;
+	margin: auto;
+	font-size: $size;
+	// font-family: "Open Sans", sans-serif;
+	color: $color;
+	font-family: "Montserrat", sans-serif;
+	background: #3dc6c9;
+}
+a:hover {
+	color: #0056b3;
+	text-decoration: none;
+}
+
+@mixin content($padd...) {
+	max-width: 1366px;
+	width: 90%;
+	margin: auto;
+	padding: $padd;
+}
+.contentain {
+	max-width: 1366px;
+	width: 90%;
+	margin: auto;
+}
+p {
+	margin: 0;
+	padding: 0;
+}
+
+//как использовать - main_content{@include mainContent}
+.heading_Button {
+	background: #194767;
+	border: 1px solid #194767;
+	color: #fff !important;
+	transition-duration: 0.5s;
+	margin-top: 100px;
+}
+.heading_Button:hover {
+	background: #194767;
+	border: 1px solid #194767;
+	color: #fff !important;
+	transition-duration: 0.5s;
+	background: #225880;
+	padding: 20px 60px;
+}
+
+@keyframes widh {
+	0% {
+		padding: 20px 40px;
+	}
+	50% {
+		padding: 20px 60px;
+		background: #225880;
+	}
+	100% {
+		padding: 20px 40px;
+	}
+}
+
+.content {
+	@include content(0px 0);
+}
+// .main_content {
+// 	@include mainContent(16px, #194767);
+// 	background: url("https://www.pulscen.ru/system/ckeditor_assets/pictures/243223/content_group_42.png") no-repeat -78px 363px/452px, url("https://www.pulscen.ru/system/ckeditor_assets/pictures/243248/content_illustration.png") no-repeat 100% 0% / 50%, #3dc6c9;
+// }
+.main_content {
+	@include mainContent(16px, #194767);
+	background: url("https://www.pulscen.ru/system/ckeditor_assets/pictures/243248/content_illustration.png") no-repeat 100% 0% / 50%, #3dc6c9;
+}
+
+header {
+	.heading {
+		font-size: 48px;
+		padding-bottom: 24px;
+		margin-top: 80px;
+	}
+
+	.subtitle {
+		max-width: 550px;
+	}
+
+	.offer__imgText {
+	}
+	.offer {
+		display: grid;
+		grid-template-columns: auto auto;
+		justify-content: left;
+		margin-top: 90px;
+		grid-gap: 120px;
+	}
+	.offer__text {
+		max-width: 373px;
+	}
+	.logo {
+		margin-top: 80px;
+	}
+	.offer__imgText {
+		position: relative;
+	}
+	.offer__textMain {
+		position: relative;
+		z-index: 1;
+	}
+
+	.offer__imgText {
+		img {
+			position: absolute;
+			top: -54px;
+			left: -168px;
+		}
+	}
+}
+
+.advantages {
+	margin-top: 120px;
+	.advantages__heading {
+		font-size: 24px;
+	}
+	.itemWrapper {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		grid-gap: 50px;
+		margin-top: 60px;
+	}
+	.item__text {
+		max-width: 300px;
+		margin-top: 24px;
+	}
+	.try {
+		margin-top: 80px;
+		max-width: 800px;
+	}
+	.line {
+		background: #194767;
+		max-width: 384px;
+		height: 3px;
+		margin: 36px 0;
+	}
+	.click {
+		max-width: 800px;
+	}
+}
+
+.futer_main {
+	background: #3dc6c9;
+	color: #013a59;
+	border-top: 1px solid #ffffff8f;
+	margin-top: 80px;
+}
+
+.futer_wrapper {
+	padding: 80px 0 90px;
+}
+
+.futer_main a {
+	font-weight: normal;
+	color: #194767;
+}
+
+.coll_me_futer {
+	border-bottom: 1px dashed #194767;
+	width: 112px;
+}
+
+@media (max-width: 1440px) {
+	.main_content {
+		background: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/243248/content_illustration.png) no-repeat 100% 16%/50%, #3dc6c9;
+	}
+}
+
+@media (max-width: 1360px) {
+	.main_content {
+		background: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/243248/content_illustration.png) no-repeat 100% 21%/47%, #3dc6c9;
+	}
+}
+
+@media (max-width: 1080px) {
+	.main_content {
+		background: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/243248/content_illustration.png) no-repeat 100% 24%/50%, #3dc6c9;
+	}
+	header {
+		.logo {
+			margin-top: 40px;
+		}
+		.heading {
+			// margin-top: 250px;
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	.main_content {
+		background: url(https://www.pulscen.ru/system/ckeditor_assets/pictures/243248/content_illustration.png) no-repeat 100% 27%/50%, #3dc6c9;
+	}
+	header {
+		.heading {
+			font-size: 36px;
+			padding-bottom: 24px;
+			margin-top: 40px;
+		}
+		.offer {
+			grid-template-columns: 1fr;
+			grid-gap: 80px;
+		}
+		.offer__text {
+			max-width: 100%;
+		}
+	}
+	.advantages {
+		margin-top: 80px;
+		.item__text {
+			max-width: 100%;
+		}
+		.itemWrapper {
+			margin-top: 40px;
+		}
+	}
+	.heading_Button {
+		margin-top: 40px;
+	}
+}
+
+@media (max-width: 500px) {
+	.main_content {
+		background: #3dc6c9;
+	}
+	header {
+		.heading {
+			font-size: 28px;
+		}
+	}
+}

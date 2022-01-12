@@ -1,0 +1,131 @@
+<!-- @format -->
+include ./miksins.pug
+
+
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+
+		title= "все включено"
+	body.js-body
+		.main_content
+			header
+				include ./modules/toolbar.pug
+				.header
+					.content
+						.header__wrapper
+							.header__text
+								p.section_h1 Круто, когда «Все включено»! Новый тариф на Пульсе цен
+								.offer
+									p Название тарифа говорит само за себя. Здесь собраны все инструменты для полноценного, грамотного продвижения компании и товаров в интернете. Вы занимаетесь продажами, а мы обеспечиваем стабильный и максимально целевой поток теплых клиентов. Один подрядчик — полный спектр услуг. И всегда понятно, с кого спросить результат. 
+									p Что входит в тариф «Всё включено»
+									.header__btns
+										+buttonEvent("{crm_analytics:click_link(SEO,#seo,network_actions,ПП_SEO_Все_Включено)}", "section-buttonWhite fat")
+										+buttonEvent("{crm_analytics:click_link(Дизайн,#design,network_actions,ПП_Дизайн_Все_Включено)}", "section-buttonWhite fat ")
+										+buttonEvent("{crm_analytics:click_link(Реклама,#reklamat,network_actions,ПП_реклама_Все_Включено)}", "section-buttonWhite fat")
+										+buttonEvent("{crm_analytics:click_link(Интеграции,#integration,network_actions,ПП_Интеграции_Все_Включено)}", "section-buttonWhite fat")
+										+buttonEvent("{crm_analytics:click_link(Продажи в доп.регионы,#sale,network_actions,ПП_Регионы_Все_Включено)}", "section-buttonWhite fat")
+									p Реализация от А до Я. Учтем ваши пожелания, особенности бизнеса и последние тренды интернет продаж. У вас будет полноценный и стабильно работающий канал продаж, а также поддержка команды специалистов на протяжении всего периода размещения.   
+							.header__img
+								img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/280267/content_illyustratsiya.png")
+			.block.block-site#design
+				.content
+					.container
+						.text
+							p.block__heading.section_h3 Современный сайт с индивидуальным дизайном
+							p.block_subtitle Оформление, структура, навигация и наполнение сайта на Пульс цен:
+							.list
+								.list__li Узнаваемый фирменный стиль.
+								.list__li Информационные страницы о компании и рекламный слайдер на Главной странице вашего сайта.
+								.list__li Быстрая и понятная навигация (тулбар, поисковая строка и т.д.).
+								.list__li Продающие коммерческие блоки (калькулятор, онлайн-консультант и пр.).
+								.list__li Посадочные страницы для рекламных кампаний. 
+						.slider
+							.swiper.slider-r
+								.swiper-wrapper
+									.swiper-slide 
+										img.slider__img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/280247/content_1_primer.png")
+									.swiper-slide
+										img.slider__img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/280246/content_2_primer.png")
+									.swiper-slide 
+										img.slider__img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/280249/content_3_primer.png")
+							.button-prev 
+							.button-next 
+			.block.block-graph#seo
+				.content
+					.container
+						.graph.mobile
+							img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/280250/content_preimuschestva.png')
+						.text
+							p.block__heading.section_h3 Проработанное SEO
+							p.block_subtitle Привлечение дополнительного органического трафика и увеличение конверсии сайта
+							.list
+								.list__li Работа со структурой товарного каталога.
+								.list__li Оптимизация названий и описаний групп товаров для поисковых систем (title, H1, description).
+								.list__li Написание уникальных текстов для кратких и полных описаний групп.
+								.list__li Проработка изображений групп товаров. 
+			.block.block-reklam#reklamat
+				.content
+					p.block__heading.section_h3 Контекстная реклама на поиске
+					p.block_subtitle Грамотное и эффективное продвижение в рекламной выдаче Яндекса и Google:
+					.container
+						.text
+							.list
+								.list__li Составление полного семантического ядра.
+								.list__li Подбор подходящих посадочных страниц для всех объявлений.
+								.list__li Составление привлекательного для покупателей продающего объявления.
+								.list__li Настройка Яндекс.Метрики и целей. 
+								.list__li Запуск рекламной кампании в Яндексе и Google. 
+						.text.text_2
+							.list
+								.list__li Перехват заявок, которые могут уйти к конкурентам и еще больше клиентов с поиска.
+								.list__li Контроль ключевых показателей эффективности рекламной кампании – показы, переходы, СТR, % отказа, конверсии в звонки и заявки (достижение целей).
+								.list__li Ежеквартальная полная отчетность о проведенных работах и полученных результатах. 
+			.block.geo#sale
+				.content
+					.container
+						.geo.mobile
+							img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/280248/content_group_123.png')
+						.text
+							.text__block
+								p.block__heading.section_h3 Расширенная география продаж
+								p.block_subtitle Продвижение товаров в 7 регионах на приоритетном размещении.
+								p.block_subtitle Разместите товары во всех регионах РФ выше бесплатного пакета в каталоге Пульса цен. 214 площадок для расширения вашей географии продаж!
+								p.block_subtitle Продавайте в другие регионы без посредников и присутствия в них. Получайте клиентов со всей страны.
+			.block.block-integration#integration
+				.content
+					p.block__heading.section_h3 Удобные сервисы интеграции для быстрых продаж
+
+					.container
+						.text
+							p.block_subtitle Получайте оплату в кратчайшие сроки благодаря модулям онлайн-оплаты.
+							.text__icon
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/280241/content_yookassa_1.png')
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/280240/content_pek_kiper.png')
+							p.block_subtitle.block_subtitle2 Увеличьте конверсию с прозрачной системой расчета доставки для покупателей.
+							.text__icon
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/280244/content_9334_boxberry_logo_1.png')
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/280243/content_f203f7feb390b5fcf27b31853623ec99_1.png')
+								img(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/280242/content_e15c4c002e42aac5901f5da1d9711994_1.png')
+
+						.text
+							.text__block
+								p.block_subtitle Обрабатывайте все лиды в одном месте в привычном интерфейсе Битрикс 24.
+								p.block_subtitle Все заказы с Пульса цен будут приходить в Битрикс автоматически.
+							.list
+								.list__li.list__li_gray  Вы не пропустите ни одного обращения от клиентов.
+								.list__li.list__li_gray Сэкономите время - не нужно заходить в разные рекламные кабинеты, чтобы отслеживать новые заявки.
+								.list__li.list__li_gray Вы сможете контролировать работу продавцов и оценивать эффективность рекламных каналов.
+			.block.spider
+				.content
+					.center
+						p.block__heading.section_h3 Состав тарифа
+						img.desktop(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/280363/content_pauk.png')
+						img.mobile(src='https://www.pulscen.ru/system/ckeditor_assets/pictures/280364/content_mobayl.png')
+					.offer
+						p  <span class="fat">Тариф «Всё включено»</span> — это сильный канал для привлечения клиентов. Он включает все ТОПовые инструменты и команду специалистов, которая их внедрит и настроит. 
+						p Узнайте подробный состав тарифа и условия подключения у своего менеджера.
+					+button('{crm_analytics:click_link(Расскажите подробнее о тарифе,#order,network_actions,ПП_Всё_Включено_Консультация_121021)}','section-button')
+			include ./modules/footer.pug
+		p {crm_analytics:show_page(network_actions,ПП_Все_Включено)}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<style>
+    rascal_{
+        color: #013a59 !important;
+        font-family: 'Open Sans', sans-serif !important;
+    }
+    .heading{
+        font-size: 26px!important;
+        text-align: center;
+        font-weight: 600 !important;
+        margin-bottom: 30px !important;
+    }
+
+    .btns{
+        display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    grid-gap: 20px;
+    }
+
+    .btn{
+        letter-spacing: 0.06em;
+	font-size: 16px;
+	background: #49abfd;
+	border-radius: 5px;
+	width: fit-content;
+	padding: 10px  40px !important;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	color: #fff !important;
+	transition-duration: 0.5s;
+	border: 1px solid #49abfd;
+	text-align: center;
+    cursor: pointer;
+    }
+</style>
+ 
+<body>
+    <div class="rascal_">
+        <p class="heading">Нужен сайт для бизнеса?</p>
+
+    <div class="btns">
+        <div class="btn button_yes feedback-js weight_600 ab-order js-apress-order-button js-orders-callback-link"
+        data-button-type="order_callback" data-company="99572059 " data-company-id="99572059 "
+        data-company-name="Пульс цен Онлайн" data-company-name-rest=""
+        data-company-url="https://help.pulscen.ru/" data-params='{"company_id":"99572059 "}'
+        data-statistics="1" data-type="callback">Да</div>
+        <div class="btn button_no">Нет</div>
+    </div>
+    </div>
+</body>
+
+<script>
+
+    let button_no = document.querySelector('.button_no')
+    button_no.addEventListener('click', ()=>{
+        document.querySelector('cnv-widget_popup-content').style.display = 'none' 
+    })
+</script>
+</html>
+

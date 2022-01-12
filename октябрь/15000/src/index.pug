@@ -1,0 +1,159 @@
+<!-- @format -->
+include ./miksins.pug
+
+
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		title= "все включено"
+	body.js-body
+		.main_content
+			header
+				include ./modules/toolbar.pug
+				.header
+					.content
+						.header__wrapper
+							.header__text
+								p.section_h1 15 000 рублей #[br] на продвижение в интернете
+								.header__img.mobile
+									img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/282443/content_illyustratsiya_glavnaya.png")
+								.section-offer
+									p При подключении услуг Турбосети и/или Турбопоиск дарим бонусы на дополнительное продвижение ваших товаров в интернете.
+									.list
+										p #[b Это отличная возможность:]
+										.list__li попробовать новые формы для продвижения;
+										.list__li сэкономить рекламный бюджет на продвижение;
+										.list__li быстро увеличить продажи товаров и товарных групп.
+									.header__btns
+										div
+											+buttonEvent("{crm_analytics:click_link(Бонус-1,#bonus1,want_orders,МР_Бонсуы_Турбопоиск)}", 
+											"Бонус-1","section-button fat")
+											p Турбопоиск  — продвижение групп товаров в поисковике Яндекса.
+										div
+											+buttonEvent("{crm_analytics:click_link(Бонус-2,#bonus2,want_orders,МР_Бонусы_Турбосети)}", 
+											"Бонус-2","section-button fat")
+											p Турбосети  — продвижение групп товаров в рекламных сетях Яндекса и Google.   
+							.header__img
+								img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/282443/content_illyustratsiya_glavnaya.png")
+			section.bonus#bonus1
+				.content 
+					p.section_h2 Бонусы при первом подключении #[br] или продлении услуги ТурбоПоиск
+					.subtitle Мы подберем для вас бонус и подключим его на бюджет в 15 000 рублей.
+					.blocks 
+						.block 
+							img.block__img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/282435/content_galochka.png", alt="")
+							.block__heading.section_h3 Продвижение #[br] на аудиторию Google*
+							.block__subtitle Контекстное объявление, показывается на первой странице коммерческой выдачи Google. 
+							.list
+									p.list__heading Выгоды:
+									.list__li больше клиентов с поиска Google;
+									.list__li первая страница  поисковой выдачи;
+									.list__li увеличение продаж группы товаров;
+									.list__li перехват заявок, которые могут уйти к конкурентам.
+							div.block__end
+								div
+									.line
+									p.line-note Условия показа:
+									p.block__text ваше предложение увидят люди, которые ввели в строку поиска Google запрос на ваш товар.
+									p.block__note *только для клиентов, у которых уже есть услуга Турбопоиск в Яндексе.
+								+button("{crm_analytics:click_link(Хочу клиентов с Google,#order,want_orders,МР_Бонусы_Google)}", "Хочу клиентов с Google","section-buttonAccent fat")
+						.block 
+							img.block__img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/282435/content_galochka.png", alt="")
+							.block__heading.section_h3 Продвижение #[br] на уникальную аудиторию 
+							.block__subtitle Медийное объявление, показывается в #[p.block__hint(data-title="РСЯ — это рекламная сеть Яндекса. В нее входят 1000+ самых популярных сайтов рунета. ")  &nbsp; РСЯ &nbsp; ] покупателям с #[p.block__hint(data-title="Покупатели, которые сделали заказы на Пульс Цен в активный сезон или оформили заказы по определенной тематике в определенном регионе. ")  &nbsp;  Пульса цен &nbsp; ] и аудитории #[p.block__hint(data-title="Look-ilake — аудитория посетителей Яндекса, похожая на аудиторию рубрики Пульс цен. ") &nbsp; look-alike ].
+							.list
+									p.list__heading Выгоды:
+									.list__li привлечение только заинтересованной аудитории;
+									.list__li увеличение трафика выбранной группы товаров;
+									.list__li быстрое и эффективное донесение предложений до покупателя.
+							div.block__end
+								div
+									.line
+									p.line-note Условия показа:
+									p.block__text объявление увидит заинтересованная аудитория, которая покупает такие же товары.
+									p.block__note 
+								+button("{crm_analytics:click_link(Хочу уникальные лиды,#order,want_orders,МР_Бонусы_ПЦ+Lool-alike)}", "Хочу уникальные лиды","section-buttonAccent fat")
+						.block 
+							img.block__img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/282435/content_galochka.png", alt="")
+							.block__heading.section_h3 Продвижение #[br] Смарт-Баннером
+							.block__subtitle Динамическое объявление «текст с картинкой», показывается в #[div.block__hint(data-title="РСЯ — это рекламная сеть Яндекса. В нее входят 1000+ самых популярных сайтов рунета. ") &nbsp; РСЯ &nbsp; ] тем, кто уже смотрел ваши товары или искал похожие. 
+							.list
+								p.list__heading Выгоды:
+								.list__li привлечение новых клиентов из РСЯ;
+								.list__li возврат пользователей, которые ничего не заказали;
+								.list__li повышение конверсии, ведь баннер видят только заинтересованные покупатели.
+							div.block__end
+								div
+									.line
+									p.line-note Условия показа:
+									p.block__text баннер увидят пользователи, которые смотрели ваши товары или товары конкурентов.
+									p.block__note 
+								+button("{crm_analytics:click_link(Хочу клиентов с РСЯ,#order,want_orders,МР_Бонусы_Смарт-баннер)}", "Хочу клиентов с РСЯ","section-buttonAccent fat")
+					.bonus__end
+						p Оставьте заявку на выбранный бонус, менеджер Пульса цен  позвонит и подберет формат продвижения, который лучше всего подойдет для решения ваших задач.
+						p.bonus__note *Услуга Турбопоиск — это продвижение групп товаров в рекламной выдаче на поиске Яндекс и Google. Запустим рекламную кампанию на поиске в короткие сроки. Гарантируем рост трафика в 2 раза по выбранным направлениям и первую страницу выдачи.
+			section.turboSearch#bonus2
+				.content 
+					p.section_h2 Бонусы при подключении услуги ТурбоСети
+					.section-offer 
+						p Мы подберем для вас бонус и подключим его на бюджет в 15 000 рублей.
+						p #[span.accent Адаптивное объявление]  — это объявление, которое полноценно раскрывает ваш продукт. Визуально выделяет и захватывает внимание аудитории. К классическому формату добавим два новых: видео-баннер и статическое объявление.
+					.blocks 
+						.block 
+							.block__header.section_h3 Классический формат
+							.block__content 
+								p Проверенный временем и бизнесом формат. Объявление содержит всю информацию для успешных продаж: изображение, название, Уникальное торговое предложение, призыв к действию.
+								.img
+									img.block__img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/282442/content_image2_2.png", alt="")
+								.list 
+									.list__heading Преимущества:
+									.list__li усиление продаж;
+									.list__li увеличение конверсии рекламных кампаний;
+									.list__li привлечение внимания к товару или линейке товаров;
+									.list__li работает на побуждение покупателя оставить заказ именно у вас.
+						.block 
+							.block__header.section_h3 Видео баннер
+							.block__content 
+								p Этот формат редко кто использует из-за сложности в подготовке. У аудитории пока не сформировалась «слепота». Поэтому видео-баннер притягивает внимание с первых секунд.
+								.img.block__imgSmall
+									img.block__img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/282738/content_frame_942.png", alt="")
+								.list 
+									.list__heading Преимущества:
+									.list__li работает как оффер или инструмент для формирования спроса;
+									.list__li показывает всю линейку товаров за счет нескольких кадров;
+									.list__li выделяет основные преимущества и выгоды;
+									.list__li работает на повышение лояльности и доверия аудитории.
+						.block 
+							.block__header.section_h3 Статический формат
+							.block__content 
+								p Это адаптивное объявление. Рекламная система сама подстраивает баннер под место. Это помогает увеличить количество площадок для размещения.
+								.img
+									img.block__img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/282444/content_image1_1.png", alt="")
+								.list 
+									.list__heading Преимущества:
+									.list__li охватывает большее количество площадок;
+									.list__li побуждает покупателя совершить переход на сайт;
+									.list__li работает как оффер или инструмент для формирование спроса;
+									.list__li повышает узнаваемость компании.
+					+button("{crm_analytics:click_link(Хочу адаптивное объявление,#order,want_orders,МР_Бонусы_Адаптивное_объявление)}", "Хочу адаптивное объявление","section-buttonAccent fat", )
+			section.audit 
+				.content 
+					.block
+						p.section_h2.block__heading Продвижение на уникальную аудиторию  
+						p.block__subtitle Медийное объявление, показывается в Рекламной сети Яндекс покупателям с Пульса цен, которые уже оставляли заявки на аналогичные товары. 
+						p.section_h3.block__headingAccent Преимущества:
+						.items 
+							.item 
+								img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/282684/content_ikonka_pokupateli.png", alt="")
+								p Ваше объявление видит только заинтересованная аудитория
+							.item 
+								img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/282434/content_frame_938.png", alt="")
+								p Увеличение трафика на выбранную группу товаров
+							.item 
+								img(src="https://www.pulscen.ru/system/ckeditor_assets/pictures/282436/content_frame_941.png", alt="")
+								p Быстрое и эффективное донесение предложений до покупателя.
+					+button("{crm_analytics:click_link(Хочу уникальную аудиторию,#order,want_orders,МР_Бонусы_ПЦ+Lool-alike)}", "Хочу уникальную аудиторию","section-buttonAccent fat", )
+					p.bonus__note Услуга Турбосети — продвижение групп товаров в рекламных сетях Яндекса и Google. Запуск рекламной кампании в РСЯ и КМС в короткие сроки. Показ вашего объявления на 1000-ах сайтах.
+			include ./modules/footer.pug
+			p {crm_analytics:show_page(want_orders,МР_Бонусы_Октябрь)}
