@@ -19,7 +19,7 @@ $listImg: 32px;
 	font-size: $size;
 	// font-family: "Open Sans", sans-serif;
 	color: $color;
-	font-family: "Montserrat", sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 * {
@@ -244,6 +244,7 @@ header {
 		color: $white;
 		z-index: 1;
 		position: relative;
+		background: inherit;
 		.toolbar__feedback {
 			@include grid(15px, 1fr 1fr 1fr);
 			align-items: center;
@@ -297,8 +298,8 @@ header {
 					position: relative;
 				}
 				.li:before {
-					content: "";
-					background: url("https://www.pulscen.ru/system/ckeditor_assets/pictures/268909/content_galochka.png");
+					content: '';
+					background: url('https://www.pulscen.ru/system/ckeditor_assets/pictures/268909/content_galochka.png');
 					background-size: $listImg;
 					width: $listImg;
 					height: $listImg;
